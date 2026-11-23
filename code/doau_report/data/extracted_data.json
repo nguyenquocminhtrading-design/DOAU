@@ -1,0 +1,4689 @@
+{
+  "months": [
+    "Jan 2026",
+    "Feb 2026",
+    "Mar 2026",
+    "Apr 2026",
+    "May 2026",
+    "Jun 2026",
+    "Jul 2026",
+    "Aug 2026",
+    "Sep 2026",
+    "Oct 2026"
+  ],
+  "monthly_trend": [
+    {
+      "month": "Jan 2026",
+      "revenue": 1015172.38,
+      "cogs": 1007561.48,
+      "gross_profit": 7610.9,
+      "gm_pct": 0.007497150385435033,
+      "admin_exp": 97335.57,
+      "sales_exp": 13772.99,
+      "total_opex": 111108.56,
+      "net_operating_income": -129487.56,
+      "interest": 26271.55,
+      "depreciation": 33951.96,
+      "ebitda": -69264.04999999999
+    },
+    {
+      "month": "Feb 2026",
+      "revenue": 701561.49,
+      "cogs": 741373.42468,
+      "gross_profit": -39811.93468,
+      "gm_pct": -0.05674760551637462,
+      "admin_exp": 100387.72,
+      "sales_exp": 32030.72,
+      "total_opex": 132418.44,
+      "net_operating_income": -197335.26468,
+      "interest": 25104.89,
+      "depreciation": 33951.96,
+      "ebitda": -138278.41468000002
+    },
+    {
+      "month": "Mar 2026",
+      "revenue": 685015.17,
+      "cogs": 724003.25743,
+      "gross_profit": -38988.08743,
+      "gm_pct": -0.05691565550292849,
+      "admin_exp": 94656.27,
+      "sales_exp": 23229.75,
+      "total_opex": 117886.02,
+      "net_operating_income": -183145.66743,
+      "interest": 26271.56,
+      "depreciation": 33951.96,
+      "ebitda": -122922.14743000001
+    },
+    {
+      "month": "Apr 2026",
+      "revenue": 972265.26,
+      "cogs": 993008.59,
+      "gross_profit": -20743.33,
+      "gm_pct": -0.021335052123532625,
+      "admin_exp": 129155.55,
+      "sales_exp": 27856.62,
+      "total_opex": 157012.17,
+      "net_operating_income": -203638.16,
+      "interest": 25882.66,
+      "depreciation": 33951.96,
+      "ebitda": -143803.54
+    },
+    {
+      "month": "May 2026",
+      "revenue": 713122.8,
+      "cogs": 901431.87294,
+      "gross_profit": -188309.07294,
+      "gm_pct": -0.2640626171817813,
+      "admin_exp": 82799.26,
+      "sales_exp": 24763.27,
+      "total_opex": 107562.53,
+      "net_operating_income": -322143.16294,
+      "interest": 26271.56,
+      "depreciation": 33951.96,
+      "ebitda": -261919.64294000002
+    },
+    {
+      "month": "Jun 2026",
+      "revenue": 979430.58,
+      "cogs": 971270.54428,
+      "gross_profit": 8160.03572,
+      "gm_pct": 0.0083314079493005,
+      "admin_exp": 97807.0,
+      "sales_exp": 27401.3,
+      "total_opex": 125208.3,
+      "net_operating_income": -142930.92428,
+      "interest": 25882.66,
+      "depreciation": 33951.96,
+      "ebitda": -83096.30428000001
+    },
+    {
+      "month": "Jul 2026",
+      "revenue": 1252822.49,
+      "cogs": 1319006.91604,
+      "gross_profit": -66184.42604,
+      "gm_pct": -0.0528282550547125,
+      "admin_exp": 117770.75,
+      "sales_exp": 24369.2,
+      "total_opex": 142139.95,
+      "net_operating_income": -237928.93604,
+      "interest": 29604.56,
+      "depreciation": 33951.96,
+      "ebitda": -174372.41604
+    },
+    {
+      "month": "Aug 2026",
+      "revenue": 976553.32,
+      "cogs": 1027757.73736,
+      "gross_profit": -51204.41736,
+      "gm_pct": -0.052433816271291775,
+      "admin_exp": 99494.42,
+      "sales_exp": 25293.03,
+      "total_opex": 124787.45,
+      "net_operating_income": -203791.86736,
+      "interest": 27800.0,
+      "depreciation": 33951.96,
+      "ebitda": -142039.90736
+    },
+    {
+      "month": "Sep 2026",
+      "revenue": 1424357.67,
+      "cogs": 1477844.7,
+      "gross_profit": -53487.03,
+      "gm_pct": -0.03755168461303684,
+      "admin_exp": 107537.72,
+      "sales_exp": 24964.02,
+      "total_opex": 132501.74,
+      "net_operating_income": -209087.08,
+      "interest": 28473.61,
+      "depreciation": 33951.96,
+      "ebitda": -146661.50999999998
+    },
+    {
+      "month": "Oct 2026",
+      "revenue": 1358930.08,
+      "cogs": 1447714.98,
+      "gross_profit": -88784.9,
+      "gm_pct": -0.06533441367343933,
+      "admin_exp": 89573.66,
+      "sales_exp": 19099.55,
+      "total_opex": 108673.21,
+      "net_operating_income": -219973.14,
+      "interest": 22550.0,
+      "depreciation": 33951.96,
+      "ebitda": -163471.18000000002
+    }
+  ],
+  "sep_vs_oct": {
+    "revenue": {
+      "sep": 1424357.67,
+      "oct": 1358930.08
+    },
+    "cogs": {
+      "sep": 1477844.7,
+      "oct": 1447714.98
+    },
+    "gross_profit": {
+      "sep": -53487.03,
+      "oct": -88784.9
+    },
+    "admin_exp": {
+      "sep": 107537.72,
+      "oct": 89573.66
+    },
+    "sales_exp": {
+      "sep": 24964.02,
+      "oct": 19099.55
+    },
+    "total_opex": {
+      "sep": 132501.74,
+      "oct": 108673.21
+    },
+    "net_operating_income": {
+      "sep": -209087.08,
+      "oct": -219973.14
+    },
+    "other_income": {
+      "sep": 5375.3,
+      "oct": 34.97
+    },
+    "other_expense": {
+      "sep": 28473.61,
+      "oct": 22550.0
+    },
+    "ebitda": {
+      "sep": -146661.50999999998,
+      "oct": -163471.18000000002
+    }
+  },
+  "ytd_summary": {
+    "revenue_ytd26": 10079231.24,
+    "revenue_ytd25": 14728397.12,
+    "revenue_chg": -4649165.88,
+    "revenue_chg_pct": -0.316,
+    "sales_ytd26": 9868353.29,
+    "sales_ytd25": 14403161.42,
+    "custom_proc_ytd26": 84421.89,
+    "custom_proc_ytd25": 144049.23,
+    "discounts_ytd26": -27010.57,
+    "discounts_ytd25": -33800.65,
+    "cogs_ytd26": 10729973.5,
+    "cogs_ytd25": 13734470.06,
+    "gross_profit_ytd26": -650742.26,
+    "gross_profit_ytd25": 993927.06,
+    "direct_labor_ytd26": 833083.08,
+    "direct_labor_ytd25": 993992.84,
+    "factory_oh_ytd26": 1652901.23,
+    "factory_oh_ytd25": 1524516.24,
+    "admin_exp_ytd26": 1016517.92,
+    "admin_exp_ytd25": 766303.39,
+    "sales_exp_ytd26": 242780.45,
+    "sales_exp_ytd25": 394139.12,
+    "total_opex_ytd26": 1259298.37,
+    "total_opex_ytd25": 1160442.51,
+    "net_ordinary_income_ytd26": -1910040.63,
+    "net_ordinary_income_ytd25": -166515.45,
+    "interest_exp_ytd26": 0.0,
+    "interest_exp_ytd25": 317.03,
+    "net_income_ytd26": -2168461.76,
+    "net_income_ytd25": -438323.97
+  },
+  "pl_oct": {
+    "revenue_oct": 1358930.08,
+    "sales_oct": 1322742.59,
+    "custom_proc_oct": 26192.0,
+    "cogs_oct": 1447714.98,
+    "direct_labor_oct": 92254.58,
+    "factory_oh_oct": 179144.07,
+    "gross_profit_oct": -88784.9,
+    "admin_exp_oct": 3042.02,
+    "sales_exp_oct": 19099.55,
+    "total_opex_oct": 108673.21,
+    "net_ordinary_income_oct": -197458.11,
+    "interest_oct": 22550.0,
+    "net_other_income_oct": -22515.03,
+    "net_income_oct": -219973.14
+  },
+  "ebitda_schedule": {
+    "title": "Adjusted EBITDA Management Schedule",
+    "ytd": {
+      "depreciation": 386204.0,
+      "interest": 120881.0,
+      "ebitda": 630463.0,
+      "consulting_fee": 53957.0,
+      "bonus_vinh": 5000.0,
+      "loyalty_victor": 30000.0,
+      "rent_cliveden": 160000.0,
+      "total_addbacks": 248957.0,
+      "adjusted_ebitda": 879420.0
+    },
+    "oct": {
+      "depreciation": 55928.0,
+      "interest": 14195.0,
+      "ebitda": 135895.0,
+      "consulting_fee": 0,
+      "bonus_vinh": 0,
+      "loyalty_victor": 10000.0,
+      "rent_cliveden": 32000.0,
+      "total_addbacks": 42000.0,
+      "adjusted_ebitda": 177895.0
+    },
+    "operational_ebitda": {
+      "oct": -163471.18000000002,
+      "ytd": -1445829.1127300002
+    }
+  },
+  "balance_sheet": {
+    "as_of": "October 31, 2026",
+    "cash_and_equiv": 275741.28,
+    "ar_gross": 2580975.87,
+    "ar_allowance": -166596.0,
+    "ar_net": 2414379.87,
+    "inventory": 3609121.53727,
+    "inventory_clearing": 5976.56,
+    "inventory_wip": 4650.0,
+    "inventory_other": 3598494.9772716705,
+    "prepaid": 3638428.13727,
+    "undeposited_funds": 5641.65,
+    "total_current_assets": 6328549.28727,
+    "fixed_assets_cip": 1920888.35,
+    "fixed_assets_prod_equip": 3882176.62,
+    "fixed_assets_automation": 494022.74,
+    "fixed_assets_building_imp": 767814.9700000001,
+    "fixed_assets_auto": 195389.91,
+    "fixed_assets_furniture_equipment": 63954.16,
+    "fixed_assets_office_computer": 68079.36,
+    "accum_depreciation": -4358336.7,
+    "total_fixed_assets": 3033989.41,
+    "total_assets": 9453850.07727,
+    "accounts_payable": 1378167.76,
+    "credit_cards": 31124.68,
+    "accrued_expenses": 305473.28,
+    "loan_dan_d_pistachio": 1000000.0,
+    "payroll_liabilities": 92787.21,
+    "total_current_liabilities": 2808150.2,
+    "lt_loans": {
+      "east_west_1": 500000.0,
+      "east_west_2": 500000.0,
+      "dan_d_foods_ltd": 1277610.4,
+      "danway": 2819900.0,
+      "ddp_llc": 211906.74,
+      "horseshoe": 500000.0
+    },
+    "total_lt_liabilities": 5809417.14,
+    "total_liabilities": 8617567.34,
+    "capital_stock": 2000000.0,
+    "members_equity": 425783.6,
+    "retained_earnings": 459960.9,
+    "net_income_bs": -2049461.762728329,
+    "total_equity": 836282.73727,
+    "total_liabilities_and_equity": 9453850.07727
+  },
+  "ar_aging": {
+    "rows": [
+      {
+        "name": "DOF - Vietnam",
+        "current": 440681.05,
+        "d1_30": 13352.3,
+        "d31_60": 1387.5,
+        "d61_90": 0.0,
+        "over90": -852.78,
+        "total": 454568.07,
+        "nature": "Interco"
+      },
+      {
+        "name": "Dan-D-Foods, Ltd-Canada",
+        "current": 0.0,
+        "d1_30": 188077.25,
+        "d31_60": 51875.75,
+        "d61_90": 83312.5,
+        "over90": 65563.95,
+        "total": 388829.45,
+        "nature": "Interco"
+      },
+      {
+        "name": "Falcon Trading Co., Inc. & SunRidge Farms",
+        "current": 215310.7,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -65.4,
+        "total": 215245.3,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Wal-Mart Stores, Inc.",
+        "current": 0.0,
+        "d1_30": 150174.36,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 7458.87,
+        "total": 157633.23,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Dollarama",
+        "current": 0.0,
+        "d1_30": 141421.5,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -70.0,
+        "total": 141351.5,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "AN DIEN FOODS JSC",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 135200.0,
+        "total": 135200.0,
+        "nature": "Interco"
+      },
+      {
+        "name": "Tropicon Foods, Inc.",
+        "current": 128805.75,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 128805.75,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Vacaville Fruit",
+        "current": 0.0,
+        "d1_30": 85347.05,
+        "d31_60": 15173.25,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 100520.3,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "99 Cents Stores",
+        "current": -11106.4,
+        "d1_30": 0.0,
+        "d31_60": -11106.4,
+        "d61_90": -11106.4,
+        "over90": 133276.8,
+        "total": 99957.6,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "East Pacific Foods Ltd Company",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 77869.5,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 77869.5,
+        "nature": "Interco"
+      },
+      {
+        "name": "Dan D Pak Co., Ltd (Taiwan)",
+        "current": 0.0,
+        "d1_30": 76800.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 124.92,
+        "total": 76924.92,
+        "nature": "Interco"
+      },
+      {
+        "name": "Walmart Canada Corp.",
+        "current": 23577.6,
+        "d1_30": 23590.4,
+        "d31_60": 0.0,
+        "d61_90": 23590.4,
+        "over90": 6089.64,
+        "total": 76848.04,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Pockets Chocolates",
+        "current": 0.0,
+        "d1_30": 65421.5,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 65421.5,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "DOF My Phuoc 3",
+        "current": 6658.26,
+        "d1_30": 7556.87,
+        "d31_60": 3734.17,
+        "d61_90": 3863.28,
+        "over90": 33081.01,
+        "total": 54893.59,
+        "nature": "Interco"
+      },
+      {
+        "name": "Burke's Naturals",
+        "current": 0.0,
+        "d1_30": 33268.5,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 33268.5,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Berkeley Bowl West",
+        "current": 25950.5,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 25950.5,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Moonlight Mixes",
+        "current": 0.0,
+        "d1_30": 25730.25,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 25730.25,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Newport Ingredients",
+        "current": 22151.5,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 22151.5,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Nature's World",
+        "current": 20010.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -1860.04,
+        "total": 18149.96,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Dollar Tree Stores",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 16704.0,
+        "total": 16704.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Diamond Foods",
+        "current": 0.0,
+        "d1_30": 14847.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 14847.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Jasper Specialty Foods",
+        "current": 14028.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 14028.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Candies Tolteca",
+        "current": 0.0,
+        "d1_30": 13567.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 13567.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Off The Farm Foods, Inc.",
+        "current": 0.0,
+        "d1_30": 13342.75,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 13342.75,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Grocery Outlet",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 11495.57,
+        "total": 11495.57,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Dollar Tree Stores",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 11365.2,
+        "total": 11365.2,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Dollar Tree Stores",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 9780.48,
+        "total": 9780.48,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Pedrick Produce",
+        "current": 0.0,
+        "d1_30": 9621.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 9621.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Ariana Sweets",
+        "current": 8414.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 8414.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Beckner Farms",
+        "current": 0.0,
+        "d1_30": 7240.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 7240.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Keenan Farms Inc.",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 6436.56,
+        "total": 6436.56,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Pacific Grain & Foods",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 5753.0,
+        "total": 5753.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Dollar Tree Stores",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 5580.0,
+        "total": 5580.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Trader Joe's Co",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 5000.0,
+        "total": 5000.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Winford Foods Ltd",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 4031.33,
+        "total": 4031.33,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Dollar Tree Stores",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 3744.0,
+        "total": 3744.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Dan On Charitable Foundations",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 3405.81,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 3405.81,
+        "nature": "Interco"
+      },
+      {
+        "name": "Dollar Tree Stores",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 1684.8,
+        "total": 1684.8,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Dollar Tree Stores",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 1152.0,
+        "total": 1152.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Dollar Tree Stores",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 1152.0,
+        "total": 1152.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Dollar Tree Stores",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 1151.3,
+        "total": 1151.3,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Imlak'esh Organics",
+        "current": 0.0,
+        "d1_30": 950.4,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 950.4,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Misc",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 474.0,
+        "total": 474.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Trader Joe's Co",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 358.5,
+        "total": 358.5,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Dollar Tree Stores",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 328.32,
+        "total": 328.32,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Unbound Snacks",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 266.38,
+        "total": 266.38,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Daily Nuts and Fruits, Inc.",
+        "current": 0.0,
+        "d1_30": 28.8,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 28.8,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Kloster Company",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -25.0,
+        "total": -25.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Simonian Farms",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": -44.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": -44.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Natural Grocers",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -280.0,
+        "total": -280.0,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Krishna International",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": -600.0,
+        "over90": -5.25,
+        "total": -605.25,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Wham Frozen Foods",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -1423.68,
+        "total": -1423.68,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "Kobe Bussan",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -1449.66,
+        "total": -1449.66,
+        "nature": "3rd Party"
+      },
+      {
+        "name": "SUPERTIENDAS DETODO",
+        "current": 0.0,
+        "d1_30": -26507.0,
+        "d31_60": -26507.2,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": -53014.2,
+        "nature": "3rd Party"
+      }
+    ],
+    "totals": {
+      "current": 894480.96,
+      "d1_30": 843829.93,
+      "d31_60": 115788.38,
+      "d61_90": 99059.78,
+      "over90": 461220.82,
+      "total": 2414379.87,
+      "intercompany": 1188285.53,
+      "third_party": 1226094.34
+    }
+  },
+  "ap_aging": {
+    "rows": [
+      {
+        "name": "DOF - MP3 branch",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 428938.2,
+        "over90": 1981511.68,
+        "total": 2410449.88,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "DOF Vietnam",
+        "current": 779595.04,
+        "d1_30": 0.0,
+        "d31_60": 129465.5,
+        "d61_90": 140784.73,
+        "over90": 1222413.25,
+        "total": 2272258.52,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Sun Valley",
+        "current": 69300.0,
+        "d1_30": 46200.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 115500.0,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Dan-D-Pak, LLC",
+        "current": 0.0,
+        "d1_30": 4000.0,
+        "d31_60": 4000.0,
+        "d61_90": 4000.0,
+        "over90": 61000.0,
+        "total": 73000.0,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Tifton Quality Peanut",
+        "current": 27280.0,
+        "d1_30": 27280.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 54560.0,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "American Peanut Growers Group",
+        "current": 21318.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 27720.0,
+        "total": 49038.0,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Maverik Oils LLC",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 30050.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 30050.0,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Sessions Company",
+        "current": 0.0,
+        "d1_30": 25609.02,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 25609.02,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Golden Peanut Company, LLC",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 25080.0,
+        "total": 25080.0,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "JTS-Johanson Transportation Service",
+        "current": 11005.0,
+        "d1_30": 7706.61,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 3000.0,
+        "total": 21711.61,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Walmart Inc.",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 21369.22,
+        "total": 21369.22,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Yusen Logistics Inc",
+        "current": 19155.45,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -3.0,
+        "total": 19152.45,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Qingdao Dan-D Trade Co., Ltd",
+        "current": 0.0,
+        "d1_30": 3744.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 14845.0,
+        "total": 18589.0,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Packaging Corporation of America",
+        "current": 0.0,
+        "d1_30": 14082.22,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 14082.22,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "PG & E",
+        "current": 10846.36,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 979.41,
+        "total": 11825.77,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Hub Group",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 22.5,
+        "d61_90": 4112.17,
+        "over90": 7162.8,
+        "total": 11297.47,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "JM Charo, Inc.",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 6860.74,
+        "total": 6860.74,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "United States Cold Storage Of California",
+        "current": 6638.74,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 6638.74,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Dan-D-Foods Ltd-Canada",
+        "current": 1066.33,
+        "d1_30": 1079.14,
+        "d31_60": 0.0,
+        "d61_90": 1069.22,
+        "over90": 3274.36,
+        "total": 6489.05,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Nationwide",
+        "current": 0.0,
+        "d1_30": 6333.43,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 6333.43,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Sunshine USA Produce INC",
+        "current": 0.0,
+        "d1_30": 6173.6,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 6173.6,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "NexGen Container",
+        "current": 0.0,
+        "d1_30": 4981.6,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 4981.6,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "KVC Systems Inc",
+        "current": 0.0,
+        "d1_30": 4223.49,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 575.05,
+        "total": 4798.54,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "YRC Freight",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 3792.66,
+        "total": 3792.66,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Innovative Sales/JPSF",
+        "current": 336.0,
+        "d1_30": 2962.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 3298.0,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Smart Pay Solution",
+        "current": 2872.41,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 2872.41,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Going Nuts",
+        "current": 2738.67,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 2738.67,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Transpacific Customs Brokers",
+        "current": 0.0,
+        "d1_30": 52.09,
+        "d31_60": 0.0,
+        "d61_90": 109.9,
+        "over90": 2553.6,
+        "total": 2715.59,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Fresno Oxygen",
+        "current": 1387.74,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 999.66,
+        "total": 2387.4,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "PAZCUZZI PASCUZZI & STOKER",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 1862.5,
+        "total": 1862.5,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Cintas",
+        "current": 1623.81,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 1623.81,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Hong Kong Ding Ting Trading Co Ltd",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 1400.0,
+        "total": 1400.0,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "USDA",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 1290.69,
+        "total": 1290.69,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "U-PACK Engineering(Shanghai)",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 1120.0,
+        "total": 1120.0,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "UPS Supply Chain Solutions Inc",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 914.47,
+        "total": 914.47,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "National Confectioners Association",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 750.0,
+        "total": 750.0,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Orkin Pest Control",
+        "current": 515.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 515.0,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "T-Mobile",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 343.35,
+        "total": 343.35,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "California Industrial Rubber",
+        "current": 313.67,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 24.35,
+        "total": 338.02,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Unwired Broadband, LLC",
+        "current": 279.99,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 279.99,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "webstaurantstore.com",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 235.12,
+        "total": 235.12,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Associated Compressor Equipment",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 170.24,
+        "total": 170.24,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Restaurant Depot Store",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 89.65,
+        "total": 89.65,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Grainger, Inc.",
+        "current": 83.75,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 83.75,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Amerigas",
+        "current": 20.27,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 20.27,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Cal Nut",
+        "current": 132440.0,
+        "d1_30": -132440.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": 0.0,
+        "kind": "3rd Party"
+      },
+      {
+        "name": "Pack Plus Converting",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -0.01,
+        "total": -0.01,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Asenzya Inc",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -2.4,
+        "total": -2.4,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Valley Harvest Nut Co, Inc",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -25.0,
+        "total": -25.0,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "City of Fresno - Utilities Billing",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -34.76,
+        "total": -34.76,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Valley Iron, Inc.",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -106.38,
+        "total": -106.38,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Frontier Fastener1",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -145.73,
+        "total": -145.73,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Pacific Spice Company",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -203.78,
+        "total": -203.78,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Specialty Crop Trade Council",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -228.0,
+        "total": -228.0,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Cablevey Conveyors",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -254.08,
+        "total": -254.08,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Victor Packing Inc",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -500.0,
+        "total": -500.0,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Mid Valley Packaging (MVP)",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -647.68,
+        "total": -647.68,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Home Depot",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -1017.81,
+        "total": -1017.81,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "An Dien Foods Co., Ltd",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -1570.4,
+        "total": -1570.4,
+        "kind": "Interco"
+      },
+      {
+        "name": "Remant Cool Logistics LLC",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -1734.25,
+        "total": -1734.25,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "SNRA Commodities",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -3996.0,
+        "total": -3996.0,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Gold Coast Ingredients, Inc.",
+        "current": 0.0,
+        "d1_30": -5117.9,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": -5117.9,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Shanghai Speed Logistics Equipment",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -17073.7,
+        "total": -17073.7,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Aegis Energy Portfolios LLC",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -26689.0,
+        "total": -26689.0,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Meduri Farms, Inc",
+        "current": 0.0,
+        "d1_30": 87200.0,
+        "d31_60": -150873.6,
+        "d61_90": 0.0,
+        "over90": -25.0,
+        "total": -63698.6,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Minerva Global Limited",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 128100.0,
+        "d61_90": 0.0,
+        "over90": -256200.0,
+        "total": -128100.0,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "El Dorado Almonds LLC",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": -130214.5,
+        "d61_90": 0.0,
+        "over90": 0.0,
+        "total": -130214.5,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Minturn Nut Company",
+        "current": 70400.0,
+        "d1_30": 281600.0,
+        "d31_60": -211200.0,
+        "d61_90": 0.0,
+        "over90": -584220.0,
+        "total": -443420.0,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "Valley Pride",
+        "current": 256200.0,
+        "d1_30": 128100.0,
+        "d31_60": 384300.0,
+        "d61_90": 0.0,
+        "over90": -1810012.0,
+        "total": -1041412.0,
+        "kind": "Advance to supplier"
+      },
+      {
+        "name": "AC Horn",
+        "current": 0.0,
+        "d1_30": 0.0,
+        "d31_60": 0.0,
+        "d61_90": 0.0,
+        "over90": -2000340.14,
+        "total": -2000340.14,
+        "kind": "Advance to supplier"
+      }
+    ],
+    "totals": {
+      "current": 1415425.66,
+      "d1_30": 513769.3,
+      "d31_60": 178149.9,
+      "d61_90": 579014.22,
+      "over90": -1308191.32,
+      "total": 1378167.76,
+      "advance_to_supplier": -3864961.7199999997,
+      "intercompany": 4760627.05,
+      "payable_to_3rd": 482502.4299999997
+    }
+  },
+  "top_customers": [
+    {
+      "name": "Falcon Trading Co., Inc. & SunRidge Farms",
+      "sales": 215310.69999999998,
+      "cost": 208703.47,
+      "gp": 6607.2300000000005,
+      "gm_pct": 0.03068695610575787,
+      "share_pct": 0.15764354166213637
+    },
+    {
+      "name": "DOF - Vietnam",
+      "sales": 190588.25,
+      "cost": 6373.799999999999,
+      "gp": 184214.45,
+      "gm_pct": 0.9665572248026834,
+      "share_pct": 0.13954256211692528
+    },
+    {
+      "name": "Wal-Mart Stores, Inc.",
+      "sales": 155710.14,
+      "cost": 429460.74000000005,
+      "gp": -273750.60000000003,
+      "gm_pct": -1.7580781829622658,
+      "share_pct": 0.1140059362693405
+    },
+    {
+      "name": "Dollarama",
+      "sales": 141421.5,
+      "cost": 37689.25,
+      "gp": 103732.25,
+      "gm_pct": 0.7334970283867729,
+      "share_pct": 0.10354425547439965
+    },
+    {
+      "name": "Tropicon Foods, Inc.",
+      "sales": 128805.75,
+      "cost": 80281.54,
+      "gp": 48524.21,
+      "gm_pct": 0.37672394283640287,
+      "share_pct": 0.09430741071599193
+    },
+    {
+      "name": "Dan D Pak Co., Ltd (Taiwan)",
+      "sales": 76800.0,
+      "cost": 8544.23,
+      "gp": 68255.77,
+      "gm_pct": 0.8887470052083334,
+      "share_pct": 0.056230479951307914
+    },
+    {
+      "name": "Vacaville Fruit",
+      "sales": 69247.8,
+      "cost": 20395.78,
+      "gp": 48852.020000000004,
+      "gm_pct": 0.7054667440698478,
+      "share_pct": 0.0507010029892211
+    },
+    {
+      "name": "Pockets Chocolates",
+      "sales": 65421.5,
+      "cost": 13141.58,
+      "gp": 52279.92,
+      "gm_pct": 0.7991244468561558,
+      "share_pct": 0.047899509689251184
+    },
+    {
+      "name": "Newport Ingredients",
+      "sales": 64096.5,
+      "cost": 64273.17,
+      "gp": -176.67000000000007,
+      "gm_pct": -0.002756312747185885,
+      "share_pct": 0.04692938747654958
+    },
+    {
+      "name": "Burke's Naturals",
+      "sales": 33268.5,
+      "cost": 12086.76,
+      "gp": 21181.74,
+      "gm_pct": 0.6366905631453177,
+      "share_pct": 0.02435812138359489
+    },
+    {
+      "name": "Candies Tolteca",
+      "sales": 27403.0,
+      "cost": 29925.880000000005,
+      "gp": -2522.880000000001,
+      "gm_pct": -0.09206583220815243,
+      "share_pct": 0.020063591694084518
+    },
+    {
+      "name": "Berkeley Bowl West",
+      "sales": 25950.5,
+      "cost": 9036.91,
+      "gp": 16913.59,
+      "gm_pct": 0.6517635498352633,
+      "share_pct": 0.01900011809865125
+    },
+    {
+      "name": "Moonlight Mixes",
+      "sales": 25730.25,
+      "cost": 9248.259999999998,
+      "gp": 16481.989999999998,
+      "gm_pct": 0.640568591443923,
+      "share_pct": 0.018838858161030477
+    },
+    {
+      "name": "Daily Nuts and Fruits, Inc.",
+      "sales": 25354.399999999998,
+      "cost": 6364.72,
+      "gp": 18989.679999999997,
+      "gm_pct": 0.7489698040576783,
+      "share_pct": 0.018563672928091683
+    },
+    {
+      "name": "Walmart Canada Corp.",
+      "sales": 23577.6,
+      "cost": 8549.02,
+      "gp": 15028.579999999998,
+      "gm_pct": 0.6374092358849077,
+      "share_pct": 0.01726275734505153
+    },
+    {
+      "name": "Nature's World",
+      "sales": 20010.0,
+      "cost": 6205.030000000001,
+      "gp": 13804.97,
+      "gm_pct": 0.6899035482258871,
+      "share_pct": 0.01465067583106343
+    },
+    {
+      "name": "Jasper Specialty Foods",
+      "sales": 14028.0,
+      "cost": 1170.94,
+      "gp": 12857.06,
+      "gm_pct": 0.916528371827773,
+      "share_pct": 0.010270848603606086
+    },
+    {
+      "name": "Off The Farm Foods, Inc.",
+      "sales": 13342.75,
+      "cost": 4812.59,
+      "gp": 8530.16,
+      "gm_pct": 0.6393104869685784,
+      "share_pct": 0.009769130681905127
+    },
+    {
+      "name": "Beckner Farms",
+      "sales": 10630.0,
+      "cost": 18567.34,
+      "gp": -7937.339999999999,
+      "gm_pct": -0.746692380056444,
+      "share_pct": 0.007782942732843791
+    },
+    {
+      "name": "Pedrick Produce",
+      "sales": 9621.0,
+      "cost": 14568.7,
+      "gp": -4947.7,
+      "gm_pct": -0.5142604718844195,
+      "share_pct": 0.007044185515775176
+    },
+    {
+      "name": "Krishna International",
+      "sales": 9216.5,
+      "cost": 17205.48,
+      "gp": -7988.98,
+      "gm_pct": -0.8668127814246188,
+      "share_pct": 0.0067480236780108
+    },
+    {
+      "name": "Ariana Sweets",
+      "sales": 8414.0,
+      "cost": 1290.01,
+      "gp": 7123.99,
+      "gm_pct": 0.8466829094366531,
+      "share_pct": 0.006160459092582094
+    },
+    {
+      "name": "DOF My Phuoc 3",
+      "sales": 6658.26,
+      "cost": 0.0,
+      "gp": 6658.26,
+      "gm_pct": 1.0,
+      "share_pct": 0.0048749629614660865
+    },
+    {
+      "name": "Kloster Company",
+      "sales": 4050.0,
+      "cost": -429.84000000000003,
+      "gp": 4479.84,
+      "gm_pct": 1.1061333333333334,
+      "share_pct": 0.0029652792161822534
+    },
+    {
+      "name": "Imlak'esh Organics",
+      "sales": 950.4,
+      "cost": 950.4,
+      "gp": 0.0,
+      "gm_pct": 0.0,
+      "share_pct": 0.0006958521893974354
+    },
+    {
+      "name": "NY Cinnamon Nuts",
+      "sales": 200.0,
+      "cost": 4.92,
+      "gp": 195.08,
+      "gm_pct": 0.9754,
+      "share_pct": 0.00014643354153986437
+    }
+  ],
+  "total_sales_cust": 1365807.3,
+  "top_items": [
+    {
+      "name": "Tart Cherry Bulk Dried 25 Lb",
+      "sales": 125400.0,
+      "cogs": 124200.0,
+      "gp": 1200.0,
+      "gm_pct": 0.009569377990430622,
+      "share_pct": 0.09480302588578476
+    },
+    {
+      "name": "Almond, Natural Raw 25oz/4 (Great Value)",
+      "sales": 114762.59999999998,
+      "cogs": 96021.58,
+      "gp": 18741.019999999975,
+      "gm_pct": 0.16330250447445405,
+      "share_pct": 0.08676109839330112
+    },
+    {
+      "name": "Raisin, California Organic 12x2.5lb",
+      "sales": 76800.0,
+      "cogs": 68255.77,
+      "gp": 8544.229999999996,
+      "gm_pct": 0.11125299479166662,
+      "share_pct": 0.05806118331760981
+    },
+    {
+      "name": "Almond, Hickory Smoke 30 x 75g",
+      "sales": 73507.5,
+      "cogs": 60797.53,
+      "gp": 12709.970000000001,
+      "gm_pct": 0.17290711832125974,
+      "share_pct": 0.05557203688436463
+    },
+    {
+      "name": "Almond, Dry Roasted Salted 18/20 25 lbs",
+      "sales": 70400.0,
+      "cogs": 60641.72,
+      "gp": 9758.279999999999,
+      "gm_pct": 0.1386119318181818,
+      "share_pct": 0.05322275137447566
+    },
+    {
+      "name": "Almond, Raw Natural  30 x 75g",
+      "sales": 67914.0,
+      "cogs": 55424.36,
+      "gp": 12489.64,
+      "gm_pct": 0.1839037606384545,
+      "share_pct": 0.05134332296656449
+    },
+    {
+      "name": "Cashew, W320 R/S 25lbs",
+      "sales": 67075.0,
+      "cogs": 56010.45,
+      "gp": 11064.550000000003,
+      "gm_pct": 0.16495788296682823,
+      "share_pct": 0.050709034779019245
+    },
+    {
+      "name": "Almond, Dry roasted 27/30 NS 25 lbs",
+      "sales": 65200.0,
+      "cogs": 52058.42,
+      "gp": 13141.580000000002,
+      "gm_pct": 0.20155797546012272,
+      "share_pct": 0.04929152542067916
+    },
+    {
+      "name": "Pecan, Butter Toffee 12lbs",
+      "sales": 60405.600000000006,
+      "cogs": 56272.200000000004,
+      "gp": 4133.4000000000015,
+      "gm_pct": 0.0684274305693512,
+      "share_pct": 0.045666935091278796
+    },
+    {
+      "name": "Peanuts, Butter Stock DR NS Hunter Dark Splits 30 lbs",
+      "sales": 58046.7,
+      "cogs": 40350.83,
+      "gp": 17695.869999999995,
+      "gm_pct": 0.30485574546012084,
+      "share_pct": 0.0438835949177383
+    },
+    {
+      "name": "Peanuts, Butter Stock DR Honey Roasted Splits 30 lbs",
+      "sales": 57900.0,
+      "cogs": 37031.95,
+      "gp": 20868.050000000003,
+      "gm_pct": 0.36041537132987916,
+      "share_pct": 0.04377268898554177
+    },
+    {
+      "name": "Cashew, Dry Roasted Honey 25 lbs",
+      "sales": 46736.25,
+      "cogs": 30643.75,
+      "gp": 16092.5,
+      "gm_pct": 0.3443258712455535,
+      "share_pct": 0.03533283826598491
+    },
+    {
+      "name": "Cashew, W320 RNS 25lbs",
+      "sales": 45267.5,
+      "cogs": 38595.799999999996,
+      "gp": 6671.700000000004,
+      "gm_pct": 0.14738388468548086,
+      "share_pct": 0.03422245593528518
+    },
+    {
+      "name": "Almond, Raw 14oz/6 (Great Value)",
+      "sales": 40947.54,
+      "cogs": 33216.89,
+      "gp": 7730.6500000000015,
+      "gm_pct": 0.18879400325391957,
+      "share_pct": 0.030956544613869277
+    },
+    {
+      "name": "Cashew, W240 R/S 25 lbs",
+      "sales": 39900.0,
+      "cogs": 34622.020000000004,
+      "gp": 5277.979999999996,
+      "gm_pct": 0.13228020050125303,
+      "share_pct": 0.03016459914547697
+    },
+    {
+      "name": "Cashew,  Raw W320 25 lbs",
+      "sales": 34500.0,
+      "cogs": 32181.820000000003,
+      "gp": 2318.1799999999967,
+      "gm_pct": 0.0671936231884057,
+      "share_pct": 0.026082172193457532
+    },
+    {
+      "name": "Prunes, Ashlock Pitted 40/50ct",
+      "sales": 34400.0,
+      "cogs": 32802.88,
+      "gp": 1597.1200000000026,
+      "gm_pct": 0.04642790697674426,
+      "share_pct": 0.026006571694346062
+    },
+    {
+      "name": "Peanut, Dry Roasted Blanched Salted  30lbs",
+      "sales": 24696.3,
+      "cogs": 18268.640000000003,
+      "gp": 6427.659999999996,
+      "gm_pct": 0.2602681373323128,
+      "share_pct": 0.018670526062066237
+    },
+    {
+      "name": "Cashew, Everything Bagel 12x7oz/200g GV",
+      "sales": 23577.6,
+      "cogs": 15028.58,
+      "gp": 8549.019999999999,
+      "gm_pct": 0.3625907641150923,
+      "share_pct": 0.01782478327850621
+    },
+    {
+      "name": "Blueberry Bulk Dried 25 Lbs",
+      "sales": 20000.0,
+      "cogs": 19600.0,
+      "gp": 400.0,
+      "gm_pct": 0.02,
+      "share_pct": 0.015120099822294222
+    },
+    {
+      "name": "Peanut, Honey Roasted 25lbs",
+      "sales": 15247.5,
+      "cogs": 10860.869999999999,
+      "gp": 4386.630000000001,
+      "gm_pct": 0.28769503197245455,
+      "share_pct": 0.011527186102021558
+    },
+    {
+      "name": "Peanut, Oil Roasted Blanched Unsalted 30 lbs",
+      "sales": 13147.5,
+      "cogs": 10157.57,
+      "gp": 2989.9300000000003,
+      "gm_pct": 0.22741433732648794,
+      "share_pct": 0.009939575620680664
+    },
+    {
+      "name": "Cashew, Dry Roasted Unsalted 25 lbs",
+      "sales": 11797.5,
+      "cogs": 9803.18,
+      "gp": 1994.3199999999997,
+      "gm_pct": 0.16904598431871157,
+      "share_pct": 0.008918968882675803
+    },
+    {
+      "name": "Almond, Dry roasted NS 25 lbs",
+      "sales": 10900.0,
+      "cogs": 8698.71,
+      "gp": 2201.290000000001,
+      "gm_pct": 0.2019532110091744,
+      "share_pct": 0.008240454403150351
+    },
+    {
+      "name": "Almond, Hickory Smoked 25 lbs",
+      "sales": 10787.5,
+      "cogs": 7460.31,
+      "gp": 3327.1899999999996,
+      "gm_pct": 0.3084301274623406,
+      "share_pct": 0.008155403841649946
+    },
+    {
+      "name": "Almond, BBQ 25lb",
+      "sales": 9430.0,
+      "cogs": 6874.67,
+      "gp": 2555.33,
+      "gm_pct": 0.27097879109225875,
+      "share_pct": 0.007129127066211725
+    },
+    {
+      "name": "Cashew, Dry roasted Organic Salted W320",
+      "sales": 9300.0,
+      "cogs": 7910.66,
+      "gp": 1389.3400000000001,
+      "gm_pct": 0.14939139784946237,
+      "share_pct": 0.007030846417366813
+    },
+    {
+      "name": "Cashew, Dry roasted W320 Skin on 22 lbs",
+      "sales": 9009.0,
+      "cogs": 7864.58,
+      "gp": 1144.42,
+      "gm_pct": 0.12703074703074704,
+      "share_pct": 0.006810848964952433
+    },
+    {
+      "name": "Cashews, Raw Organic W320 Pasteurized",
+      "sales": 8600.0,
+      "cogs": 8249.64,
+      "gp": 350.3600000000006,
+      "gm_pct": 0.040739534883721,
+      "share_pct": 0.006501642923586516
+    },
+    {
+      "name": "Cashew, W240 R/N/S 25 lbs",
+      "sales": 8492.5,
+      "cogs": 7403.37,
+      "gp": 1089.13,
+      "gm_pct": 0.12824609949955845,
+      "share_pct": 0.006420372387041684
+    },
+    {
+      "name": "Almond, Dry roasted 18/20 NS 25 lbs",
+      "sales": 8400.0,
+      "cogs": 6706.91,
+      "gp": 1693.0900000000001,
+      "gm_pct": 0.20155833333333334,
+      "share_pct": 0.006350441925363573
+    },
+    {
+      "name": "Cashew,  Raw W320 Past 25 lbs",
+      "sales": 8342.5,
+      "cogs": 8268.77,
+      "gp": 73.72999999999956,
+      "gm_pct": 0.008837878333832731,
+      "share_pct": 0.006306971638374477
+    },
+    {
+      "name": "Raisin, Medium Flames 30 lbs",
+      "sales": 8190.0,
+      "cogs": 8294.39,
+      "gp": -104.38999999999942,
+      "gm_pct": -0.012746031746031675,
+      "share_pct": 0.006191680877229484
+    },
+    {
+      "name": "Cashew,  Raw W240 25 lbs",
+      "sales": 7300.0,
+      "cogs": 6757.29,
+      "gp": 542.71,
+      "gm_pct": 0.07434383561643836,
+      "share_pct": 0.005518836435137391
+    },
+    {
+      "name": "Almond, Dry Roasted Salted 25 lbs",
+      "sales": 4500.0,
+      "cogs": 2829.95,
+      "gp": 1670.0500000000002,
+      "gm_pct": 0.37112222222222224,
+      "share_pct": 0.0034020224600162
+    },
+    {
+      "name": "Almond, Dry Roasted Salted 27/30 25 lbs",
+      "sales": 4300.0,
+      "cogs": 3341.23,
+      "gp": 958.77,
+      "gm_pct": 0.22296976744186045,
+      "share_pct": 0.003250821461793258
+    },
+    {
+      "name": "Cashew, OR/H&P Salted 30 lbs",
+      "sales": 4050.0,
+      "cogs": 4264.92,
+      "gp": -214.92000000000007,
+      "gm_pct": -0.053066666666666686,
+      "share_pct": 0.0030618202140145797
+    },
+    {
+      "name": "Cashew, Chili lime 25 lbs",
+      "sales": 3800.0,
+      "cogs": 3699.14,
+      "gp": 100.86000000000013,
+      "gm_pct": 0.02654210526315793,
+      "share_pct": 0.002872818966235902
+    },
+    {
+      "name": "Peanut, Oil Roasted Blanched Salted 30lbs",
+      "sales": 2745.0,
+      "cogs": 1720.05,
+      "gp": 1024.95,
+      "gm_pct": 0.3733879781420765,
+      "share_pct": 0.002075233700609882
+    },
+    {
+      "name": "Cashew, Jalapeno 25 lbs",
+      "sales": 1700.0,
+      "cogs": 1376.6399999999999,
+      "gp": 323.3600000000001,
+      "gm_pct": 0.19021176470588244,
+      "share_pct": 0.0012852084848950088
+    },
+    {
+      "name": "Almond, Chili lime 25lb",
+      "sales": 1692.5,
+      "cogs": 1342.1399999999999,
+      "gp": 350.3600000000001,
+      "gm_pct": 0.2070073855243723,
+      "share_pct": 0.0012795384474616484
+    },
+    {
+      "name": "Almond, Garlic & Onion 25lb",
+      "sales": 1665.0,
+      "cogs": 1415.8899999999999,
+      "gp": 249.11000000000013,
+      "gm_pct": 0.1496156156156157,
+      "share_pct": 0.001258748310205994
+    },
+    {
+      "name": "Cashew, BBQ 25 lbs",
+      "sales": 1550.0,
+      "cogs": 1155.8,
+      "gp": 394.20000000000005,
+      "gm_pct": 0.25432258064516133,
+      "share_pct": 0.0011718077362278022
+    },
+    {
+      "name": "Cashew, Garlic 25lbs",
+      "sales": 1200.0,
+      "cogs": 793.6700000000001,
+      "gp": 406.3299999999999,
+      "gm_pct": 0.3386083333333333,
+      "share_pct": 0.0009072059893376533
+    },
+    {
+      "name": "Hazelnut, Raw 25 lbs",
+      "sales": 1150.0,
+      "cogs": 15.68,
+      "gp": 1134.32,
+      "gm_pct": 0.9863652173913043,
+      "share_pct": 0.0008694057397819178
+    },
+    {
+      "name": "Cashew, Salt & Pepper 25lbs",
+      "sales": 1000.0,
+      "cogs": 823.7,
+      "gp": 176.29999999999995,
+      "gm_pct": 0.17629999999999996,
+      "share_pct": 0.0007560049911147111
+    },
+    {
+      "name": "Almond, Salt & Pepper 25 lbs",
+      "sales": 975.0,
+      "cogs": 1045.23,
+      "gp": -70.23000000000002,
+      "gm_pct": -0.07203076923076925,
+      "share_pct": 0.0007371048663368433
+    },
+    {
+      "name": "Almond, Dry Roasted Salted  25 lbs",
+      "sales": 800.0,
+      "cogs": 689.69,
+      "gp": 110.30999999999995,
+      "gm_pct": 0.13788749999999994,
+      "share_pct": 0.0006048039928917689
+    },
+    {
+      "name": "Peanut, Dry Roasted Blanched Unsalted 30 lbs",
+      "sales": 780.0,
+      "cogs": 393.06,
+      "gp": 386.94,
+      "gm_pct": 0.4960769230769231,
+      "share_pct": 0.0005896838930694746
+    },
+    {
+      "name": "Almond, Honey Habanero 25lb",
+      "sales": 780.0,
+      "cogs": 657.51,
+      "gp": 122.49000000000001,
+      "gm_pct": 0.15703846153846154,
+      "share_pct": 0.0005896838930694746
+    },
+    {
+      "name": "Almond, Jalapeno 25lb",
+      "sales": 585.0,
+      "cogs": 481.96,
+      "gp": 103.04000000000002,
+      "gm_pct": 0.17613675213675217,
+      "share_pct": 0.00044226291980210597
+    },
+    {
+      "name": "Cashew, Honey Habanero 25 lbs",
+      "sales": 500.0,
+      "cogs": 389.74,
+      "gp": 110.25999999999999,
+      "gm_pct": 0.22052,
+      "share_pct": 0.00037800249555735557
+    },
+    {
+      "name": "Mix nuts, salted  25 lbs",
+      "sales": 500.0,
+      "cogs": 34.47,
+      "gp": 465.53,
+      "gm_pct": 0.93106,
+      "share_pct": 0.00037800249555735557
+    },
+    {
+      "name": "Cashew, Spicy Dill & Pickle 25 lbs",
+      "sales": 400.0,
+      "cogs": 240.15,
+      "gp": 159.85,
+      "gm_pct": 0.399625,
+      "share_pct": 0.00030240199644588446
+    },
+    {
+      "name": "Almond, Oil Roasted Salted  25 lbs",
+      "sales": 307.5,
+      "cogs": 239.12,
+      "gp": 68.38,
+      "gm_pct": 0.22237398373983738,
+      "share_pct": 0.00023247153476777367
+    },
+    {
+      "name": "Cashew, Picante 25 lbs",
+      "sales": 300.0,
+      "cogs": 233.23,
+      "gp": 66.77000000000001,
+      "gm_pct": 0.2225666666666667,
+      "share_pct": 0.00022680149733441332
+    },
+    {
+      "name": "Peanut, Chili Lemon 30 lbs",
+      "sales": 279.0,
+      "cogs": 108.35,
+      "gp": 170.65,
+      "gm_pct": 0.6116487455197133,
+      "share_pct": 0.0002109253925210044
+    },
+    {
+      "name": "Cashew, Raw DW320 Pasteurized",
+      "sales": 200.0,
+      "cogs": 195.08,
+      "gp": 4.9199999999999875,
+      "gm_pct": 0.024599999999999938,
+      "share_pct": 0.00015120099822294223
+    },
+    {
+      "name": "Peanut, Jalapeno 30 lbs",
+      "sales": 162.0,
+      "cogs": 119.45,
+      "gp": 42.55,
+      "gm_pct": 0.2626543209876543,
+      "share_pct": 0.0001224728085605832
+    },
+    {
+      "name": "Peanut, Honey Habanero 30 lbs",
+      "sales": 162.0,
+      "cogs": 113.33,
+      "gp": 48.67,
+      "gm_pct": 0.3004320987654321,
+      "share_pct": 0.0001224728085605832
+    },
+    {
+      "name": "Peanut, Salt & Pepper 30 lbs",
+      "sales": 162.0,
+      "cogs": 88.11,
+      "gp": 73.89,
+      "gm_pct": 0.45611111111111113,
+      "share_pct": 0.0001224728085605832
+    },
+    {
+      "name": "Peanut, Roasted BBQ 30lbs",
+      "sales": 117.0,
+      "cogs": 83.86,
+      "gp": 33.14,
+      "gm_pct": 0.2832478632478633,
+      "share_pct": 8.84525839604212e-05
+    },
+    {
+      "name": "Packing - Roasted almonds NS 3lb (bag)",
+      "sales": 0.0,
+      "cogs": 18876.88,
+      "gp": -18876.88,
+      "gm_pct": 0,
+      "share_pct": 0.0
+    },
+    {
+      "name": "Packing - Sacha Inchi (pouch) 8/2.25oz",
+      "sales": 0.0,
+      "cogs": 0.0,
+      "gp": 0.0,
+      "gm_pct": 0,
+      "share_pct": 0.0
+    }
+  ],
+  "total_item_sales": 1322742.59,
+  "inventory_skus": [
+    {
+      "name": "K100003 (Bag, Almond, No Salt 1b/454g)",
+      "asset_value": 4099.33
+    },
+    {
+      "name": "K100004 (Bag, Almond, Salted 1b/454g)",
+      "asset_value": 4340.74
+    },
+    {
+      "name": "K100005 (Bag, Almond, No Salt 16oz/454g Harvest Day)",
+      "asset_value": 2220.89
+    },
+    {
+      "name": "K100008 (Bag, Almond, Whole Natural 10oz)",
+      "asset_value": 1743.22
+    },
+    {
+      "name": "K100009 (Bag, Almond, Slice Natural 10oz)",
+      "asset_value": 2133.75
+    },
+    {
+      "name": "K100010 (Bag, Almond, Blanched Slivered 10oz)",
+      "asset_value": 2490.29
+    },
+    {
+      "name": "K100011 (Bag, Cluster Almond, 60g)",
+      "asset_value": 776.69
+    },
+    {
+      "name": "K100012 (Bag, Cluster Cashew Almond & Cranberry, 60g)",
+      "asset_value": 803.28
+    },
+    {
+      "name": "K100013 (Bags, Mt Trail Mix 14oz)",
+      "asset_value": 73.07
+    },
+    {
+      "name": "K100014 (Bags, Rainbow Trail Mix 14oz)",
+      "asset_value": 55.41
+    },
+    {
+      "name": "K100015 (Bags, Sierra Mt Mix 14oz)",
+      "asset_value": 37.71
+    },
+    {
+      "name": "K100016 (Bags, Theatre Trail Mix 14oz)",
+      "asset_value": 47.56
+    },
+    {
+      "name": "K100017 (Bag, Mixed Nut, No Salt 16oz/454g Harvest Day)",
+      "asset_value": 251.86
+    },
+    {
+      "name": "K100018 (Bag, Mixed Nut, Salted 16oz/454g Harvest Day)",
+      "asset_value": 106.33
+    },
+    {
+      "name": "K100019 (Bag, Clear Cashews/ Almonds 16oz/454g)",
+      "asset_value": 4758.21
+    },
+    {
+      "name": "K100020 (Bag, Almond, Raw 14oz (Great Value))",
+      "asset_value": 5383.31
+    },
+    {
+      "name": "K100021 (Bag, Almond, Raw 25oz (Great Value))",
+      "asset_value": 934.13
+    },
+    {
+      "name": "K100022 (Bag, Almond, Wasabi Soy 14oz (Great Value))",
+      "asset_value": 1943.23
+    },
+    {
+      "name": "K100023 (Bag, Almond, Smoke 14oz (Great Value))",
+      "asset_value": 4690.54
+    },
+    {
+      "name": "K100024 (Bag, Almond, Roasted Salted 14oz (Great Value))",
+      "asset_value": 7106.81
+    },
+    {
+      "name": "K100099 (Bags, Peanuts, Salted1.13 kg  )",
+      "asset_value": 2520.0
+    },
+    {
+      "name": "K100101 (Bag, Peanut Blanched Salted with Peanut Man, 294x225mm 2.5lbs/1.13 kg)",
+      "asset_value": 2058.25
+    },
+    {
+      "name": "K100103 (Bag, Crispy Crunchy Coated Peanuts TJ 8oz)",
+      "asset_value": 1319.48
+    },
+    {
+      "name": "K100199 (Bag, Pistachios-Salted1.36kg (3lb) E/C  )",
+      "asset_value": 2016.33
+    },
+    {
+      "name": "K100300 (Bag, Generic Medium Blue  )",
+      "asset_value": 2209.06
+    },
+    {
+      "name": "K100303 (Bag, Generic Medium Green  )",
+      "asset_value": 797.96
+    },
+    {
+      "name": "K100401 (Bag, Prunes 4oz)",
+      "asset_value": 423.98
+    },
+    {
+      "name": "K100427 (Bag, Raisin California Natural 14oz/397g  English)",
+      "asset_value": 77.7
+    },
+    {
+      "name": "K100428 (Bag, Raisin California Natural 5.3oz  DDPK006494)",
+      "asset_value": 2829.06
+    },
+    {
+      "name": "K100429 (Bag, Raisin California Natural 400g Kobe)",
+      "asset_value": 859.53
+    },
+    {
+      "name": "K100430 (Bag, Banana chips, Sweetened 454g/ 1lb)",
+      "asset_value": 529.3
+    },
+    {
+      "name": "K100431 (Bag, Organic Raisin 1.13kg DDTaiwan)",
+      "asset_value": 5637.61
+    },
+    {
+      "name": "K100451 (Bag, Apricot 4oz)",
+      "asset_value": 763.12
+    },
+    {
+      "name": "K100452 (Bag, Mango 3oz)",
+      "asset_value": 5069.38
+    },
+    {
+      "name": "K100551 (Bag, Cranberries 150g)",
+      "asset_value": 149.61
+    },
+    {
+      "name": "K100552 (Bag, Granola Fruity Berry 350g)",
+      "asset_value": 272.48
+    },
+    {
+      "name": "K100553 (Bag, Granola Cashew Cranberry 350g)",
+      "asset_value": 272.48
+    },
+    {
+      "name": "K100601 (Bag, Popcorn Kernel, W190xH242xB70 1kg)",
+      "asset_value": 3712.97
+    },
+    {
+      "name": "K100626 (Bag, Oat Goji Omega 2.2lbs/1kg)",
+      "asset_value": 38.16
+    },
+    {
+      "name": "K100630 (Bag, Quick Oat 454g)",
+      "asset_value": 768.29
+    },
+    {
+      "name": "K100631 (Bag, Rolled Oat 454g)",
+      "asset_value": 946.93
+    },
+    {
+      "name": "K100726 (Bag, Rice Cracker 6oz/170g)",
+      "asset_value": 2396.33
+    },
+    {
+      "name": "K100727 (Bag, Rice Cracker Oriental, Peach color 17.6oz/499g 353x216mm)",
+      "asset_value": 326.95
+    },
+    {
+      "name": "K100729 (Bag, Zip Rice Cracker Wasabi 6oz/170g)",
+      "asset_value": 2924.52
+    },
+    {
+      "name": "K100801 (Bag, Edamame Salted 100g/3.5oz)",
+      "asset_value": 1814.43
+    },
+    {
+      "name": "K100802 (Bag, Edamame Wasabi 85g/3oz)",
+      "asset_value": 3.67
+    },
+    {
+      "name": "K100903 (Bag, Spice Mustard Seeds 3.5oz/100g)",
+      "asset_value": 590.77
+    },
+    {
+      "name": "K100904 (Bag, Spice Parsley Flakes 0.5oz/15g)",
+      "asset_value": 565.15
+    },
+    {
+      "name": "K100905 (Bag, Spice Sage 0.9oz /5g 140x185mm)",
+      "asset_value": 1170.12
+    },
+    {
+      "name": "K100906 (Bag, Spice Tarragon 0.9oz/25g 140x185mm)",
+      "asset_value": 1415.65
+    },
+    {
+      "name": "K100907 (Bag, vacuum zipper small 2.27kg)",
+      "asset_value": 400.0
+    },
+    {
+      "name": "K100910 (Bag, Vacuum Clear Wide 30 lbs import)",
+      "asset_value": 24058.06
+    },
+    {
+      "name": "K200009 (Bag, Almond, DR NS 3LB (Just almond))",
+      "asset_value": 0.0
+    },
+    {
+      "name": "K200907 (Bag, Maple vanilla coconut organic 3oz (Made in Nature)  )",
+      "asset_value": 0.0
+    },
+    {
+      "name": "K200909 (Bag, Golden Berries 2oz Imlak'esh)",
+      "asset_value": 0.0
+    },
+    {
+      "name": "K200914 (Bag, Plaintain chip 10oz (Nature World))",
+      "asset_value": 0.0
+    },
+    {
+      "name": "K200917 (Bag, Greek yogurt & Dark chocolate coated almonds 30/0.7oz (Pocket Choco...",
+      "asset_value": 0.0
+    },
+    {
+      "name": "K200937 (Bag, RS Pistachios 16oz)",
+      "asset_value": 0.0
+    },
+    {
+      "name": "K101002 (Box, Almond Raw 1.13kg/2.5lb 212mm x 340mm x 393mm)",
+      "asset_value": 115.0
+    },
+    {
+      "name": "K101004 (Box, Plain 278x278x350mm)",
+      "asset_value": 3200.0
+    },
+    {
+      "name": "K101007 (Box, Almond Raw 6/14oz (Great Value))",
+      "asset_value": 910.59
+    },
+    {
+      "name": "K101008 (Box, Almond Raw 4/25oz (Great Value))",
+      "asset_value": -1669.02
+    },
+    {
+      "name": "K101056 (Box, Almond Natural  9.875x9.8125x5.5)",
+      "asset_value": 9581.75
+    },
+    {
+      "name": "K101057 (Box, Almond Hickory Smoke 9.875x9.8125x5.5)",
+      "asset_value": 2019.2
+    },
+    {
+      "name": "K101059 (Box, Cluster Cashews Almond & Cranberry 24x60g)",
+      "asset_value": 65.21
+    },
+    {
+      "name": "K101060 (Box, Almond 9.875x9.8125x5.5 Plain)",
+      "asset_value": 4945.41
+    },
+    {
+      "name": "K101099 (Box, Cashew Sesame 3oz)",
+      "asset_value": 1710.0
+    },
+    {
+      "name": "K101106 (Box, Peanut Composite Cans 16+3/4 x 12+3/4 x 6+3/4)",
+      "asset_value": 439.11
+    },
+    {
+      "name": "K101107 (Box, TJ coated peanuts box)",
+      "asset_value": 2172.28
+    },
+    {
+      "name": "K101111 (Box, Peanut 7oz x24, 325x230x215 (Plain))",
+      "asset_value": 2630.89
+    },
+    {
+      "name": "K101401 (Box, Prune  - Japan EJ 220x440x300mm)",
+      "asset_value": 451.52
+    },
+    {
+      "name": "K101402 (Box, Banana 1lb  - 18.25 L x 14 W x 12.25 H)",
+      "asset_value": 1622.88
+    },
+    {
+      "name": "K101428 (Box, Kobe 17+3/16 x 11+3/4 x8+5/8)",
+      "asset_value": 960.55
+    },
+    {
+      "name": "K101430 (Box, Raisin (30lbs)  17+1/8x11+1/2x7+7/8)",
+      "asset_value": 2897.13
+    },
+    {
+      "name": "K101727 (Box, Rice Cracker 5kg/11lbs 10 x 500g/17.6oz)",
+      "asset_value": 202.5
+    },
+    {
+      "name": "K101728 (Box, Banana Chip 6oz 17+1/8x12+3/4x7+3/4)",
+      "asset_value": 205.57
+    },
+    {
+      "name": "K101729 (Box, Banana Chip 17+1/8x12+3/4x7+3/4 Plain  )",
+      "asset_value": 3418.87
+    },
+    {
+      "name": "K101906 (Box, Kraft Moore \"A\" 17x14X9 32ECT)",
+      "asset_value": 222.79
+    },
+    {
+      "name": "K101907 (Box, Plain 255x235x150  )",
+      "asset_value": 587.6
+    },
+    {
+      "name": "K101909H (Box, Plain 25 lbs Wide Heavy 15x11x7)",
+      "asset_value": 2697.55
+    },
+    {
+      "name": "K101910 (Box, Cashew DDP logo white 310x125x170 12x100g)",
+      "asset_value": 1356.0
+    },
+    {
+      "name": "K101911 (Box, white 390x310x290 Goji Omega 12x40g)",
+      "asset_value": 1356.0
+    },
+    {
+      "name": "K101912 (Box, Plain 12-15/16x9x7-1/4)",
+      "asset_value": 678.35
+    },
+    {
+      "name": "K101917 (Box, 30lb Tall 11.75x8.75x16 Peanut (Dan D Bulk))",
+      "asset_value": 376.61
+    },
+    {
+      "name": "K101918 (Box, 30lb Wide Plain)",
+      "asset_value": 32515.08
+    },
+    {
+      "name": "K101920 (Box, Almond, Pink salt & garlic 10oz/6 (Bettergood))",
+      "asset_value": 2424.9
+    },
+    {
+      "name": "K101921 (Box, Olive & Herb mixed nuts 10oz/6 (Bettergood))",
+      "asset_value": 1746.57
+    },
+    {
+      "name": "K101922 (Box, Cashew, Everything Bagel 10oz/6 (Bettergood))",
+      "asset_value": 2024.15
+    },
+    {
+      "name": "K201001 (Box, Imlakesh 8 pack pouches)",
+      "asset_value": 0.0
+    },
+    {
+      "name": "K201004 (Box, Generic 6PK Made In Nature    )",
+      "asset_value": 0.0
+    },
+    {
+      "name": "K201101 (Box, 16 oz for Holland Nut)",
+      "asset_value": 0.0
+    },
+    {
+      "name": "K102001 (Film, Almond Butter Toffee EF 3.5oz /100g 275x195mm 1000M)",
+      "asset_value": 166.63
+    },
+    {
+      "name": "K102002 (Film, Almond Butter Toffee EF 1.8oz/50g 225x187mm 1000M)",
+      "asset_value": 750.0
+    },
+    {
+      "name": "K102005 (Film, Almond Hickory PES 3.25oz/92g 275x195mm x 800m  Foil)",
+      "asset_value": 2185.21
+    },
+    {
+      "name": "K102006 (Film, Almond Hickory 3.5oz/100g  275x195mm 1000M)",
+      "asset_value": 14.82
+    },
+    {
+      "name": "K102007 (Film, Almond Hot & Spicy FEF 1.8oz/50g 225x187mm)",
+      "asset_value": 600.0
+    },
+    {
+      "name": "K102008 (Film, Almond Lightly Salted EF 1.80Z/50g 225X187mm)",
+      "asset_value": 282.4
+    },
+    {
+      "name": "K102009 (Film, Almond Raw 3.25oz/92g  800M)",
+      "asset_value": 375.0
+    },
+    {
+      "name": "K102011 (Film, Almond Salt and Pepper 3.25oz/92g)",
+      "asset_value": 975.0
+    },
+    {
+      "name": "K102013 (Film, Almond Salted 3.5oz/100g)",
+      "asset_value": 1350.0
+    },
+    {
+      "name": "K102014 (Film, Almond Salted  3.25oz/92g)",
+      "asset_value": 1650.0
+    },
+    {
+      "name": "K102015 (Film, Almond Sesame Glaze 3.25oz/92g 275x195x1000M)",
+      "asset_value": 487.5
+    },
+    {
+      "name": "K102016 (Film, Almond Sesame Glazed 50g/1.8oz 225x187x900M)",
+      "asset_value": 706.0
+    },
+    {
+      "name": "K102017 (Film, Almond Sesame Glazed ELF 3.5oz/100g)",
+      "asset_value": 300.0
+    },
+    {
+      "name": "K102018 (Film, Almond Salted 3oz/85g 225Wx187Lx1000M)",
+      "asset_value": 2758.25
+    },
+    {
+      "name": "K102019 (Film, Almond Toffee Caramel 3.25oz/92g  1000M)",
+      "asset_value": 600.0
+    },
+    {
+      "name": "K102020 (Film, Almond Toffee Caramel 3.5oz/100g)",
+      "asset_value": 1500.0
+    },
+    {
+      "name": "K102023 (Film, Almond Unsalted 3oz/85g  225Wx187Lx1000M)",
+      "asset_value": 3166.86
+    },
+    {
+      "name": "K102024 (Film, Almond Raw  3.5oz/100g)",
+      "asset_value": 300.0
+    },
+    {
+      "name": "K102025 (Film, Almond Honey Roasted  3.25oz/92g)",
+      "asset_value": 600.0
+    },
+    {
+      "name": "K102026 (Film, Almond Unsalted with Window 3.25oz/92g)",
+      "asset_value": 300.0
+    },
+    {
+      "name": "K102027 (Film, Almond Hickory Smoke 50g)",
+      "asset_value": 600.0
+    },
+    {
+      "name": "K102029 (Film, Almond Natural 75g 225x187mmx800M  )",
+      "asset_value": 2026.46
+    },
+    {
+      "name": "K102030 (Film, Almond Hickory Smoked 75g  225x187mmx800M)",
+      "asset_value": 3618.59
+    },
+    {
+      "name": "K102032 (Film, Almond Raw 3oz  225Wx187Lx1000M)",
+      "asset_value": 1156.58
+    },
+    {
+      "name": "K102033 (Film, Almond Salted 3.5oz/100g E/F)",
+      "asset_value": 300.0
+    },
+    {
+      "name": "K102034 (Film, Almond Hickory 3oz 225x187mmx1000M)",
+      "asset_value": 1873.73
+    },
+    {
+      "name": "K102037 (Film, Almond Natural Pasteurized 3oz  270Wx210Lx800M)",
+      "asset_value": 442.4
+    },
+    {
+      "name": "K102038 (Film, Almond Butter Toffee 3oz/85g 225x187mmx1000M      )",
+      "asset_value": 4667.2
+    },
+    {
+      "name": "K102039 (Film, Almond BBQ 3oz/85g 225x187mmx1000M      )",
+      "asset_value": 4116.69
+    },
+    {
+      "name": "K102040 (Film, Almond Chili & Lemon 3oz/85g 225x187mmx1000M      )",
+      "asset_value": 4197.43
+    },
+    {
+      "name": "K102041 (Film, Almond Natural 1oz 170x160mmx800M (Great Value)  )",
+      "asset_value": 3362.83
+    },
+    {
+      "name": "K102042 (Film, Almond Lightly salted 1oz 170x160mmx800M (Great Value)  )",
+      "asset_value": 6028.65
+    },
+    {
+      "name": "K102100 (Film, Cashew 50% Salted Pieces TJ 16oz/454g)",
+      "asset_value": 750.0
+    },
+    {
+      "name": "K102101 (Film, Cashew Garlic & Onion 3oz/85g 270mm x 1000m)",
+      "asset_value": 300.0
+    },
+    {
+      "name": "K102102 (Film, Cashew Honey Roasted Brown 3.5oz/100g 275mm x 195mm x 1000M)",
+      "asset_value": 150.0
+    },
+    {
+      "name": "K102103 (Film, Cashew Honey Roasted Yellow 100g/3.5oz 275mm x 195mm x 1000M)",
+      "asset_value": 418.8
+    },
+    {
+      "name": "K102104 (Film, Cashew Pieces Salted TAJ 16oz/454g)",
+      "asset_value": 900.0
+    },
+    {
+      "name": "K102105 (Film, Cashew Salt and Pepper ELF 0.7oz/20g 225x125mmx1000M)",
+      "asset_value": 450.0
+    },
+    {
+      "name": "K102106 (Film, Cashew Salt and Pepper ELF 3.5oz/100g)",
+      "asset_value": 450.0
+    },
+    {
+      "name": "K102109 (Film, Cashew Salted 3oz/85g 270x195x1000M)",
+      "asset_value": 375.0
+    },
+    {
+      "name": "K102110 (Film, Cashew Salted EF 0.7oz/20g 225x125mmx1000M)",
+      "asset_value": 720.0
+    },
+    {
+      "name": "K102111 (Film, Cashew Salted 225Wx157Lx800M (no weight print))",
+      "asset_value": 2790.96
+    },
+    {
+      "name": "K102112 (Film, Cashews Salted 3.5oz/100g 275mm x 195mm x 1000M)",
+      "asset_value": 433.5
+    },
+    {
+      "name": "K102113 (Film, Cashew Sweet Sesame 1.8oz/51g  225x187)",
+      "asset_value": 3618.16
+    },
+    {
+      "name": "K102114 (Film, Cashew Unsalted 3.5oz/100g 275x195mm)",
+      "asset_value": 282.4
+    },
+    {
+      "name": "K102115 (Film, Cashew Unsalted 3oz/85g)",
+      "asset_value": 309.0
+    },
+    {
+      "name": "K102116 (Film, Cashew Unsalted Pieces TJ 16oz/454g)",
+      "asset_value": 772.5
+    },
+    {
+      "name": "K102117 (Film, Cashew Wasabi 3.5oz/100g  275x1000M)",
+      "asset_value": 150.0
+    },
+    {
+      "name": "K102118 (Film, Cashew Unsalted 225Wx157Lx800M (no weight print))",
+      "asset_value": 4695.15
+    },
+    {
+      "name": "K102124 (Film, Cashew Salted 2.5 oz Island Choice 225mmx170x800M)",
+      "asset_value": 6943.32
+    },
+    {
+      "name": "K102201 (Film, Peanut Archides Hot & Spicy 6oz/170g)",
+      "asset_value": 170.0
+    },
+    {
+      "name": "K102204 (Film, Peanut Roasted Salted (old design) 8oz/227g 275x235x800M)",
+      "asset_value": 798.11
+    },
+    {
+      "name": "K102205 (Film, Peanut Honey Roasted 7oz/198g 275mm x 235mm x 800M)",
+      "asset_value": 7422.8
+    },
+    {
+      "name": "K102208 (Film, Peanut Honey Roasted 8oz/227g 275x235x800M)",
+      "asset_value": 778.62
+    },
+    {
+      "name": "K102209 (Film, Peanut Honey Roasted Peanut Man 7oz/198g 275x235x800M)",
+      "asset_value": 115.29
+    },
+    {
+      "name": "K102211 (Film, Peanut Raw Blanched 230x335H 800M 11oz/300g)",
+      "asset_value": 23.45
+    },
+    {
+      "name": "K102212 (Film, Peanut Raw Red Skin 230x335H 800M 11oz/300g)",
+      "asset_value": 116.45
+    },
+    {
+      "name": "K102213 (Film, Peanut Roasted Hot & Spicy 8oz/220g  275mmx800M)",
+      "asset_value": 506.66
+    },
+    {
+      "name": "K102215 (Film, Peanut Salted 7oz/198g 275x235x800M)",
+      "asset_value": 1164.16
+    },
+    {
+      "name": "K102216 (Film, Peanut Salted Peanut Man 3.5oz/100g 275x195x800M)",
+      "asset_value": 1467.9
+    },
+    {
+      "name": "K102218 (Film, Peanut Salted Peanut Man 8oz/227g 275x235x800M)",
+      "asset_value": 147.5
+    },
+    {
+      "name": "K102219 (Film, Peanut Unsalted 7oz198g 275x235mmx800M)",
+      "asset_value": 3937.77
+    },
+    {
+      "name": "K102220 (Film, Peanut Chili Lemon 7oz W275xL235mm 800M)",
+      "asset_value": 731.14
+    },
+    {
+      "name": "K102221 (Film, Peanut Seasoned 7 oz 275x235 x800M)",
+      "asset_value": 3611.02
+    },
+    {
+      "name": "K102222 (Film, Peanut Hot & Spicy 7oz 275x235x800M)",
+      "asset_value": 4240.02
+    },
+    {
+      "name": "K102223 (Film, Peanut BBQ 7oz 275x235x800M)",
+      "asset_value": 2305.76
+    },
+    {
+      "name": "K102224 (Film, Peanut Japanese Style BBQ 3.5oz 275x235x800M)",
+      "asset_value": 2909.88
+    },
+    {
+      "name": "K102225 (Film, Peanut Japanese Style Picante 3.5oz 275x235x800M)",
+      "asset_value": 2909.88
+    },
+    {
+      "name": "K102300 (Film, Fancy Mix Nuts Lightly Salted EF 3oz/85g 275mmx800M)",
+      "asset_value": 840.0
+    },
+    {
+      "name": "K102301 (Film, Fancy Mix Nuts Lightly Salted FEF 3oz/85g 275mmx800M)",
+      "asset_value": 120.0
+    },
+    {
+      "name": "K102302 (Film, Mix Rainbow 6oz/170g)",
+      "asset_value": 1260.0
+    },
+    {
+      "name": "K102303 (Film, Mix Traveller's 6oz/170g)",
+      "asset_value": 1140.0
+    },
+    {
+      "name": "K102304 (Film, Nut Mix Up 6oz/170g)",
+      "asset_value": 1170.0
+    },
+    {
+      "name": "K102306 (Film, Glazed honey nuts 100g (3.5oz)  )",
+      "asset_value": 150.0
+    },
+    {
+      "name": "K102307 (Film, Mixed Nuts Honey 3oz W225*L187*800M  )",
+      "asset_value": 1256.04
+    },
+    {
+      "name": "K102308 (Film, Premium Mix Nut Salted 3oz W225*L187*800M  )",
+      "asset_value": 1736.38
+    },
+    {
+      "name": "K102400 (Film, Pistachio Salted 225x187x1000M 2oz/57g)",
+      "asset_value": 1151.8
+    },
+    {
+      "name": "K102401 (Film, Pistachios 160g  (220mm, 4,545 pcs/rl))",
+      "asset_value": 294.52
+    },
+    {
+      "name": "K102402 (Film, Pistachios Salted 150g 800M (Kobe Logo))",
+      "asset_value": 2098.37
+    },
+    {
+      "name": "K102403 (Film, Pistachios Salted 300g/11oz)",
+      "asset_value": 226.5
+    },
+    {
+      "name": "K102404 (Film, Pistachios Salted 150g 800M (No Kobe Logo))",
+      "asset_value": 3955.62
+    },
+    {
+      "name": "K102500 (Film, Walnut Raw 3oz 210h*270w*800M)",
+      "asset_value": 907.22
+    },
+    {
+      "name": "K102501 (Film, Walnut Halves and Pieces EF 3.5oz/100g)",
+      "asset_value": 148.52
+    },
+    {
+      "name": "K102700 (Film, Prune 250g Japan 335x1000M)",
+      "asset_value": 3174.78
+    },
+    {
+      "name": "K102701 (Film, Pitted Prunes 250g)",
+      "asset_value": 75.59
+    },
+    {
+      "name": "K102750 (Film, Raisin Thompson 5.3oz/150g 285x210x800M)",
+      "asset_value": 3070.8
+    },
+    {
+      "name": "K102751 (Film, Raisin Thompson  (CRT Mart) 14oz/400g 335x245)",
+      "asset_value": 790.05
+    },
+    {
+      "name": "K102800 (Film, Banana Chips 6oz/170g  335x240mm)",
+      "asset_value": 4684.12
+    },
+    {
+      "name": "K102802 (Film, Banana Chips 5oz Island Choice 335mmx245x800M)",
+      "asset_value": 47.46
+    },
+    {
+      "name": "K102803 (Film, Banana Chips 3oz Island Choice 335mmx230x800M)",
+      "asset_value": 246.51
+    },
+    {
+      "name": "K103251 (Film, Rice Cracker Wasabi 7oz/200g  1000M)",
+      "asset_value": 200.0
+    },
+    {
+      "name": "K103252 (Film, Rice Cracker Wasabi 6oz)",
+      "asset_value": 306.98
+    },
+    {
+      "name": "K103253 (Film, Rice Cracker 6oz Island Choice 245x337mmx800M)",
+      "asset_value": 2382.5
+    },
+    {
+      "name": "K103550 (Film, Sunflower Seeds Salted 6 oz W290xL223mm 800M  )",
+      "asset_value": 1166.11
+    },
+    {
+      "name": "K103551 (Film, Sunflower Seeds Honey 6 oz  W290xL223mm 800M  )",
+      "asset_value": 2382.83
+    },
+    {
+      "name": "K103552 (Film, Wasabi Peas 3oz 290mm x 210mm x 800M  )",
+      "asset_value": 2807.45
+    },
+    {
+      "name": "K103553 (Film, Green peas salted 3.5 oz 290mm x 210mm x 800M  )",
+      "asset_value": 4694.0
+    },
+    {
+      "name": "K103603 (Film, Clear 265mm)",
+      "asset_value": 30.0
+    },
+    {
+      "name": "K103605 (Film, Clear 280mm)",
+      "asset_value": 60.0
+    },
+    {
+      "name": "K103607 (Film, Clear 305mm)",
+      "asset_value": 30.0
+    },
+    {
+      "name": "K103609 (Film, Clear 385mm)",
+      "asset_value": 120.0
+    },
+    {
+      "name": "K103610 (Film, Clear 400mm)",
+      "asset_value": 240.0
+    },
+    {
+      "name": "K103611 (Film, Clear 450mm)",
+      "asset_value": 240.0
+    },
+    {
+      "name": "K103612 (Film, Clear 560mm)",
+      "asset_value": 240.0
+    },
+    {
+      "name": "K103614 (Film, Chiffon Cake)",
+      "asset_value": 60.0
+    },
+    {
+      "name": "K103617 (Film, Clear 100g 275Wx1000M)",
+      "asset_value": 202.1
+    },
+    {
+      "name": "K103618 (Film, Clear Trader Joe 225Wx1100M)",
+      "asset_value": 122.39
+    },
+    {
+      "name": "K103619 (Film, Clear Trader Joe 336Wx1100M)",
+      "asset_value": 133.93
+    },
+    {
+      "name": "K202500 (Film, Greek yogurt & Dark chocolate coated almonds 0.7oz (20G))",
+      "asset_value": 0.0
+    },
+    {
+      "name": "K105102 (Jar, Round 90mmdia  400ml)",
+      "asset_value": 1074.66
+    },
+    {
+      "name": "K105103 (Jar, Round 115mm dia  908g/1kg)",
+      "asset_value": 977.97
+    },
+    {
+      "name": "K105201 (Jar, Square 67mm dia 72x72x265H 1.3L)",
+      "asset_value": 582.4
+    },
+    {
+      "name": "K105202 (Jar, Square 67mmx67x120)",
+      "asset_value": 570.0
+    },
+    {
+      "name": "K105203 (Jar, Square 97mm dia 102x102x115H .875L)",
+      "asset_value": 655.2
+    },
+    {
+      "name": "K104002 (Label, Almond Raw  32oz/908g)",
+      "asset_value": 30.0
+    },
+    {
+      "name": "K104003 (Label, Almond Milk Chocolate 350g)",
+      "asset_value": 40.0
+    },
+    {
+      "name": "K104004 (Label, Almond Soft Inshell 250g)",
+      "asset_value": 100.0
+    },
+    {
+      "name": "K104005 (Label, Almond Soft Inshell EC 250g)",
+      "asset_value": 80.0
+    },
+    {
+      "name": "K104006 (Label, Almond Soft Inshell Dry roasted EF 250g)",
+      "asset_value": 360.0
+    },
+    {
+      "name": "K104008 (Label, Almond Salted 580g (2,000pcs/roll))",
+      "asset_value": 7.2
+    },
+    {
+      "name": "K104010 (Label, Soft Inshell Almond EF)",
+      "asset_value": 360.99
+    },
+    {
+      "name": "K104013 (Label, Almond Pink salt & garlic 10oz)",
+      "asset_value": 1886.01
+    },
+    {
+      "name": "K104051 (Label, Cashews and Almonds Raw EF 32oz/1kg)",
+      "asset_value": 200.0
+    },
+    {
+      "name": "K104052 (Label, Cashews Salted EF)",
+      "asset_value": 310.15
+    },
+    {
+      "name": "K104053 (Label, Cashews NS EF)",
+      "asset_value": 128.95
+    },
+    {
+      "name": "K104055 (Label, Cashew & Almond EF)",
+      "asset_value": 200.0
+    },
+    {
+      "name": "K104059 (Label, Cashew Salted 16oz/453g)",
+      "asset_value": 810.6
+    },
+    {
+      "name": "K104060 (Label, Cashew Unsalted 16oz/453g)",
+      "asset_value": 963.62
+    },
+    {
+      "name": "K104065 (Label, Cashew Wasabi 18oz)",
+      "asset_value": 720.01
+    },
+    {
+      "name": "K104067 (Label, Cashew, Everything Bagel 10oz)",
+      "asset_value": 461.88
+    },
+    {
+      "name": "K104101 (Label, Peanuts Seasoned D/R 14oz/400g)",
+      "asset_value": 330.0
+    },
+    {
+      "name": "K104102 (Label, Honey Peanut 40 oz/1.13kg)",
+      "asset_value": 360.0
+    },
+    {
+      "name": "K104103 (Label, Peanut blanched Salted 40 oz/1.13kg  )",
+      "asset_value": 360.0
+    },
+    {
+      "name": "K104104 (Label, Peanut Seasoned EC  )",
+      "asset_value": 80.0
+    },
+    {
+      "name": "K104105 (Label, Peanut Seasoned EF  )",
+      "asset_value": 80.0
+    },
+    {
+      "name": "K104106 (Label, Honey Peanut EC  )",
+      "asset_value": 90.0
+    },
+    {
+      "name": "K104108 (Label, Japanese style Garlic 6oz  )",
+      "asset_value": 0.69
+    },
+    {
+      "name": "K104151 (Label, Cajun Snack Mix 300g Chinese)",
+      "asset_value": 80.0
+    },
+    {
+      "name": "K104152 (Label, Cajun Snack Mix 10.6oz/300g -English)",
+      "asset_value": 220.0
+    },
+    {
+      "name": "K104153 (Label, Cranergy Mix 400g-English)",
+      "asset_value": 520.0
+    },
+    {
+      "name": "K104154 (Label, Lounge Mix 200g-English)",
+      "asset_value": 200.0
+    },
+    {
+      "name": "K104155 (Label, Over the Rainbow Mix 400g-English    1000/rl)",
+      "asset_value": 180.0
+    },
+    {
+      "name": "K104156 (Label, Yosemite Mt. Mix 400g-English)",
+      "asset_value": 290.0
+    },
+    {
+      "name": "K104158 (Label, Cranergy Mix EC)",
+      "asset_value": 90.0
+    },
+    {
+      "name": "K104159 (Label, Lounge Mix 200g EC)",
+      "asset_value": 90.0
+    },
+    {
+      "name": "K104160 (Label, Over the Rainbow Mix EC)",
+      "asset_value": 240.0
+    },
+    {
+      "name": "K104162 (Label, Olive & Herb mixed nuts 10oz)",
+      "asset_value": 488.94
+    },
+    {
+      "name": "K104176 (Label, Pistachio 17.6oz/500g)",
+      "asset_value": 200.0
+    },
+    {
+      "name": "K104177 (Label, Pistachio  28oz/800g 2000ea/Rl)",
+      "asset_value": 536.45
+    },
+    {
+      "name": "K104178 (Label, Pistachio 32oz/908g)",
+      "asset_value": 160.0
+    },
+    {
+      "name": "K104180 (Label, Pistachio 28oz)",
+      "asset_value": -256.67
+    },
+    {
+      "name": "K104601 (Label, Popcorn Carmel 75x120mm 330g E)",
+      "asset_value": 440.0
+    },
+    {
+      "name": "K104602 (Label, Popcorn Carmel 75x120mm 330g EF)",
+      "asset_value": 200.0
+    },
+    {
+      "name": "K104850 (Label, Apricots 350g-English)",
+      "asset_value": 410.0
+    },
+    {
+      "name": "K104851 (Label, Chocolate Desire Pretzels/7oz/200g)",
+      "asset_value": 100.0
+    },
+    {
+      "name": "K104852 (Label, Fruit Loop Medley 350g-English)",
+      "asset_value": 180.0
+    },
+    {
+      "name": "K104853 (Label, Madamia Natural EF 7oz/200g)",
+      "asset_value": 80.0
+    },
+    {
+      "name": "K104854 (Label, Nacho Ranger 400g-English)",
+      "asset_value": 270.0
+    },
+    {
+      "name": "K104855 (Label, Vegetable Crisp 6oz/175g)",
+      "asset_value": 680.0
+    },
+    {
+      "name": "K104856 (Label, Vegetable Chips E)",
+      "asset_value": 240.0
+    },
+    {
+      "name": "K104857 (Label, Wasabi Peas 300g Chinese)",
+      "asset_value": 280.0
+    },
+    {
+      "name": "K104858 (Label, Wasabi Peas 300g-EnglisH)",
+      "asset_value": 476.0
+    },
+    {
+      "name": "K104859 (Label, Wasabi peas 10.6oz/300g)",
+      "asset_value": 360.0
+    },
+    {
+      "name": "K104860 (Label, Yogurt delight Pretzels C 7.9oz/225g)",
+      "asset_value": 130.0
+    },
+    {
+      "name": "K104862 (Labels, Perforated Thermal Transfer 4x3  4Rl/Box  1900/Rl)",
+      "asset_value": 7073.54
+    },
+    {
+      "name": "K104863 (Label, Hot and Spicy)",
+      "asset_value": 90.0
+    },
+    {
+      "name": "K104865 (Label, Nacho Ranger 400g EC)",
+      "asset_value": 80.0
+    },
+    {
+      "name": "K104866 (Label, Vegetable Crisps EC)",
+      "asset_value": 760.0
+    },
+    {
+      "name": "K104868 (Label, Fruit Loop Medley 350g-EC)",
+      "asset_value": 80.0
+    },
+    {
+      "name": "K106001 (Lid, Round  4\")",
+      "asset_value": 244.35
+    },
+    {
+      "name": "K106002 (Lid, Round (for Can) 103mm)",
+      "asset_value": 1050.0
+    },
+    {
+      "name": "K106003 (Lid, Round Chrome 128mm dia)",
+      "asset_value": 2220.0
+    },
+    {
+      "name": "K106004 (Lid, Round Gold 75mm dia)",
+      "asset_value": 8.4
+    },
+    {
+      "name": "K106005 (Lid, Round Green 124mm dia 908g)",
+      "asset_value": 604.95
+    },
+    {
+      "name": "K106006 (Lid, Round Green 128mm dia 1.75L)",
+      "asset_value": 2334.2
+    },
+    {
+      "name": "K106008 (Lid, Round Dark Green 90mm dia 16oz-21oz/454-600g)",
+      "asset_value": 0.96
+    },
+    {
+      "name": "K106010 (Lid, Round White 401 109mm dia)",
+      "asset_value": 897.6
+    },
+    {
+      "name": "K106011 (Lid, Round White 70mm dia)",
+      "asset_value": 100.0
+    },
+    {
+      "name": "K106012 (Lid, Round Yellow 90mm dia 454/600g)",
+      "asset_value": 23.44
+    },
+    {
+      "name": "K106013 (Lid, Round Yellow 125mm dia 1kg)",
+      "asset_value": 2408.7
+    },
+    {
+      "name": "K106014 (Lid, Round Blue 120dia 1kg)",
+      "asset_value": 191.85
+    },
+    {
+      "name": "K106015 (Lid, Round Light Green 454/600gg)",
+      "asset_value": 445.78
+    },
+    {
+      "name": "K106017 (Lid, Round Light Green (For Can) #401)",
+      "asset_value": 4878.25
+    },
+    {
+      "name": "K106018 (Lid, Iron cover (For Can) #401)",
+      "asset_value": 4304.95
+    },
+    {
+      "name": "K106098 (Lid, Round Green 600g)",
+      "asset_value": 2871.96
+    },
+    {
+      "name": "K106101 (Lid, Square 165mm x 101mm 16oz)",
+      "asset_value": 220.0
+    },
+    {
+      "name": "K106102 (Lid, Square Black 70x70x123mm 500g)",
+      "asset_value": 240.0
+    },
+    {
+      "name": "K106103 (Lid, Square Black 73x73x45mm 1.3L)",
+      "asset_value": 426.3
+    },
+    {
+      "name": "K106107 (Lid, Square Gummier Worms 4.5 250g/8.8oz)",
+      "asset_value": 420.0
+    },
+    {
+      "name": "K106108 (Lid, Square Red 103x103x30mm 1.75L)",
+      "asset_value": 13.0
+    },
+    {
+      "name": "K106109 (Lid, Square Tub Popcorn 170mmx170mmx18mm)",
+      "asset_value": 1965.0
+    },
+    {
+      "name": "K106201 (Lid, Plastic Party Tray 7 compartment)",
+      "asset_value": 15.2
+    },
+    {
+      "name": "K106202 (Lid, Pail 2 Gal)",
+      "asset_value": 49.0
+    },
+    {
+      "name": "K106203 (Lid, Pail 5 Gal)",
+      "asset_value": 38.0
+    },
+    {
+      "name": "K106299 (Lid, Round Yellow 125mm dia 1kg  )",
+      "asset_value": 3101.0
+    },
+    {
+      "name": "K106399 (Lid, Square Green 103x103x30mm  1.75L    )",
+      "asset_value": 3646.5
+    },
+    {
+      "name": "K109001 (Shrink Band, Square Tub (250/16))",
+      "asset_value": 250.0
+    },
+    {
+      "name": "K109002 (Shrink Band, Round clear 4\", 23mmT x 12mm dia 5M/case)",
+      "asset_value": 100.0
+    },
+    {
+      "name": "K109003 (Seal, tray shrink wrap 600g)",
+      "asset_value": 2188.38
+    },
+    {
+      "name": "K109004 (Shrink wrap, Quick 8\" 60 gau  )",
+      "asset_value": 0.24
+    },
+    {
+      "name": "K109012 (Foil, Jar seal 430mmx400M)",
+      "asset_value": 1709.8
+    },
+    {
+      "name": "K109013 (Foil, Jar seal with Logo 130mm x 400m)",
+      "asset_value": 882.0
+    },
+    {
+      "name": "K109014 (Foil Film, plain 336mmx500M)",
+      "asset_value": 2750.0
+    },
+    {
+      "name": "K109102 (Liner, clear, 24 x 36 2 Mil (250/case))",
+      "asset_value": 8.25
+    },
+    {
+      "name": "K109103 (Foil, Bag vacuum seal 378x520mm  10 lbs  (800ea/box))",
+      "asset_value": 531.45
+    },
+    {
+      "name": "K109105 (Liner, Tote  54\" x  50\" x 125\" 2.2mil 40/R)",
+      "asset_value": 307.1
+    },
+    {
+      "name": "K109106 (Liner, Bin 3mil 52\"x48\"x73\" 50ea/Roll)",
+      "asset_value": 6053.41
+    },
+    {
+      "name": "K109107 (Poly bag, 10x8x24, .0015  5 lbs 500/Cs)",
+      "asset_value": 9.0
+    },
+    {
+      "name": "K109109 (Liner, Clear  12x18  1000/cs)",
+      "asset_value": 1217.92
+    },
+    {
+      "name": "K109113 (Foil, Jar seal with Logo 170mm)",
+      "asset_value": 180.0
+    },
+    {
+      "name": "K109115 (Foil, Jar seal 265MM)",
+      "asset_value": 90.0
+    },
+    {
+      "name": "K109117 (Foil, Jar seal 300mm)",
+      "asset_value": 90.0
+    },
+    {
+      "name": "K109118 (Foil, Jar seal 335mm)",
+      "asset_value": 90.0
+    },
+    {
+      "name": "K109119 (Liner, blue 650X720mm 30lbs)",
+      "asset_value": 9356.73
+    },
+    {
+      "name": "K109202 (Lid, Fiber Tote 2000 lb)",
+      "asset_value": 362.47
+    },
+    {
+      "name": "K109203 (Bin, Fiber Tote 2000 lb)",
+      "asset_value": 992.27
+    },
+    {
+      "name": "K109204 (Can, Island Paradise 225g     280/case)",
+      "asset_value": 2819.25
+    },
+    {
+      "name": "K109205 (Canister body, 227g)",
+      "asset_value": 6512.15
+    },
+    {
+      "name": "K109206 (Cap, Canister 227g)",
+      "asset_value": 1011.45
+    },
+    {
+      "name": "K109208 (Tape, Packaging Clear, 2” x 110yds 36 Rolls/Case)",
+      "asset_value": 5810.42
+    },
+    {
+      "name": "K109209 (Stretch Film, Hand, 55ga 17.7\"x1476' 4 rolls/case)",
+      "asset_value": 2726.56
+    },
+    {
+      "name": "K109210 (Stretch Film, Machine, 63ga, 20\"x5000')",
+      "asset_value": 6806.38
+    },
+    {
+      "name": "K109211 (Tape, 3M Machine, 2” x 1000yds 6 Roll/Case  )",
+      "asset_value": 4826.71
+    },
+    {
+      "name": "K109215 (Tape, Yellow 2\" 36 Rolls/Case)",
+      "asset_value": 113.4
+    },
+    {
+      "name": "K109216 (Tape, Blue 2\" 36 Rolls/Case)",
+      "asset_value": 113.4
+    },
+    {
+      "name": "K109218 (Tape, Red  2\" 36 Rolls/Cs)",
+      "asset_value": 67.41
+    },
+    {
+      "name": "K109219 (Canister bottom 227g)",
+      "asset_value": 1136.25
+    },
+    {
+      "name": "K109220 (Canister, Cashews Bagel 200g)",
+      "asset_value": 17507.9
+    },
+    {
+      "name": "K109222 (Supersack)",
+      "asset_value": 9824.81
+    },
+    {
+      "name": "K209109 (Pouch - Cacao Wafers (Keto) Imlakesh)",
+      "asset_value": 0.0
+    },
+    {
+      "name": "K107002 (Tray, Cardboard 10 Compartments Insert)",
+      "asset_value": 1261.0
+    },
+    {
+      "name": "K107003 (Tray, Cardboard 12 compartment for Oval Jar 600g 337x290x40mm @350 PCS)",
+      "asset_value": 28.25
+    },
+    {
+      "name": "K107006 (Tray, Cardboard 250x580x51mm)",
+      "asset_value": 277.65
+    },
+    {
+      "name": "K107009 (Tray, Cardboard 485x255x65mm)",
+      "asset_value": 114.2
+    },
+    {
+      "name": "K107010 (Tray, Cardboard 430x210x40mm 8/400g  )",
+      "asset_value": 17.21
+    },
+    {
+      "name": "K107012 (Tray, Cardboard 540x260x65mm 8/1kg  )",
+      "asset_value": 381.66
+    },
+    {
+      "name": "K107013 (Shelf, Black DDP Display  )",
+      "asset_value": 2414.05
+    },
+    {
+      "name": "K107017 (Tray, Cardboard DDP Logo 215x350x42mm)",
+      "asset_value": 50.4
+    },
+    {
+      "name": "K107018 (Tray, Cardboard DDP Logo 240x331x42mm)",
+      "asset_value": 3.06
+    },
+    {
+      "name": "K107019 (Tray, Cardboard DDP Logo 279x380x50mm)",
+      "asset_value": 25.56
+    },
+    {
+      "name": "K107023 (Tray, White DDP Logo 10 Compartment Cashew S 10/600g  )",
+      "asset_value": 410.16
+    },
+    {
+      "name": "K107026 (Tray, Cardboard 12 compartment for Bagel cashews 12/200g)",
+      "asset_value": 1661.37
+    },
+    {
+      "name": "K108001 (Tub, Round 4\" 16oz  500/case)",
+      "asset_value": 619.35
+    },
+    {
+      "name": "K108100 (Tub, Square 165x165x101mm 16oz)",
+      "asset_value": 2325.0
+    },
+    {
+      "name": "K108101 (Tub, Square 106x106x75mm Deep Dome)",
+      "asset_value": 540.0
+    },
+    {
+      "name": "K108102 (Tub, Square 4.75'' 16oz (WM USA))",
+      "asset_value": 1190.75
+    },
+    {
+      "name": "K108200 (Tub TS-16 Gummi Bears 143x120mm)",
+      "asset_value": 65.18
+    },
+    {
+      "name": "K108201 (Tub, TS-24,  46mmX177mmX148mm 7.9 oz/225g)",
+      "asset_value": 330.0
+    },
+    {
+      "name": "K208001 (Tub, Round Small (DSD))",
+      "asset_value": 0.0
+    },
+    {
+      "name": "R103211 (Oats, #5 Quick)",
+      "asset_value": 2861.45
+    },
+    {
+      "name": "R103212 (Oats, #5 Rolled)",
+      "asset_value": 4576.8
+    },
+    {
+      "name": "R101401 (Prunes, Ashlock Pitted 50/60ct   )",
+      "asset_value": 11712.77
+    },
+    {
+      "name": "R102213 (Raisin, Jumbo Flames 30 lbs  )",
+      "asset_value": 2876.29
+    },
+    {
+      "name": "R102214 (Raisin, Jumbo Golden 30 lbs  )",
+      "asset_value": 256.46
+    },
+    {
+      "name": "R102215 (Raisin, Medium Flames 30 lbs  )",
+      "asset_value": 402.9
+    },
+    {
+      "name": "R102216 (Raisin, Organic Natural Seedless 30lb  )",
+      "asset_value": 120153.0
+    },
+    {
+      "name": "R102310 (Banana Chips, Sweetened)",
+      "asset_value": 15739.4
+    },
+    {
+      "name": "R102411 (Papaya Dice - Dehydrated    44lbs/case)",
+      "asset_value": 170.63
+    },
+    {
+      "name": "R102511 (Mango Slice, unsulphured)",
+      "asset_value": 17084.81
+    },
+    {
+      "name": "R102611 (Pineapple, Core Dice 44 lbs)",
+      "asset_value": 102.14
+    },
+    {
+      "name": "R102714 (Cranberry, Dried Regular Moisture Sweetened  25 lb)",
+      "asset_value": 1857.54
+    },
+    {
+      "name": "R106110 (Powder, Honey (qwik flo))",
+      "asset_value": 7172.1
+    },
+    {
+      "name": "R106112 (Powder, Garlic)",
+      "asset_value": 1499.87
+    },
+    {
+      "name": "R106114 (Vanilla Extract)",
+      "asset_value": 375.37
+    },
+    {
+      "name": "R106116 (Onion Minced)",
+      "asset_value": 563.2
+    },
+    {
+      "name": "R106118 (Powder, Onion)",
+      "asset_value": 1224.89
+    },
+    {
+      "name": "R106128 (Salted caramel flavor powder  )",
+      "asset_value": 375.0
+    },
+    {
+      "name": "R106129 (Marjoram Ground  )",
+      "asset_value": 399.95
+    },
+    {
+      "name": "R106130 (Oregano Ground  )",
+      "asset_value": 822.15
+    },
+    {
+      "name": "R106131 (Thyme Ground  )",
+      "asset_value": 435.19
+    },
+    {
+      "name": "R106132 (Rosemary Ground  )",
+      "asset_value": 198.35
+    },
+    {
+      "name": "R106133 (Sage Ground  )",
+      "asset_value": 302.89
+    },
+    {
+      "name": "R106134 (Garlic minced  )",
+      "asset_value": 2391.0
+    },
+    {
+      "name": "R106135 (Basil leave Ground  )",
+      "asset_value": 2269.67
+    },
+    {
+      "name": "R106308 (Distilled White Vinegar Powder)",
+      "asset_value": 25.44
+    },
+    {
+      "name": "R106309 (Sugar, Powder)",
+      "asset_value": 4610.78
+    },
+    {
+      "name": "R106310 (Salt, Purified Sea Fine  )",
+      "asset_value": 73.02
+    },
+    {
+      "name": "R106311 (Salt Sea Purified Powder)",
+      "asset_value": 40.96
+    },
+    {
+      "name": "R106312 (Sugar, Brown)",
+      "asset_value": 10068.03
+    },
+    {
+      "name": "R106313 (Pepper, Black  Finely Ground 50 lb)",
+      "asset_value": 406.92
+    },
+    {
+      "name": "R106314 (Chili Pepper Ground Arbol 50 lb)",
+      "asset_value": 1187.46
+    },
+    {
+      "name": "R106315 (Yeast Extract)",
+      "asset_value": 27.27
+    },
+    {
+      "name": "R106316 (Citric Acid 50 lbs)",
+      "asset_value": 807.95
+    },
+    {
+      "name": "R106317 (Paprika, Ground 50 lb)",
+      "asset_value": 1241.63
+    },
+    {
+      "name": "R106321 (Chili Lime Intense)",
+      "asset_value": 1977.91
+    },
+    {
+      "name": "R106323 (Generic Hickory Almond Seasoning)",
+      "asset_value": 9610.88
+    },
+    {
+      "name": "R106324 (BBQ Seasoning 50 lbs/bag)",
+      "asset_value": 1459.08
+    },
+    {
+      "name": "R106326 (Instant Clear jet modified starch  )",
+      "asset_value": 208.41
+    },
+    {
+      "name": "R106328 (Salt, Sea Fine Grain (for mixing)    )",
+      "asset_value": 4618.95
+    },
+    {
+      "name": "R106330 (Wasabi flavor, powder    )",
+      "asset_value": 254.25
+    },
+    {
+      "name": "R106331 (Himalayan pink salt, powder    )",
+      "asset_value": 1938.5
+    },
+    {
+      "name": "R106332 (Black Olive    )",
+      "asset_value": 315.91
+    },
+    {
+      "name": "R106333 (Nutritional Yeast    )",
+      "asset_value": 4009.63
+    },
+    {
+      "name": "R106334 (Jalapeno, powder    )",
+      "asset_value": 295.06
+    },
+    {
+      "name": "R106335 (Habanero, powder    )",
+      "asset_value": 576.32
+    },
+    {
+      "name": "R106336 (Wasabi Soy Seasoning)",
+      "asset_value": 6376.57
+    },
+    {
+      "name": "R106500 (Oil, Canola NGMO)",
+      "asset_value": 69835.58
+    },
+    {
+      "name": "R106502 (Oil, Extra Virgin Olive)",
+      "asset_value": 878.83
+    },
+    {
+      "name": "R106504 (Oil, Canola NGMO Organic)",
+      "asset_value": 3770.26
+    },
+    {
+      "name": "R106510 (Gum, Tic (Arabic) 50 lbs)",
+      "asset_value": 10716.54
+    },
+    {
+      "name": "R106513 (Dill Weed   )",
+      "asset_value": 665.36
+    },
+    {
+      "name": "R106515 (SALSA PICANTE SEASONING)",
+      "asset_value": 276.4
+    },
+    {
+      "name": "R106517 (Ginger powder)",
+      "asset_value": 148.1
+    },
+    {
+      "name": "R106518 (Cinnamon powder)",
+      "asset_value": 168.76
+    },
+    {
+      "name": "R106599 (Oil, High Oleic (Canola Oil)        )",
+      "asset_value": 77955.44
+    },
+    {
+      "name": "WIP106112 (Italian seasoning)",
+      "asset_value": 2.68
+    },
+    {
+      "name": "R100116 (Almond, Carmel SSR 25/27, Pasteurized)",
+      "asset_value": 123645.65
+    },
+    {
+      "name": "R100119 (Almond, Carmel Supreme 18/20 - 20/22 Unpasteurized)",
+      "asset_value": 5040.0
+    },
+    {
+      "name": "R100121 (Almond, California Supreme 23/25 Unpasteurized)",
+      "asset_value": 132300.0
+    },
+    {
+      "name": "R100122 (Almonds, NPS /25 Pasteurized)",
+      "asset_value": 130200.0
+    },
+    {
+      "name": "R100123 (Almond, Mission SSR 27/30-25/27)",
+      "asset_value": 131460.0
+    },
+    {
+      "name": "R100124S (Almond, NPS 27/30 , Pasteurized)",
+      "asset_value": 22386.89
+    },
+    {
+      "name": "R100125 (Almond, NPS 27/30 Unpasteurized  )",
+      "asset_value": 345131.04
+    },
+    {
+      "name": "R100126 (Almond, CTS 34/36, Unpasteurized)",
+      "asset_value": 3412.12
+    },
+    {
+      "name": "R100129 (Almond, Carmel No. 1 25/27 Unpasteurized)",
+      "asset_value": 142261.13
+    },
+    {
+      "name": "R100133 (Almond, Blanched Sliver)",
+      "asset_value": 4676.96
+    },
+    {
+      "name": "R100136 (Almond, Cluster)",
+      "asset_value": 692.65
+    },
+    {
+      "name": "R100311 (Cashew, Raw WS)",
+      "asset_value": 6814.17
+    },
+    {
+      "name": "R100311T (Cashew, Raw WS in tote)",
+      "asset_value": 20531.59
+    },
+    {
+      "name": "R100313 (Cashew, Raw W320)",
+      "asset_value": 194507.26
+    },
+    {
+      "name": "R100313D (Cashew, Raw DW320)",
+      "asset_value": 102800.91
+    },
+    {
+      "name": "R100315D (Cashew, Raw DW320 Pasteurized)",
+      "asset_value": 14045.98
+    },
+    {
+      "name": "R100317 (Cashew, DW360 Pasteurised)",
+      "asset_value": 27948.03
+    },
+    {
+      "name": "R100319 (Cashew, Raw DW360)",
+      "asset_value": 12526.54
+    },
+    {
+      "name": "R100320 (Cashews, Raw Organic W320)",
+      "asset_value": 6563.66
+    },
+    {
+      "name": "R100320T (Cashews, Raw Organic W320 (tote))",
+      "asset_value": 78999.25
+    },
+    {
+      "name": "R100325 (Cashews, Raw Organic W320 Pasteurized)",
+      "asset_value": 57128.82
+    },
+    {
+      "name": "R100326 (Cashews, Raw Organic LP Pasteurized)",
+      "asset_value": 72591.97
+    },
+    {
+      "name": "R100327 (Cashews, Raw DW240 Pasteurized)",
+      "asset_value": 47576.7
+    },
+    {
+      "name": "R100353 (Cashew , R/S Halves & Pieces)",
+      "asset_value": 2563.98
+    },
+    {
+      "name": "R100410 (Hazel Nuts Raw)",
+      "asset_value": 8560.0
+    },
+    {
+      "name": "R100510 (Almond, Cashew, Cranberry Cluster 5kg/11lb)",
+      "asset_value": 550.61
+    },
+    {
+      "name": "R100610 (Peanut, Raw Jumbo Blanched)",
+      "asset_value": 3640.91
+    },
+    {
+      "name": "R100611 (Peanut, Raw Red Skin SW Runner Medium 40/50)",
+      "asset_value": 932.77
+    },
+    {
+      "name": "R100613 (Peanut, raw redskin jumbo runner)",
+      "asset_value": 12249.84
+    },
+    {
+      "name": "R100614 (Peanut, Blanched  Extra Large (Virginia)  )",
+      "asset_value": 17496.1
+    },
+    {
+      "name": "R100616 (Peanut, Raw split Blanched)",
+      "asset_value": 75794.19
+    },
+    {
+      "name": "R100617 (Crunchy biscuits (Japanese coated peanut) plain  )",
+      "asset_value": 7671.06
+    },
+    {
+      "name": "R100619 (Shoyu Crunchy biscuits   )",
+      "asset_value": 270320.46
+    },
+    {
+      "name": "R100710 (Pecan, Fancy Jr Mammoth Halves 30 LBS  )",
+      "asset_value": 39591.63
+    },
+    {
+      "name": "R100856 (Pistachio, RS 21/26 25 lbs)",
+      "asset_value": 1093.18
+    },
+    {
+      "name": "R105110 (Chocolate Gems  )",
+      "asset_value": 4557.88
+    },
+    {
+      "name": "R104114 (Pumpkin seed, Raw)",
+      "asset_value": 6173.6
+    },
+    {
+      "name": "R104310 (Sesame, White Hulled 50 lbs)",
+      "asset_value": 389.18
+    },
+    {
+      "name": "R104311 (Poppy seeds 50 lbs)",
+      "asset_value": 305.17
+    },
+    {
+      "name": "R104312 (Sesame, Black 50 lbs)",
+      "asset_value": 189.63
+    },
+    {
+      "name": "R204210 (Pumpkin Seed)",
+      "asset_value": 0.0
+    },
+    {
+      "name": "PR910289 (Dry roasting - Almonds Whole & Broken NS)",
+      "asset_value": 54.0
+    },
+    {
+      "name": "PR910291S (Oil roasting - Cashews WS NS (Sorted))",
+      "asset_value": 2674.68
+    },
+    {
+      "name": "PR910802 (Dry Roasting, Pistachios Kernel Honey (supersack))",
+      "asset_value": 0.0
+    },
+    {
+      "name": "DB610140 (Almond, Dry Roasted Salted 27/30 25 lbs)",
+      "asset_value": 27612.94
+    },
+    {
+      "name": "DB610165 (Almond, Italian Herbs 25lb)",
+      "asset_value": 140.71
+    },
+    {
+      "name": "DB610312 (Cashew, W320 R/S 25lbs)",
+      "asset_value": 6526.09
+    },
+    {
+      "name": "DB610317 (Cashew, W240 R/S 25 lbs)",
+      "asset_value": 507.86
+    },
+    {
+      "name": "DB610326 (Cashew, OR/H&P Salted 30 lbs)",
+      "asset_value": 2843.29
+    },
+    {
+      "name": "DB610336 (Cashew, Jalapeno 25 lbs)",
+      "asset_value": 5877.84
+    },
+    {
+      "name": "DB610337 (Cashew, Honey Habanero 25 lbs)",
+      "asset_value": 6468.11
+    },
+    {
+      "name": "DB610344 (Cashew, Dry Roasted Honey 25 lbs)",
+      "asset_value": 68.9
+    },
+    {
+      "name": "DB610515 (Italian Mixed Nuts 25 lbs)",
+      "asset_value": 11076.48
+    },
+    {
+      "name": "DB610613T (Peanut, Oil Roasted Blanched Unsalted 2000 lbs)",
+      "asset_value": 53.03
+    },
+    {
+      "name": "DB610619 (Peanut, Oil Roasted Red Skin 40/50 Medium Unsalted for Sunridge 30 lbs)",
+      "asset_value": 14714.94
+    },
+    {
+      "name": "DB610632 (Peanut, Honey Roasted 25lbs)",
+      "asset_value": 2902.41
+    },
+    {
+      "name": "DB610911 (Walnut, Light halves 100% 22lbs  )",
+      "asset_value": 3794.71
+    },
+    {
+      "name": "WIP610111 (Almond, Oil Roasted Salted)",
+      "asset_value": 0.53
+    },
+    {
+      "name": "WIP610132 (Almond, Dry Roasted Unsalted)",
+      "asset_value": 18891.59
+    },
+    {
+      "name": "WIP610157 (Almond, Pink salt & garlic WIP)",
+      "asset_value": 5021.75
+    },
+    {
+      "name": "WIP610315 (Cashew, Salted)",
+      "asset_value": 6851.35
+    },
+    {
+      "name": "WIP610317 (Cashew, Bagel)",
+      "asset_value": 85.57
+    },
+    {
+      "name": "WIP610317C (Cashew, Bagel (Canada version))",
+      "asset_value": 37201.48
+    },
+    {
+      "name": "WIP610323 (Cashew, Chili lime)",
+      "asset_value": -470.58
+    },
+    {
+      "name": "WIP610513A (Olive & Herbs Almonds WIP)",
+      "asset_value": 3935.34
+    },
+    {
+      "name": "WIP610513C (Olive & Herbs Cashews WIP)",
+      "asset_value": 4738.2
+    },
+    {
+      "name": "WIP610513P (Olive & Herbs Pecan WIP)",
+      "asset_value": 566.32
+    },
+    {
+      "name": "WIP610615 (Peanut, Oil Roasted Blanched Salted)",
+      "asset_value": 5903.3
+    },
+    {
+      "name": "WIP910142 (Almond, Oil Roasted Unsalted   )",
+      "asset_value": 44611.78
+    },
+    {
+      "name": "DB644211 (Pumpkin Seed, Roasted Salted 25 lbs  )",
+      "asset_value": 187.19
+    },
+    {
+      "name": "DP733204 (Rolled Oats, PeaceRiver 24x16oz)",
+      "asset_value": 1105.79
+    },
+    {
+      "name": "DP733205 (Quick Oats, PeaceRiver 24x16oz)",
+      "asset_value": 395.15
+    },
+    {
+      "name": "DP722210 (Raisin, Japan 28x400g)",
+      "asset_value": 453.34
+    },
+    {
+      "name": "DP722212 (Raisin, California Natural 48x5.3oz/150g  )",
+      "asset_value": 8878.73
+    },
+    {
+      "name": "DP722310 (Banana Chip 24 x 6oz)",
+      "asset_value": 323.85
+    },
+    {
+      "name": "DP722713 (Cranberries, 48 x 4oz)",
+      "asset_value": 496.41
+    },
+    {
+      "name": "DP710104 (Almond, Pink salt & garlic 10oz/6 (Bettergood)  )",
+      "asset_value": 6168.73
+    },
+    {
+      "name": "DP710106 (Almond, Natural Raw 25oz/4 (Great Value)  )",
+      "asset_value": 89491.14
+    },
+    {
+      "name": "DP710112 (Almond, Unsalted 24x3oz)",
+      "asset_value": 1527.51
+    },
+    {
+      "name": "DP710113 (Almond, Salted 24x3oz)",
+      "asset_value": 740.24
+    },
+    {
+      "name": "DP710115 (Almond, Hickory Smoke 24x3oz)",
+      "asset_value": 0.0
+    },
+    {
+      "name": "DP710119 (Almond, Raw 24x3oz)",
+      "asset_value": 21084.44
+    },
+    {
+      "name": "DP710127 (Almond, Raw 14oz/6 (Great Value)  )",
+      "asset_value": 27328.35
+    },
+    {
+      "name": "DP710132 (Almond, Hickory Smoke 30 x 75g     )",
+      "asset_value": 279.16
+    },
+    {
+      "name": "DP710427 (Cashew, Everything Bagel 10oz/6 (Bettergood)  )",
+      "asset_value": 12731.33
+    },
+    {
+      "name": "DP710811 (Peanut, Oil Roasted Salted  48x7oz)",
+      "asset_value": 5833.91
+    },
+    {
+      "name": "DP711010 (Peanut, Japanese Style BBQ  48x3.5 oz)",
+      "asset_value": 891.34
+    },
+    {
+      "name": "DP711013 (Peanut, Japanese Style Picante 48x3.5oz)",
+      "asset_value": 725.82
+    },
+    {
+      "name": "DP711018 (Peanut, Chili Lime 48x7oz)",
+      "asset_value": 5776.05
+    },
+    {
+      "name": "DP711302 (Walnut 48x3oz)",
+      "asset_value": 969.85
+    }
+  ],
+  "inventory_sku_total": 3449487.83,
+  "inventory_breakdown": {
+    "raw_nuts": 2123706.05,
+    "raw_ingredients": 232578.51,
+    "raw_fruits": 170355.94,
+    "packaging": 505752.67,
+    "total_inventory_raw": 3051446.88,
+    "finished_goods_bulk": 209923.94,
+    "finished_goods_pack": 173547.87,
+    "total_assembly": 398040.95,
+    "total_inventory_asset_value": 3449487.83,
+    "bs_total_inventory": 3609121.53727
+  },
+  "cash_flow": {
+    "title": "STATEMENT OF CASH FLOWS (Indirect Method) – Jan to Oct 2026",
+    "net_operating_loss": -1919974.202728329,
+    "depreciation_addback": 305567.64,
+    "provision_doubtful_debts": 0.0,
+    "interest_reclassified": 237841.5,
+    "wc_delta_ar": -391571.4600000002,
+    "wc_delta_inventory": -220529.61727000028,
+    "wc_delta_prepaid": 13016.740000000002,
+    "wc_delta_undeposited": -5304.15,
+    "wc_delta_employee_advances": -350.0,
+    "wc_delta_ap": 930338.8500000001,
+    "wc_delta_credit_cards": 10475.130000000001,
+    "wc_delta_accrued_expenses": 156279.00000000003,
+    "wc_delta_payroll_liabilities": 11971.130000000005,
+    "net_cfo": -872239.4399983294,
+    "net_cfi_capex": 41295.7699999997,
+    "wc_delta_security_deposits": 0.0,
+    "net_cfi": 41295.7699999997,
+    "interest_paid": -237841.5,
+    "borrowings_net": 1131197.0499999998,
+    "equity_proceeds": 1111.2799999999697,
+    "net_cff": 894466.8299999997,
+    "net_change_cash": 63523.16000000003,
+    "opening_cash": 212218.12,
+    "closing_cash": 275741.28,
+    "reconciliation_check": 0.0,
+    "months": [
+      "Jan 2026",
+      "Feb 2026",
+      "Mar 2026",
+      "Apr 2026",
+      "May 2026",
+      "Jun 2026",
+      "Jul 2026",
+      "Aug 2026",
+      "Sep 2026",
+      "Oct 2026"
+    ],
+    "monthly": {
+      "net_operating_loss": [
+        0.0,
+        -198931.29468468612,
+        -183871.68742526247,
+        -205913.1900000004,
+        -317581.442942202,
+        -144561.72494784894,
+        -240791.42536,
+        -199506.0073683292,
+        -213292.84999999986,
+        -215524.58000000007
+      ],
+      "depreciation_addback": [
+        0.0,
+        33951.96,
+        33951.96,
+        33951.96,
+        33951.96,
+        33951.96,
+        33951.96,
+        33951.96,
+        33951.96,
+        33951.96
+      ],
+      "provision_doubtful_debts": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "interest_reclassified": [
+        0.0,
+        25104.89,
+        26271.56,
+        25882.66,
+        26271.56,
+        25882.66,
+        29604.56,
+        27800.0,
+        28473.61,
+        22550.0
+      ],
+      "wc_delta_ar": [
+        0.0,
+        32259.899999999907,
+        56185.88000000012,
+        -229287.76000000024,
+        295187.2300000002,
+        -16105.420000000158,
+        -185197.44999999995,
+        200907.6200000001,
+        62755.56999999983,
+        -608277.03
+      ],
+      "wc_delta_inventory": [
+        0.0,
+        -138399.95532000018,
+        98867.63743000012,
+        401762.8300000001,
+        139944.41293999972,
+        -288296.04504999984,
+        267229.25535999984,
+        -826740.4726299997,
+        -21692.55000000028,
+        146795.27000000002
+      ],
+      "wc_delta_prepaid": [
+        0.0,
+        2151.4400000000023,
+        2151.4399999999987,
+        2151.4400000000023,
+        2151.4399999999987,
+        2151.4399999999987,
+        -245.22999999999956,
+        -200.3299999999981,
+        1352.5499999999993,
+        1352.5499999999993
+      ],
+      "wc_delta_undeposited": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -5304.15
+      ],
+      "wc_delta_employee_advances": [
+        0.0,
+        200.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1050.0,
+        250.0,
+        250.0
+      ],
+      "wc_delta_ap": [
+        0.0,
+        304422.63000000006,
+        -278441.89,
+        308855.91000000003,
+        -256666.8500000001,
+        636190.6600000001,
+        -1244636.9300000002,
+        580237.3400000001,
+        491180.36,
+        389197.62
+      ],
+      "wc_delta_credit_cards": [
+        0.0,
+        -12649.439999999999,
+        5706.260000000001,
+        5568.15,
+        -977.2099999999991,
+        2398.9399999999987,
+        -8687.84,
+        7948.759999999998,
+        24351.96,
+        -13184.449999999997
+      ],
+      "wc_delta_accrued_expenses": [
+        0.0,
+        14216.0,
+        14216.0,
+        14216.0,
+        14216.0,
+        14216.0,
+        17549.0,
+        22550.0,
+        22550.00000000003,
+        22550.0
+      ],
+      "wc_delta_payroll_liabilities": [
+        0.0,
+        -2285.4900000000052,
+        17911.490000000005,
+        -11528.940000000002,
+        -12529.529999999999,
+        12523.0,
+        6965.759999999995,
+        -6646.179999999993,
+        -73465.53,
+        81026.55
+      ],
+      "net_cfo": [
+        0.0,
+        60040.63999531364,
+        -207051.34999526222,
+        345659.0599999995,
+        -76032.4300022021,
+        278351.4700021512,
+        -1324258.3400000003,
+        -160747.30999832874,
+        356415.0799999997,
+        -144616.26000000013
+      ],
+      "net_cfi_capex": [
+        0.0,
+        -30303.230000000018,
+        -24741.99000000026,
+        150112.1699999999,
+        4.2928149923682213e-10,
+        -9697.790000000074,
+        -24093.99000000026,
+        -41.39999999994325,
+        -795.0000000000364,
+        -19143.000000000036
+      ],
+      "wc_delta_security_deposits": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "net_cfi": [
+        0.0,
+        -30303.230000000018,
+        -24741.99000000026,
+        150112.1699999999,
+        4.2928149923682213e-10,
+        -9697.790000000074,
+        -24093.99000000026,
+        -41.39999999994325,
+        -795.0000000000364,
+        -19143.000000000036
+      ],
+      "interest_paid": [
+        0.0,
+        -25104.89,
+        -26271.56,
+        -25882.66,
+        -26271.56,
+        -25882.66,
+        -29604.56,
+        -27800.0,
+        -28473.61,
+        -22550.0
+      ],
+      "borrowings_net": [
+        0.0,
+        0.0,
+        62627.94999999985,
+        -78998.99999999967,
+        0.0,
+        0.0,
+        1000497.27,
+        149402.72999999998,
+        -1384.5400000000373,
+        -947.3600000003353
+      ],
+      "equity_proceeds": [
+        0.0,
+        1238.219999999972,
+        -126.94000000000233,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        20.0,
+        0.0,
+        -20.0
+      ],
+      "net_cff": [
+        0.0,
+        -23866.670000000027,
+        36229.44999999985,
+        -104881.65999999967,
+        -26271.56,
+        -25882.66,
+        970892.71,
+        121622.72999999998,
+        -29858.150000000038,
+        -23517.360000000335
+      ],
+      "net_change_cash": [
+        0.0,
+        5870.739995313597,
+        -195563.8899952626,
+        390889.5699999997,
+        -102303.99000220167,
+        242771.0200021511,
+        -377459.6200000006,
+        -39165.979998328694,
+        325761.92999999964,
+        -187276.6200000005
+      ],
+      "opening_cash": [
+        212218.12,
+        212218.12,
+        218088.86,
+        22524.97,
+        413414.54,
+        311110.55,
+        553881.57,
+        176421.95,
+        137255.97,
+        463017.9
+      ],
+      "closing_cash": [
+        212218.12,
+        218088.86,
+        22524.97,
+        413414.54,
+        311110.55,
+        553881.57,
+        176421.95,
+        137255.97,
+        463017.9,
+        275741.28
+      ],
+      "reconciliation_check": [
+        0.0,
+        4.686393367592245e-06,
+        -4.737376002594829e-06,
+        0.0,
+        2.201675670221448e-06,
+        -2.1511514205485582e-06,
+        6.402842700481415e-10,
+        -1.6713165678083897e-06,
+        0.0,
+        4.94765117764473e-10
+      ],
+      "wc_delta_other": [
+        0.0,
+        -518.9300000000039,
+        37833.75000000001,
+        8255.209999999997,
+        709.260000000002,
+        29137.94,
+        15826.919999999995,
+        22802.580000000005,
+        -26313.56999999997,
+        85337.95000000001
+      ]
+    },
+    "wc_delta_other": 173071.11000000004
+  },
+  "hr_payroll": {
+    "monthly_oct": {
+      "direct_labor": 92254.58,
+      "direct_labor_base": 85589.56,
+      "direct_labor_taxes": 6665.02,
+      "production_payroll": 34431.73,
+      "admin_payroll": 29190.42,
+      "payroll_processing_fees": 2882.24,
+      "total_labor_oct": 155876.72999999998
+    },
+    "ytd": {
+      "direct_labor": 833083.08,
+      "direct_labor_prior": 993992.84,
+      "production_payroll": 305254.29,
+      "production_payroll_prior": 313765.82,
+      "admin_payroll": 405112.18,
+      "admin_payroll_prior": 416708.38,
+      "payroll_processing_fees": 29654.13,
+      "payroll_processing_fees_prior": 30262.98,
+      "total_labor_ytd26": 1543449.5499999998,
+      "total_labor_ytd25": 1724467.04
+    }
+  },
+  "report_metadata": {
+    "reporting_period": "Oct 2026",
+    "monthly_source": {
+      "workbook": "FS DOAU Oct 26_adjust.xlsm",
+      "sheet": "007-DOAU data"
+    },
+    "ytd_source": {
+      "workbook": "FS DOAU Oct 26_adjust.xlsm",
+      "sheet": "PL YTD Aug 26"
+    },
+    "balance_sheet_source": {
+      "workbook": "FS DOAU Oct 26_adjust.xlsm",
+      "sheet": "BS"
+    },
+    "cash_flow_source": {
+      "workbook": "FS_DOAU_Oct_26_CF_Indirect_Fixed_v2.xlsm",
+      "sheet": "CF"
+    }
+  },
+  "data_quality": {
+    "monthly_revenue_total": 10079231.24,
+    "monthly_revenue_ytd_difference": 0.0,
+    "monthly_gross_profit_total": -531742.26273,
+    "ytd_gross_profit": -650742.26,
+    "monthly_ytd_gross_profit_difference": 118999.99727000005,
+    "balance_sheet_difference": 0.0,
+    "ar_aging_bs_net_difference": 0.0,
+    "ap_aging_bs_difference": 0.0,
+    "inventory_bs_difference": 159633.70727000013,
+    "prior_year_monthly_comparison_available": false,
+    "headcount_data_available": false
+  }
+}

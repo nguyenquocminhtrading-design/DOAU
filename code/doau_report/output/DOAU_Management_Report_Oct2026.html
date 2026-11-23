@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DOAU - Management Business Review (Oct 2026)</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 8.5pt;
+    line-height: 1.4;
+    color: #1e293b;
+    background: #f1f5f9;
+  }
+  
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto 10mm;
+    background: #ffffff;
+    padding: 12mm 14mm 10mm 14mm;
+    position: relative;
+    page-break-after: always;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media print {
+    body { background: transparent; }
+    .page { margin: 0; box-shadow: none; width: 210mm; height: 297mm; }
+    .export-controls { display: none !important; }
+    .chart-box { break-inside: avoid; page-break-inside: avoid; }
+  }
+  @media screen and (max-width: 900px) {
+    .page {
+      width: 100%;
+      height: auto;
+      min-height: 0;
+      margin: 0 auto 12px;
+      padding: 18px;
+      overflow: visible;
+    }
+    .two-col, .equal-two-col, .three-col {
+      display: block;
+      height: auto;
+    }
+    .inventory-two-col { display: block; }
+    .two-col > *, .equal-two-col > *, .three-col > * {
+      margin-bottom: 12px;
+    }
+    .product-chart-grid { grid-template-columns: 1fr; }
+    .cfa-footer { flex-wrap: wrap; gap: 4px 12px; }
+    table.cfa-table { font-size: 7pt; }
+  }
+  .export-controls {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    background: #0b2545;
+  }
+  .export-controls button {
+    border: 0;
+    border-radius: 3px;
+    padding: 8px 14px;
+    background: #c9a84c;
+    color: #0b2545;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  /* CFA Header Standard */
+  .cfa-header {
+    border-bottom: 2px solid #0b2545;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .cfa-header .brand-title {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13pt;
+    font-weight: 800;
+    color: #0b2545;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .cfa-header .brand-sub {
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: #8b0000;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+  .cfa-header .doc-meta {
+    text-align: right;
+    font-size: 7pt;
+    color: #64748b;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  /* CFA Footer Standard */
+  .cfa-footer {
+    border-top: 1px solid #cbd5e1;
+    padding-top: 4px;
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 6.8pt;
+    color: #64748b;
+  }
+  .cfa-footer .confidential {
+    font-weight: 700;
+    color: #8b0000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* Layout Columns */
+  .content-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .two-col {
+    display: grid;
+    grid-template-columns: minmax(0, 32%) minmax(0, 66%);
+    gap: 12px;
+    height: 100%;
+  }
+  .inventory-two-col {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
+  .cash-flow-two-col {
+    grid-template-columns: minmax(0, 0.48fr) minmax(0, 0.52fr);
+    height: auto;
+  }
+  .equal-two-col {
+    display: grid;
+    grid-template-columns: minmax(0, 48.5%) minmax(0, 48.5%);
+    gap: 14px;
+  }
+  .three-col {
+    display: grid;
+    grid-template-columns: minmax(0, 31.5%) minmax(0, 31.5%) minmax(0, 33%);
+    gap: 10px;
+  }
+  
+  /* Editorial Sidebars & Cards */
+  .sidebar {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-top: 3px solid #0b2545;
+    padding: 8px 10px;
+    border-radius: 2px;
+  }
+  .sidebar-crimson {
+    background: #fffafa;
+    border: 1px solid #fecaca;
+    border-top: 3px solid #8b0000;
+    padding: 8px 10px;
+    border-radius: 2px;
+  }
+  
+  /* Typography & Section Titles */
+  .section-tag {
+    font-size: 6.8pt;
+    font-weight: 800;
+    color: #8b0000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+  .section-title {
+    font-size: 11pt;
+    font-weight: 800;
+    color: #0b2545;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin: 0 0 6px 0;
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid #0b2545;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .sub-title {
+    font-size: 8.5pt;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 6px 0 3px 0;
+    border-left: 3px solid #0b2545;
+    padding-left: 5px;
+  }
+  .narrative-p {
+    font-size: 7.8pt;
+    color: #334155;
+    text-align: justify;
+    margin: 0 0 6px 0;
+    line-height: 1.42;
+  }
+  
+  /* Tables Standard */
+  table.cfa-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 7.2pt;
+    margin-bottom: 6px;
+  }
+  table.cfa-table th {
+    background: #0b2545;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 6.8pt;
+    padding: 4px 5px;
+    border: 1px solid #0b2545;
+  }
+  table.cfa-table td {
+    padding: 3.5px 5px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #1e293b;
+  }
+  table.cfa-table tr:nth-child(even) td {
+    background: #f8fafc;
+  }
+  table.cfa-table tr.total-row td {
+    background: #edf2f7;
+    font-weight: 700;
+    border-top: 1.5px solid #0b2545;
+    border-bottom: 2px solid #0b2545;
+    color: #0b2545;
+  }
+  table.cfa-table tr.sub-total td {
+    background: #f1f5f9;
+    font-weight: 700;
+    border-top: 1px solid #94a3b8;
+  }
+  td.num, th.num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+  td.center, th.center {
+    text-align: center;
+  }
+  
+  /* KPI Blocks */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+  .kpi-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 3px solid #0b2545;
+    padding: 5px 7px;
+  }
+  .kpi-card.alert {
+    border-left-color: #8b0000;
+    background: #fffafa;
+  }
+  .kpi-card .kpi-label {
+    font-size: 6.5pt;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+  }
+  .kpi-card .kpi-val {
+    font-size: 11pt;
+    font-weight: 800;
+    color: #0b2545;
+    line-height: 1.2;
+    margin: 2px 0;
+  }
+  .kpi-card.alert .kpi-val {
+    color: #8b0000;
+  }
+  .kpi-card .kpi-sub {
+    font-size: 6.5pt;
+    color: #64748b;
+  }
+
+  /* Colors and Statuses */
+  .pos { color: #166534; font-weight: 600; }
+  .neg { color: #991b1b; font-weight: 600; }
+  .badge-tag {
+    display: inline-block;
+    padding: 1px 4px;
+    font-size: 6.2pt;
+    font-weight: 700;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+  .badge-interco { background: #e0e7ff; color: #3730a3; }
+  .badge-3rd { background: #f1f5f9; color: #475569; }
+  .badge-adv { background: #fee2e2; color: #991b1b; }
+
+  /* Bars for SVG/Visuals */
+  .chart-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    min-width: 0;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+  }
+  .chart-title {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #0b2545;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .report-chart {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .product-chart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .commercial-two-col {
+    grid-template-columns: 44% 1fr;
+    gap: 10px;
+    height: auto;
+  }
+  .chart-note {
+    font-size: 7pt;
+    color: #64748b;
+    line-height: 1.3;
+    margin-top: 3px;
+  }
+</style>
+</head>
+<body>
+<div class="export-controls">
+  <button type="button" onclick="window.print()">Export Management Report to PDF</button>
+</div>
+
+<!-- PAGE 1: EXECUTIVE SUMMARY -->
+<div class="page">
+  <div>
+    <div class="cfa-header">
+      <div>
+        <div class="brand-title"><img src="../assets/doau_logo.png" alt="Dan-D Pak company logo" style="max-width:68px; max-height:44px; object-fit:contain;">Dan-D Foods, LLC (DOAU)</div>
+        <div class="brand-sub">Management Business Review | Executive Summary</div>
+      </div>
+      <div class="doc-meta">
+        <div>Reporting Period: <strong>Oct 2026</strong></div>
+        <div>Standard: <strong>A4 Portrait Financial Briefing</strong></div>
+        <div>Currency: <strong>USD ($)</strong></div>
+      </div>
+    </div>
+
+    <div class="content-body">
+      <div class="two-col">
+        <!-- Left Sidebar: Key Executive Metrics -->
+        <div class="sidebar">
+          <div class="section-tag">Corporate Profile</div>
+          <div style="font-size:8pt; font-weight:700; color:#0b2545; margin-bottom:6px;">Dan-D Foods (USA) Operations</div>
+          
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <div class="kpi-label">YTD 2026 Rev</div>
+              <div class="kpi-val">$10,079.2k</div>
+              <div class="kpi-sub">YoY: (31.6%)</div>
+            </div>
+            <div class="kpi-card alert">
+              <div class="kpi-label">YTD Gross Margin</div>
+              <div class="kpi-val">(6.5%)</div>
+              <div class="kpi-sub">GP: ($650.7k)</div>
+            </div>
+            <div class="kpi-card alert">
+              <div class="kpi-label">Oct 2026 Rev</div>
+              <div class="kpi-val">$1,358.9k</div>
+              <div class="kpi-sub">MoM: (4.6%) vs Sep 2026</div>
+            </div>
+            <div class="kpi-card alert">
+              <div class="kpi-label">Oct 2026 Gross Margin</div>
+              <div class="kpi-val">(6.5%)</div>
+              <div class="kpi-sub">GP: ($88.8k)</div>
+            </div>
+          </div>
+
+          <div class="section-tag" style="margin-top:8px;">Balance Sheet & Solvency</div>
+          <table class="cfa-table" style="margin-top:4px;">
+            <tr><td>Total Assets</td><td class="num font-bold">$9,453.9k</td></tr>
+            <tr><td>Cash & Equivalents</td><td class="num">$275.7k</td></tr>
+            <tr><td>AR (Net of Bad Debt)</td><td class="num">$2,414.4k</td></tr>
+            <tr><td>Inventory Asset</td><td class="num">$3,609.1k</td></tr>
+            <tr><td>Total Liabilities</td><td class="num">$8,617.6k</td></tr>
+            <tr><td>Total Equity</td><td class="num">$836.3k</td></tr>
+            <tr><td>Current Ratio</td><td class="num font-bold">2.25x</td></tr>
+            <tr><td>Debt / Equity</td><td class="num font-bold">10.30x</td></tr>
+          </table>
+
+          <div class="sidebar-crimson" style="margin-top:6px;">
+            <div class="section-tag" style="color:#8b0000;">Margin Snapshot</div>
+            <div style="font-size:7pt; color:#7f1d1d; line-height:1.35;">
+              Gross margin is (6.5%) YTD and (6.5%) for Oct 2026. Direct labor and factory overhead are reported cost components; this comparison does not establish a single cause for the margin result.
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Main Body: Executive Commentary & Agenda -->
+        <div>
+          <div class="section-title">
+            <span>Executive Business Review</span>
+            <span style="font-size:7pt; color:#64748b; font-weight:600;">Analysis: local workbook metrics and rules; management review required</span>
+          </div>
+
+          <p class="narrative-p">
+            <strong>1. Revenue Performance:</strong> YTD net revenue through Oct 2026 was <strong>$10,079,231</strong> versus $14,728,397 in the comparable prior-year period, a change of <strong>($4,649,166) ((31.6%))</strong>. Revenue for Oct 2026 was $1,358,930, with a month-over-month change of (4.6%).
+          </p>
+
+          <p class="narrative-p">
+            <strong>2. Margin:</strong> Oct 2026 gross profit was <strong>($88,785)</strong> ((6.5%) gross margin). YTD gross profit was ($650,742); the comparable prior-year amount was $993,927. These figures describe reported outcomes and do not assign causality.
+          </p>
+
+          <p class="narrative-p">
+            <strong>3. EBITDA Measures:</strong> Operational EBITDA from the monthly data is ($163,471) for Oct 2026 and ($1,445,829) YTD. The separate management adjustment schedule reports adjusted EBITDA of $177,895 for the month and $879,420 YTD. These are distinct measures; review the schedule's add-backs before relying on the adjusted figure.
+          </p>
+
+          <div class="chart-box" style="margin-top:6px;">
+            <div class="chart-title">Monthly Sales Trend — Jan 2026 to Oct 2026</div>
+            <svg class="report-chart" viewBox="0 0 760 270" role="img" aria-label="Monthly sales trend"><title>Monthly sales trend</title><text x="58" y="16" font-size="10" fill="#64748b">Sales (USD)</text><line x1="58" y1="145.5" x2="742" y2="145.5" stroke="#e2e8f0"/><text x="50" y="148.5" text-anchor="end" font-size="10" fill="#64748b">$0.4M</text><line x1="58" y1="107.0" x2="742" y2="107.0" stroke="#e2e8f0"/><text x="50" y="110.0" text-anchor="end" font-size="10" fill="#64748b">$0.8M</text><line x1="58" y1="68.5" x2="742" y2="68.5" stroke="#e2e8f0"/><text x="50" y="71.5" text-anchor="end" font-size="10" fill="#64748b">$1.2M</text><line x1="58" y1="30.0" x2="742" y2="30.0" stroke="#e2e8f0"/><text x="50" y="33.0" text-anchor="end" font-size="10" fill="#64748b">$1.6M</text><polyline points="58.0,88.6 134.0,118.0 210.0,119.6 286.0,92.6 362.0,117.0 438.0,91.9 514.0,66.2 590.0,92.2 666.0,50.1 742.0,56.2" fill="none" stroke="#0b2545" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="58.0" cy="88.6" r="5" fill="#c9a84c" stroke="#0b2545" stroke-width="1.5"/><text class="data-label" x="58.0" y="77.6" text-anchor="middle" font-size="10" font-weight="700" fill="#0b2545">$1.02M</text><text x="58.0" y="204" text-anchor="middle" font-size="10" fill="#334155">Jan</text><text x="58.0" y="220" text-anchor="middle" font-size="9" fill="#64748b">—</text><circle cx="134.0" cy="118.0" r="5" fill="#c9a84c" stroke="#0b2545" stroke-width="1.5"/><text class="data-label" x="134.0" y="107.0" text-anchor="middle" font-size="10" font-weight="700" fill="#0b2545">$0.70M</text><text x="134.0" y="204" text-anchor="middle" font-size="10" fill="#334155">Feb</text><text x="134.0" y="220" text-anchor="middle" font-size="9" fill="#64748b">-30.9%</text><circle cx="210.0" cy="119.6" r="5" fill="#c9a84c" stroke="#0b2545" stroke-width="1.5"/><text class="data-label" x="210.0" y="108.6" text-anchor="middle" font-size="10" font-weight="700" fill="#0b2545">$0.69M</text><text x="210.0" y="204" text-anchor="middle" font-size="10" fill="#334155">Mar</text><text x="210.0" y="220" text-anchor="middle" font-size="9" fill="#64748b">-2.4%</text><circle cx="286.0" cy="92.6" r="5" fill="#c9a84c" stroke="#0b2545" stroke-width="1.5"/><text class="data-label" x="286.0" y="81.6" text-anchor="middle" font-size="10" font-weight="700" fill="#0b2545">$0.97M</text><text x="286.0" y="204" text-anchor="middle" font-size="10" fill="#334155">Apr</text><text x="286.0" y="220" text-anchor="middle" font-size="9" fill="#64748b">+41.9%</text><circle cx="362.0" cy="117.0" r="5" fill="#c9a84c" stroke="#0b2545" stroke-width="1.5"/><text class="data-label" x="362.0" y="106.0" text-anchor="middle" font-size="10" font-weight="700" fill="#0b2545">$0.71M</text><text x="362.0" y="204" text-anchor="middle" font-size="10" fill="#334155">May</text><text x="362.0" y="220" text-anchor="middle" font-size="9" fill="#64748b">-26.7%</text><circle cx="438.0" cy="91.9" r="5" fill="#c9a84c" stroke="#0b2545" stroke-width="1.5"/><text class="data-label" x="438.0" y="80.9" text-anchor="middle" font-size="10" font-weight="700" fill="#0b2545">$0.98M</text><text x="438.0" y="204" text-anchor="middle" font-size="10" fill="#334155">Jun</text><text x="438.0" y="220" text-anchor="middle" font-size="9" fill="#64748b">+37.3%</text><circle cx="514.0" cy="66.2" r="5" fill="#c9a84c" stroke="#0b2545" stroke-width="1.5"/><text class="data-label" x="514.0" y="55.2" text-anchor="middle" font-size="10" font-weight="700" fill="#0b2545">$1.25M</text><text x="514.0" y="204" text-anchor="middle" font-size="10" fill="#334155">Jul</text><text x="514.0" y="220" text-anchor="middle" font-size="9" fill="#64748b">+27.9%</text><circle cx="590.0" cy="92.2" r="5" fill="#c9a84c" stroke="#0b2545" stroke-width="1.5"/><text class="data-label" x="590.0" y="81.2" text-anchor="middle" font-size="10" font-weight="700" fill="#0b2545">$0.98M</text><text x="590.0" y="204" text-anchor="middle" font-size="10" fill="#334155">Aug</text><text x="590.0" y="220" text-anchor="middle" font-size="9" fill="#64748b">-22.1%</text><circle cx="666.0" cy="50.1" r="5" fill="#c9a84c" stroke="#0b2545" stroke-width="1.5"/><text class="data-label" x="666.0" y="39.1" text-anchor="middle" font-size="10" font-weight="700" fill="#0b2545">$1.42M</text><text x="666.0" y="204" text-anchor="middle" font-size="10" fill="#334155">Sep</text><text x="666.0" y="220" text-anchor="middle" font-size="9" fill="#64748b">+45.9%</text><circle cx="742.0" cy="56.2" r="5" fill="#c9a84c" stroke="#0b2545" stroke-width="1.5"/><text class="data-label" x="742.0" y="45.2" text-anchor="middle" font-size="10" font-weight="700" fill="#0b2545">$1.36M</text><text x="742.0" y="204" text-anchor="middle" font-size="10" fill="#334155">Oct</text><text x="742.0" y="220" text-anchor="middle" font-size="9" fill="#64748b">-4.6%</text><text x="58" y="267" font-size="9" fill="#64748b">MoM change</text></svg>
+            <div class="chart-note">USD; MoM changes are calculated from monthly net revenue. Source: 007-DOAU data sheet.</div>
+          </div>
+
+          <div class="sub-title">Review Agenda & Meeting Sequence</div>
+          <table class="cfa-table">
+            <thead>
+              <tr>
+                <th style="width:25%;">Section</th>
+                <th style="width:50%;">Analytical Scope & Key Inclusions</th>
+                <th style="width:25%;" class="num">Page Ref</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>1. Executive Summary</strong></td><td>Comprehensive snapshot, key ratios, performance scorecard</td><td class="num">Page 1</td></tr>
+              <tr><td><strong>2. Sales Report</strong></td><td>YTD sales variance and management review questions</td><td class="num">Page 2</td></tr>
+              <tr><td><strong>3. Performance Variance</strong></td><td>Prior-period comparison and YTD financial review</td><td class="num">Page 3</td></tr>
+              <tr><td><strong>4. Commercial Analysis</strong></td><td>Customer and product sales, gross profit and margin</td><td class="num">Page 4</td></tr>
+              <tr><td><strong>5. Operations & P&L</strong></td><td>Inventory reconciliation, monthly P&L and EBITDA schedule</td><td class="num">Page 5</td></tr>
+              <tr><td><strong>6. Balance Sheet & WC</strong></td><td>Balance sheet and AR/AP aging schedules</td><td class="num">Page 6</td></tr>
+              <tr><td><strong>7. Capex & Cash Flows</strong></td><td>Fixed-asset balances and parsed cash-flow statement</td><td class="num">Page 7</td></tr>
+              <tr><td><strong>8. HR Cost Analysis</strong></td><td>Payroll amounts and mix; no headcount data in source</td><td class="num">Page 8</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cfa-footer">
+    <div>Dan-D Foods, LLC | Management Business Review</div>
+    <div class="confidential">CONFIDENTIAL — FOR MANAGEMENT USE ONLY</div>
+    <div>Page 1 of 8</div>
+  </div>
+</div>
+
+<!-- PAGE 2: SALES REPORT -->
+<div class="page">
+  <div>
+    <div class="cfa-header">
+      <div>
+        <div class="brand-title">Dan-D Foods, LLC (DOAU)</div>
+        <div class="brand-sub">Sales Report | YTD Sales Performance & Action Plans</div>
+      </div>
+      <div class="doc-meta">
+        <div>Reporting Period: <strong>Oct 2026</strong></div>
+        <div>Agenda Item: <strong>Sale Report (1/2)</strong></div>
+      </div>
+    </div>
+
+    <div class="content-body">
+      <div class="two-col">
+        <!-- Left: Sales Scorecard -->
+        <div class="sidebar">
+          <div class="section-tag">Sales Highlights</div>
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <div class="kpi-label">YTD 26 Sales</div>
+              <div class="kpi-val">$9,868.4k</div>
+              <div class="kpi-sub">vs $14,403.2k YTD prior year</div>
+            </div>
+            <div class="kpi-card alert">
+              <div class="kpi-label">Sales Variance</div>
+              <div class="kpi-val">($4,534.8k)</div>
+              <div class="kpi-sub">(31.5%) vs prior year</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Custom Proc.</div>
+              <div class="kpi-val">$84,422</div>
+              <div class="kpi-sub">Prior: $144,049</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Discounts Given</div>
+              <div class="kpi-val">($27,011)</div>
+              <div class="kpi-sub">Prior: ($33,801)</div>
+            </div>
+          </div>
+
+          <div class="sub-title">10-Month Sales Trajectory</div>
+          <table class="cfa-table">
+            <thead>
+              <tr><th>Month</th><th class="num">Revenue</th><th class="num">MoM</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jan 2026</td>
+                <td class="num">$1,015.2k</td>
+                <td class="num pos">
+                  -
+                </td>
+              </tr><tr>
+                <td>Feb 2026</td>
+                <td class="num">$701.6k</td>
+                <td class="num neg">
+                  (30.9%)
+                </td>
+              </tr><tr>
+                <td>Mar 2026</td>
+                <td class="num">$685.0k</td>
+                <td class="num neg">
+                  (2.4%)
+                </td>
+              </tr><tr>
+                <td>Apr 2026</td>
+                <td class="num">$972.3k</td>
+                <td class="num pos">
+                  41.9%
+                </td>
+              </tr><tr>
+                <td>May 2026</td>
+                <td class="num">$713.1k</td>
+                <td class="num neg">
+                  (26.7%)
+                </td>
+              </tr><tr>
+                <td>Jun 2026</td>
+                <td class="num">$979.4k</td>
+                <td class="num pos">
+                  37.3%
+                </td>
+              </tr><tr>
+                <td>Jul 2026</td>
+                <td class="num">$1,252.8k</td>
+                <td class="num pos">
+                  27.9%
+                </td>
+              </tr><tr>
+                <td>Aug 2026</td>
+                <td class="num">$976.6k</td>
+                <td class="num neg">
+                  (22.1%)
+                </td>
+              </tr><tr>
+                <td>Sep 2026</td>
+                <td class="num">$1,424.4k</td>
+                <td class="num pos">
+                  45.9%
+                </td>
+              </tr><tr>
+                <td>Oct 2026</td>
+                <td class="num">$1,358.9k</td>
+                <td class="num neg">
+                  (4.6%)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="sidebar-crimson" style="margin-top:6px;">
+            <div class="section-tag" style="color:#8b0000;">Customer Concentration Risk</div>
+            <div style="font-size:7pt; color:#7f1d1d; line-height:1.35;">
+              The top three customers represent <strong>41.1% of positive customer sales</strong>. This is a concentration measure, not a forecast of future sales.
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Analytical Narrative & Action Plans -->
+        <div>
+          <div class="section-title">
+            <span>YTD Sales Performance Analysis</span>
+            <span style="font-size:7pt; color:#64748b;">YTD through Oct 2026 vs prior year</span>
+          </div>
+
+          <p class="narrative-p">
+            <strong>YTD Revenue Comparison:</strong> Net revenue was $10,079,231 versus $14,728,397 in the comparable prior-year period, a change of <strong>($4,649,166) ((31.6%))</strong>. Product sales changed by ($4,534,808); custom processing changed by ($59,627). The workbook reports totals but does not attribute the change to price, volume or mix.
+          </p>
+
+          <p class="narrative-p">
+            <strong>Monthly Trend:</strong> Oct 2026 net revenue was $1,358,930 ((4.6%) versus Sep 2026). Discount amounts are shown in the P&amp;L comparison; no pricing or freight cause is inferred from those figures alone.
+          </p>
+
+          <div class="section-title" style="margin-top:10px;">
+            <span>Management Review Questions</span>
+            <span style="font-size:7pt; color:#8b0000;">Based on reported workbook metrics</span>
+          </div>
+
+          <table class="cfa-table">
+            <thead>
+              <tr>
+                <th style="width:24%;">Review Area</th>
+                <th style="width:58%;">Data Observation & Follow-up Question</th>
+                <th style="width:18%;">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>YTD Revenue</strong></td>
+                <td>Revenue changed ($4,649,166) ((31.6%)) year over year. Confirm price, volume and mix drivers with commercial owners.</td>
+                <td>Review</td>
+              </tr>
+              <tr>
+                <td><strong>Customer Mix</strong></td>
+                <td>The top three customers account for 41.1% of positive customer sales. Review account concentration and contingency planning.</td>
+                <td>Review</td>
+              </tr>
+              <tr>
+                <td><strong>Product Margin</strong></td>
+                <td>Validate product costing and pricing for low-margin items before deciding corrective actions. Product-level results are from the GP sheet.</td>
+                <td>Validate</td>
+              </tr>
+              <tr>
+                <td><strong>Inventory</strong></td>
+                <td>INV SKU detail and the Balance Sheet inventory total do not match; review the reported reconciliation difference on page 5.</td>
+                <td>Reconcile</td>
+              </tr>
+              <tr>
+                <td><strong>Cash Conversion</strong></td>
+                <td>YTD operating cash flow is ($872,239); review the cash-flow components and working-capital movements on page 7.</td>
+                <td>Review</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="chart-box" style="margin-top:8px;">
+            <div class="chart-title">Customer Sales Share — Top 5 + Other</div>
+            <svg class="report-chart" viewBox="0 0 480 280" role="img" aria-label="Oct 2026 customer sales share"><title>Oct 2026 customer sales share</title><path d="M 122 140 L 122.00 32.00 A 108 108 0 0 1 212.32 80.79 Z" fill="#0b2545" stroke="#ffffff" stroke-width="2"/><text class="data-label" x="153.8" y="81.1" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="800" fill="#ffffff" stroke="#0b2545" stroke-width="0.8" paint-order="stroke">15.8%</text><path d="M 122 140 L 212.32 80.79 A 108 108 0 0 1 225.29 171.55 Z" fill="#c9a84c" stroke="#ffffff" stroke-width="2"/><text class="data-label" x="188.3" y="130.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="800" fill="#ffffff" stroke="#0b2545" stroke-width="0.8" paint-order="stroke">14.0%</text><path d="M 122 140 L 225.29 171.55 A 108 108 0 0 1 179.18 231.62 Z" fill="#8b0000" stroke="#ffffff" stroke-width="2"/><text class="data-label" x="175.1" y="180.8" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="800" fill="#ffffff" stroke="#0b2545" stroke-width="0.8" paint-order="stroke">11.4%</text><path d="M 122 140 L 179.18 231.62 A 108 108 0 0 1 112.01 247.54 Z" fill="#3b82a0" stroke="#ffffff" stroke-width="2"/><text class="data-label" x="137.4" y="205.2" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="800" fill="#ffffff" stroke="#0b2545" stroke-width="0.8" paint-order="stroke">10.4%</text><path d="M 122 140 L 112.01 247.54 A 108 108 0 0 1 53.66 223.63 Z" fill="#6b7280" stroke="#ffffff" stroke-width="2"/><text class="data-label" x="96.6" y="202.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="800" fill="#ffffff" stroke="#0b2545" stroke-width="0.8" paint-order="stroke">9.4%</text><path d="M 122 140 L 53.66 223.63 A 108 108 0 0 1 122.00 32.00 Z" fill="#94a3b8" stroke="#ffffff" stroke-width="2"/><text class="data-label" x="58.9" y="117.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="800" fill="#ffffff" stroke="#0b2545" stroke-width="0.8" paint-order="stroke">39.1%</text><rect x="250" y="17" width="10" height="10" rx="1" fill="#0b2545"/><text x="268" y="26" font-size="9" font-weight="700" fill="#1e293b">Falcon Trading Co., In...</text><text x="268" y="40" font-size="8" fill="#64748b">$215k · <tspan font-weight="800" fill="#0b2545">15.8%</tspan></text><rect x="250" y="55" width="10" height="10" rx="1" fill="#c9a84c"/><text x="268" y="64" font-size="9" font-weight="700" fill="#1e293b">DOF - Vietnam</text><text x="268" y="78" font-size="8" fill="#64748b">$191k · <tspan font-weight="800" fill="#0b2545">14.0%</tspan></text><rect x="250" y="93" width="10" height="10" rx="1" fill="#8b0000"/><text x="268" y="102" font-size="9" font-weight="700" fill="#1e293b">Wal-Mart Stores, Inc.</text><text x="268" y="116" font-size="8" fill="#64748b">$156k · <tspan font-weight="800" fill="#0b2545">11.4%</tspan></text><rect x="250" y="131" width="10" height="10" rx="1" fill="#3b82a0"/><text x="268" y="140" font-size="9" font-weight="700" fill="#1e293b">Dollarama</text><text x="268" y="154" font-size="8" fill="#64748b">$141k · <tspan font-weight="800" fill="#0b2545">10.4%</tspan></text><rect x="250" y="169" width="10" height="10" rx="1" fill="#6b7280"/><text x="268" y="178" font-size="9" font-weight="700" fill="#1e293b">Tropicon Foods, Inc.</text><text x="268" y="192" font-size="8" fill="#64748b">$129k · <tspan font-weight="800" fill="#0b2545">9.4%</tspan></text><rect x="250" y="207" width="10" height="10" rx="1" fill="#94a3b8"/><text x="268" y="216" font-size="9" font-weight="700" fill="#1e293b">Other customers</text><text x="268" y="230" font-size="8" fill="#64748b">$534k · <tspan font-weight="800" fill="#0b2545">39.1%</tspan></text><text x="122" y="145" text-anchor="middle" font-size="10" font-weight="700" fill="#0b2545">$1.4M</text></svg>
+            <div class="chart-note">Top five are 60.9% of positive customer sales. Negative customer balances are excluded from the share calculation; source: Sales by cust sheet.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cfa-footer">
+    <div>Dan-D Foods, LLC | Management Business Review</div>
+    <div class="confidential">CONFIDENTIAL — FOR MANAGEMENT USE ONLY</div>
+    <div>Page 2 of 8</div>
+  </div>
+</div>
+
+<!-- PAGE 3: FINANCIAL REPORT (Sep vs Oct & YTD) -->
+<div class="page">
+  <div>
+    <div class="cfa-header">
+      <div>
+        <div class="brand-title">Dan-D Foods, LLC (DOAU)</div>
+        <div class="brand-sub">Financial Report | Sep 2026 Performance & YTD Statement Analysis</div>
+      </div>
+      <div class="doc-meta">
+        <div>Reporting Period: <strong>Oct 2026</strong></div>
+        <div>Agenda Item: <strong>Financial Report (1/5)</strong></div>
+      </div>
+    </div>
+
+    <div class="content-body">
+      <div class="two-col">
+        <!-- Left: MoM Summary Column -->
+        <div class="sidebar">
+          <div class="section-tag">Month-over-Month Variance</div>
+          <div style="font-size:8pt; font-weight:700; color:#0b2545; margin-bottom:6px;">Sep 2026 vs Oct 2026</div>
+
+          <table class="cfa-table">
+            <thead>
+              <tr><th>Metric</th><th class="num">Sep 2026</th><th class="num">Oct 2026</th><th class="num">MoM $</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Revenue</strong></td>
+                <td class="num">$1,424.4k</td>
+                <td class="num">$1,358.9k</td>
+                <td class="num neg">($65.4k)</td>
+              </tr>
+              <tr>
+                <td><strong>COGS</strong></td>
+                <td class="num">$1,477.8k</td>
+                <td class="num">$1,447.7k</td>
+                <td class="num pos">($30.1k)</td>
+              </tr>
+              <tr>
+                <td><strong>Gross Profit</strong></td>
+                <td class="num neg">($53.5k)</td>
+                <td class="num neg">($88.8k)</td>
+                <td class="num neg">($35.3k)</td>
+              </tr>
+              <tr>
+                <td>Gross Margin %</td>
+                <td class="num neg">(3.8%)</td>
+                <td class="num neg">(6.5%)</td>
+                <td class="num">(2.8%)</td>
+              </tr>
+              <tr>
+                <td>Admin Exp</td>
+                <td class="num">$107.5k</td>
+                <td class="num">$89.6k</td>
+                <td class="num pos">($18.0k)</td>
+              </tr>
+              <tr>
+                <td>Sales Exp</td>
+                <td class="num">$25.0k</td>
+                <td class="num">$19.1k</td>
+                <td class="num pos">($5.9k)</td>
+              </tr>
+              <tr class="sub-total">
+                <td><strong>Total Opex</strong></td>
+                <td class="num">$132.5k</td>
+                <td class="num">$108.7k</td>
+                <td class="num pos">($23.8k)</td>
+              </tr>
+              <tr class="total-row">
+                <td><strong>Operating Loss</strong></td>
+                <td class="num neg">($209.1k)</td>
+                <td class="num neg">($220.0k)</td>
+                <td class="num neg">($10.9k)</td>
+              </tr>
+              <tr>
+                <td><strong>EBITDA (Op)</strong></td>
+                <td class="num neg">($146.7k)</td>
+                <td class="num neg">($163.5k)</td>
+                <td class="num neg">($16.8k)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="sidebar-crimson" style="margin-top:6px;">
+            <div class="section-tag" style="color:#8b0000;">Month-over-Month Observation</div>
+            <div style="font-size:7pt; color:#7f1d1d; line-height:1.35;">
+              Revenue changed ($65,428) ((4.6%)) from Sep 2026 to Oct 2026. Gross profit changed ($35,298). These comparisons do not identify the operational drivers.
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: YTD Comprehensive Financial Statement -->
+        <div>
+          <div class="section-title">
+            <span>YTD Performance through Oct 2026 vs prior year</span>
+            <span style="font-size:7pt; color:#64748b;">Source: PL YTD Aug 26 Sheet</span>
+          </div>
+
+          <table class="cfa-table">
+            <thead>
+              <tr>
+                <th style="width:36%;">Financial Line Item ($)</th>
+                <th style="width:16%;" class="num">YTD 2026</th>
+                <th style="width:16%;" class="num">YTD 2025</th>
+                <th style="width:16%;" class="num">Variance ($)</th>
+                <th style="width:16%;" class="num">% Change</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Product Sales</td>
+                <td class="num">$9,868,353</td>
+                <td class="num">$14,403,161</td>
+                <td class="num neg">($4,534,808)</td>
+                <td class="num">(31.5%)</td>
+              </tr>
+              <tr>
+                <td>Custom Processing Fees</td>
+                <td class="num">$84,422</td>
+                <td class="num">$144,049</td>
+                <td class="num neg">($59,627)</td>
+                <td class="num">(41.4%)</td>
+              </tr>
+              <tr>
+                <td>Discounts Allowed</td>
+                <td class="num">($27,011)</td>
+                <td class="num">($33,801)</td>
+                <td class="num pos">$6,790</td>
+                <td class="num">20.1%</td>
+              </tr>
+              <tr class="sub-total">
+                <td><strong>TOTAL REVENUE</strong></td>
+                <td class="num font-bold">$10,079,231</td>
+                <td class="num font-bold">$14,728,397</td>
+                <td class="num font-bold neg">($4,649,166)</td>
+                <td class="num font-bold neg">(31.6%)</td>
+              </tr>
+              <tr>
+                <td>Direct Labor</td>
+                <td class="num">$833,083</td>
+                <td class="num">$993,993</td>
+                <td class="num pos">($160,910)</td>
+                <td class="num">(16.2%)</td>
+              </tr>
+              <tr>
+                <td>Factory Overhead</td>
+                <td class="num">$1,652,901</td>
+                <td class="num">$1,524,516</td>
+                <td class="num pos">$128,385</td>
+                <td class="num">8.4%</td>
+              </tr>
+              <tr class="sub-total">
+                <td><strong>COST OF GOODS SOLD</strong></td>
+                <td class="num font-bold">$10,729,974</td>
+                <td class="num font-bold">$13,734,470</td>
+                <td class="num font-bold pos">($3,004,497)</td>
+                <td class="num font-bold">(21.9%)</td>
+              </tr>
+              <tr class="total-row">
+                <td><strong>GROSS PROFIT / (LOSS)</strong></td>
+                <td class="num font-bold neg">($650,742)</td>
+                <td class="num font-bold pos">$993,927</td>
+                <td class="num font-bold neg">($1,644,669)</td>
+                <td class="num font-bold">(165.5%)</td>
+              </tr>
+              <tr>
+                <td>Gross Margin %</td>
+                <td class="num font-bold neg">(6.5%)</td>
+                <td class="num font-bold pos">6.7%</td>
+                <td class="num font-bold">(13.2%) pts</td>
+                <td class="num font-bold neg">-</td>
+              </tr>
+              <tr>
+                <td>Administration Expenses</td>
+                <td class="num">$1,016,518</td>
+                <td class="num">$766,303</td>
+                <td class="num pos">$250,215</td>
+                <td class="num">32.7%</td>
+              </tr>
+              <tr>
+                <td>Sales & Distribution Expenses</td>
+                <td class="num">$242,780</td>
+                <td class="num">$394,139</td>
+                <td class="num pos">($151,359)</td>
+                <td class="num">(38.4%)</td>
+              </tr>
+              <tr class="sub-total">
+                <td><strong>TOTAL OPERATING EXPENSES</strong></td>
+                <td class="num font-bold">$1,259,298</td>
+                <td class="num font-bold">$1,160,443</td>
+                <td class="num font-bold pos">$98,856</td>
+                <td class="num font-bold">8.5%</td>
+              </tr>
+              <tr class="total-row">
+                <td><strong>NET ORDINARY INCOME / (LOSS)</strong></td>
+                <td class="num font-bold neg">($1,910,041)</td>
+                <td class="num font-bold neg">($166,515)</td>
+                <td class="num font-bold neg">($1,743,525)</td>
+                <td class="num font-bold neg">-</td>
+              </tr>
+              <tr>
+                <td>Interest Expense</td>
+                <td class="num">$0</td>
+                <td class="num">$317</td>
+                <td class="num pos">($317)</td>
+                <td class="num">(100.0%)</td>
+              </tr>
+              <tr class="total-row" style="background:#0b2545; color:white;">
+                <td style="color:white;"><strong>NET INCOME / (LOSS)</strong></td>
+                <td class="num font-bold" style="color:white;">($2,168,462)</td>
+                <td class="num font-bold" style="color:white;">($438,324)</td>
+                <td class="num font-bold" style="color:#fca5a5;">($1,730,138)</td>
+                <td class="num font-bold" style="color:#fca5a5;">-</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="narrative-p" style="margin-top:6px;">
+            <strong>Analytical Commentary:</strong> YTD net income changed ($1,730,138) versus the prior year. Gross profit changed ($1,644,669), while total operating expenses changed $98,856. Monthly gross profit summed from 007-DOAU data is ($531,742); the YTD P&amp;L reports ($650,742), a difference of $119,000 that requires reconciliation. The commentary does not infer a single cause or prescribe a target.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cfa-footer">
+    <div>Dan-D Foods, LLC | Management Business Review</div>
+    <div class="confidential">CONFIDENTIAL — FOR MANAGEMENT USE ONLY</div>
+    <div>Page 3 of 8</div>
+  </div>
+</div>
+
+<!-- PAGE 4: COMMERCIAL ANALYSIS -->
+<div class="page">
+  <div>
+    <div class="cfa-header">
+      <div>
+        <div class="brand-title">Dan-D Foods, LLC (DOAU)</div>
+        <div class="brand-sub">Commercial Analysis | Margins, Top Customers & Product Performance</div>
+      </div>
+      <div class="doc-meta">
+        <div>Reporting Period: <strong>Oct 2026</strong></div>
+        <div>Agenda Item: <strong>Financial Report (2/5)</strong></div>
+      </div>
+    </div>
+
+    <div class="content-body">
+      <div class="two-col commercial-two-col">
+        <!-- Left: Top Customers Ranking -->
+        <div>
+          <div class="section-title">
+            <span>Top Customer Analysis</span>
+            <span style="font-size:7pt; color:#64748b;">Oct 2026</span>
+          </div>
+
+          <table class="cfa-table">
+            <thead>
+              <tr>
+                <th style="width:38%;">Customer Name</th>
+                <th style="width:22%;" class="num">Sales ($)</th>
+                <th style="width:22%;" class="num">GP ($)</th>
+                <th style="width:18%;" class="num">GM %</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Falcon Trading Co., Inc.</td>
+                <td class="num">$215,311</td>
+                <td class="num pos">$6,607</td>
+                <td class="num pos">3.1%</td>
+              </tr><tr>
+                <td>DOF - Vietnam</td>
+                <td class="num">$190,588</td>
+                <td class="num pos">$184,214</td>
+                <td class="num pos">96.7%</td>
+              </tr><tr>
+                <td>Wal-Mart Stores, Inc.</td>
+                <td class="num">$155,710</td>
+                <td class="num neg">($273,751)</td>
+                <td class="num neg">(175.8%)</td>
+              </tr><tr>
+                <td>Dollarama</td>
+                <td class="num">$141,422</td>
+                <td class="num pos">$103,732</td>
+                <td class="num pos">73.3%</td>
+              </tr><tr>
+                <td>Tropicon Foods, Inc.</td>
+                <td class="num">$128,806</td>
+                <td class="num pos">$48,524</td>
+                <td class="num pos">37.7%</td>
+              </tr><tr>
+                <td>Dan D Pak Co., Ltd (Taiw</td>
+                <td class="num">$76,800</td>
+                <td class="num pos">$68,256</td>
+                <td class="num pos">88.9%</td>
+              </tr><tr>
+                <td>Vacaville Fruit</td>
+                <td class="num">$69,248</td>
+                <td class="num pos">$48,852</td>
+                <td class="num pos">70.5%</td>
+              </tr><tr>
+                <td>Pockets Chocolates</td>
+                <td class="num">$65,422</td>
+                <td class="num pos">$52,280</td>
+                <td class="num pos">79.9%</td>
+              </tr><tr>
+                <td>Newport Ingredients</td>
+                <td class="num">$64,096</td>
+                <td class="num neg">($177)</td>
+                <td class="num neg">(0.3%)</td>
+              </tr><tr>
+                <td>Burke&#x27;s Naturals</td>
+                <td class="num">$33,268</td>
+                <td class="num pos">$21,182</td>
+                <td class="num pos">63.7%</td>
+              </tr>
+              <tr class="total-row">
+                <td><strong>Top 10 Total</strong></td>
+                <td class="num"><strong>$1,140,671</strong></td>
+                <td class="num pos"><strong>$259,720</strong></td>
+                <td class="num"><strong>22.8%</strong></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="sidebar-crimson" style="margin-top:6px;">
+            <div class="section-tag" style="color:#8b0000;">Customer Sales Observation</div>
+            <div style="font-size:7pt; color:#7f1d1d; line-height:1.35;">
+              Highest reported customer sales were $215,311 for Falcon Trading Co., Inc. &amp; SunRidge Farms. Customer gross profit and margin are reported values; confirm cost allocation before acting on individual account results.
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Margin Analysis & Top Items -->
+        <div>
+          <div class="section-title">
+            <span>Top Product Items Analysis</span>
+            <span style="font-size:7pt; color:#64748b;">Oct 2026 (Sheet: GP)</span>
+          </div>
+
+          <div class="chart-box">
+            <div class="chart-title">Product Sales — Top 10 by USD</div>
+            <svg class="report-chart" viewBox="0 0 460 344" role="img" aria-label="Sales by product"><title>Sales by product</title><text x="2" y="32" font-size="9" fill="#334155">Tart Cherry Bulk Dr...</text><rect x="142.0" y="20" width="238.0" height="17" rx="1" fill="#0b2545"/><text class="data-label data-label--inside" x="373.0" y="32" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$125k</text><text x="2" y="64" font-size="9" fill="#334155">Almond, Natural Raw...</text><rect x="142.0" y="52" width="217.8" height="17" rx="1" fill="#0b2545"/><text class="data-label data-label--inside" x="352.8" y="64" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$115k</text><text x="2" y="96" font-size="9" fill="#334155">Raisin, California ...</text><rect x="142.0" y="84" width="145.8" height="17" rx="1" fill="#0b2545"/><text class="data-label data-label--inside" x="280.8" y="96" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$77k</text><text x="2" y="128" font-size="9" fill="#334155">Almond, Hickory Smo...</text><rect x="142.0" y="116" width="139.5" height="17" rx="1" fill="#0b2545"/><text class="data-label data-label--inside" x="274.5" y="128" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$74k</text><text x="2" y="160" font-size="9" fill="#334155">Almond, Dry Roasted...</text><rect x="142.0" y="148" width="133.6" height="17" rx="1" fill="#0b2545"/><text class="data-label data-label--inside" x="268.6" y="160" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$70k</text><text x="2" y="192" font-size="9" fill="#334155">Almond, Raw Natural...</text><rect x="142.0" y="180" width="128.9" height="17" rx="1" fill="#0b2545"/><text class="data-label data-label--inside" x="263.9" y="192" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$68k</text><text x="2" y="224" font-size="9" fill="#334155">Cashew, W320 R/S 25lbs</text><rect x="142.0" y="212" width="127.3" height="17" rx="1" fill="#0b2545"/><text class="data-label data-label--inside" x="262.3" y="224" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$67k</text><text x="2" y="256" font-size="9" fill="#334155">Almond, Dry roasted...</text><rect x="142.0" y="244" width="123.7" height="17" rx="1" fill="#0b2545"/><text class="data-label data-label--inside" x="258.7" y="256" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$65k</text><text x="2" y="288" font-size="9" fill="#334155">Pecan, Butter Toffe...</text><rect x="142.0" y="276" width="114.6" height="17" rx="1" fill="#0b2545"/><text class="data-label data-label--inside" x="249.6" y="288" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$60k</text><text x="2" y="320" font-size="9" fill="#334155">Peanuts, Butter Sto...</text><rect x="142.0" y="308" width="110.2" height="17" rx="1" fill="#0b2545"/><text class="data-label data-label--inside" x="245.2" y="320" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$58k</text></svg>
+            <div class="chart-note">Source: GP sheet, Oct 2026; the top 10 are ranked by reported sales.</div>
+          </div>
+          <div class="chart-box">
+            <div class="chart-title">Gross Profit — Same Top 10 Products</div>
+            <svg class="report-chart" viewBox="0 0 460 344" role="img" aria-label="Gross profit by product"><title>Gross profit by product</title><line x1="261.0" y1="8" x2="261.0" y2="342" stroke="#64748b" stroke-width="1"/><text x="2" y="32" font-size="9" fill="#334155">Tart Cherry Bulk Dr...</text><rect x="261.0" y="20" width="7.6" height="17" rx="1" fill="#166534"/><text class="data-label data-label--outside" x="274.6" y="32" text-anchor="start" font-size="9" font-weight="700" fill="#1e293b">$1k</text><text x="2" y="64" font-size="9" fill="#334155">Almond, Natural Raw...</text><rect x="261.0" y="52" width="119.0" height="17" rx="1" fill="#166534"/><text class="data-label data-label--inside" x="373.0" y="64" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$19k</text><text x="2" y="96" font-size="9" fill="#334155">Raisin, California ...</text><rect x="261.0" y="84" width="54.3" height="17" rx="1" fill="#166534"/><text class="data-label data-label--inside" x="308.3" y="96" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$9k</text><text x="2" y="128" font-size="9" fill="#334155">Almond, Hickory Smo...</text><rect x="261.0" y="116" width="80.7" height="17" rx="1" fill="#166534"/><text class="data-label data-label--inside" x="334.7" y="128" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$13k</text><text x="2" y="160" font-size="9" fill="#334155">Almond, Dry Roasted...</text><rect x="261.0" y="148" width="62.0" height="17" rx="1" fill="#166534"/><text class="data-label data-label--inside" x="316.0" y="160" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$10k</text><text x="2" y="192" font-size="9" fill="#334155">Almond, Raw Natural...</text><rect x="261.0" y="180" width="79.3" height="17" rx="1" fill="#166534"/><text class="data-label data-label--inside" x="333.3" y="192" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$12k</text><text x="2" y="224" font-size="9" fill="#334155">Cashew, W320 R/S 25lbs</text><rect x="261.0" y="212" width="70.3" height="17" rx="1" fill="#166534"/><text class="data-label data-label--inside" x="324.3" y="224" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$11k</text><text x="2" y="256" font-size="9" fill="#334155">Almond, Dry roasted...</text><rect x="261.0" y="244" width="83.4" height="17" rx="1" fill="#166534"/><text class="data-label data-label--inside" x="337.4" y="256" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$13k</text><text x="2" y="288" font-size="9" fill="#334155">Pecan, Butter Toffe...</text><rect x="261.0" y="276" width="26.2" height="17" rx="1" fill="#166534"/><text class="data-label data-label--outside" x="293.2" y="288" text-anchor="start" font-size="9" font-weight="700" fill="#1e293b">$4k</text><text x="2" y="320" font-size="9" fill="#334155">Peanuts, Butter Sto...</text><rect x="261.0" y="308" width="112.4" height="17" rx="1" fill="#166534"/><text class="data-label data-label--inside" x="366.4" y="320" text-anchor="end" font-size="9" font-weight="700" fill="#ffffff">$18k</text></svg>
+            <div class="chart-note">Source: GP sheet, Oct 2026; gross profit uses the same product set as the sales chart.</div>
+          </div>
+
+          <div class="section-title" style="margin-top:8px;">
+            <span>Margin & Pricing Diagnostics</span>
+            <span style="font-size:7pt; color:#64748b;">Operational Variance Factors</span>
+          </div>
+
+          <p class="narrative-p">
+            <strong>Highest Gross Profit:</strong> Peanuts, Butter Stock DR Honey Roasted Splits 30 lbs recorded $20,868 gross profit (36.0% margin). Source: GP sheet; reported gross profit is not a pricing recommendation.
+          </p>
+
+          <p class="narrative-p">
+            <strong>Lowest Recorded Margin:</strong> Almond, Salt &amp; Pepper 25 lbs recorded (7.2%) gross margin on $975 sales. Confirm item-level cost and allocation assumptions before interpreting this result.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cfa-footer">
+    <div>Dan-D Foods, LLC | Management Business Review</div>
+    <div class="confidential">CONFIDENTIAL — FOR MANAGEMENT USE ONLY</div>
+    <div>Page 4 of 8</div>
+  </div>
+</div>
+
+<!-- PAGE 5: INVENTORY, P&L & ADJUSTED EBITDA -->
+<div class="page">
+  <div>
+    <div class="cfa-header">
+      <div>
+        <div class="brand-title">Dan-D Foods, LLC (DOAU)</div>
+        <div class="brand-sub">Financial Report | Inventory Analysis, P&L & Adjusted EBITDA Schedule</div>
+      </div>
+      <div class="doc-meta">
+        <div>Reporting Period: <strong>Oct 2026</strong></div>
+        <div>Agenda Item: <strong>Financial Report (3/5)</strong></div>
+      </div>
+    </div>
+
+    <div class="content-body">
+      <div class="two-col inventory-two-col">
+        <!-- Left: Inventory Breakdown -->
+        <div>
+          <div class="section-title">
+            <span>Inventory Valuation Analysis</span>
+            <span style="font-size:7pt; color:#64748b;">As of Oct 2026</span>
+          </div>
+
+          <table class="cfa-table">
+            <thead>
+              <tr><th>Inventory Category</th><th class="num">Asset Value ($)</th><th class="num">% Total</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Raw Nuts (RMNUT)</td>
+                <td class="num">$2,123,706</td>
+                <td class="num">61.6%</td>
+              </tr>
+              <tr>
+                <td>Raw Ingredients (RMINGREDIENT)</td>
+                <td class="num">$232,579</td>
+                <td class="num">6.7%</td>
+              </tr>
+              <tr>
+                <td>Raw Dried Fruits (RMFRUIT)</td>
+                <td class="num">$170,356</td>
+                <td class="num">4.9%</td>
+              </tr>
+              <tr>
+                <td>Packaging Material (Film/Box/Bag)</td>
+                <td class="num">$505,753</td>
+                <td class="num">14.7%</td>
+              </tr>
+              <tr class="sub-total">
+                <td><strong>Total Raw & Packaging</strong></td>
+                <td class="num font-bold">$3,051,447</td>
+                <td class="num font-bold">88.5%</td>
+              </tr>
+              <tr>
+                <td>Finished Bulk Nuts (FGBNUT)</td>
+                <td class="num">$209,924</td>
+                <td class="num">6.1%</td>
+              </tr>
+              <tr>
+                <td>Finished Pack Nuts (FGPNUT)</td>
+                <td class="num">$173,548</td>
+                <td class="num">5.0%</td>
+              </tr>
+              <tr class="sub-total">
+                <td><strong>Total Finished Assembly</strong></td>
+                <td class="num font-bold">$398,041</td>
+                <td class="num font-bold">11.5%</td>
+              </tr>
+              <tr class="total-row">
+                <td><strong>INV Sheet Total Value</strong></td>
+                <td class="num font-bold">$3,449,488</td>
+                <td class="num font-bold">100.0%</td>
+              </tr>
+              <tr>
+                <td>BS Total Inventory Asset (Adj)</td>
+                <td class="num font-bold pos">$3,609,122</td>
+                <td class="num font-bold">-</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="chart-box" style="margin-top:6px;">
+            <div class="chart-title">Inventory Share by SKU — Top 5 + Other</div>
+            <svg class="report-chart" viewBox="0 0 480 280" role="img" aria-label="Inventory share by SKU"><title>Inventory share by SKU</title><path d="M 122 140 L 122.00 32.00 A 108 108 0 0 1 185.47 52.62 Z" fill="#0b2545" stroke="#ffffff" stroke-width="2"/><text class="data-label" x="142.7" y="76.3" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="800" fill="#ffffff" stroke="#0b2545" stroke-width="0.8" paint-order="stroke">10.0%</text><path d="M 122 140 L 185.47 52.62 A 108 108 0 0 1 219.22 92.97 Z" fill="#c9a84c" stroke="#ffffff" stroke-width="2"/><text class="data-label" x="173.4" y="97.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="800" fill="#ffffff" stroke="#0b2545" stroke-width="0.8" paint-order="stroke">7.8%</text><path d="M 122 140 L 219.22 92.97 A 108 108 0 0 1 229.50 129.59 Z" fill="#8b0000" stroke="#ffffff" stroke-width="2"/><path d="M 122 140 L 229.50 129.59 A 108 108 0 0 1 228.58 157.47 Z" fill="#3b82a0" stroke="#ffffff" stroke-width="2"/><path d="M 122 140 L 228.58 157.47 A 108 108 0 0 1 221.34 182.38 Z" fill="#6b7280" stroke="#ffffff" stroke-width="2"/><path d="M 122 140 L 221.34 182.38 A 108 108 0 1 1 122.00 32.00 Z" fill="#94a3b8" stroke="#ffffff" stroke-width="2"/><text class="data-label" x="66.1" y="176.9" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="800" fill="#ffffff" stroke="#0b2545" stroke-width="0.8" paint-order="stroke">68.6%</text><rect x="250" y="17" width="10" height="10" rx="1" fill="#0b2545"/><text x="268" y="26" font-size="10" font-weight="700" fill="#1e293b">R100125 (Almond, NPS 2...</text><text x="268" y="40" font-size="9" fill="#64748b">$345k · <tspan font-weight="800" fill="#0b2545">10.0%</tspan></text><rect x="250" y="55" width="10" height="10" rx="1" fill="#c9a84c"/><text x="268" y="64" font-size="10" font-weight="700" fill="#1e293b">R100619 (Shoyu Crunchy...</text><text x="268" y="78" font-size="9" fill="#64748b">$270k · <tspan font-weight="800" fill="#0b2545">7.8%</tspan></text><rect x="250" y="93" width="10" height="10" rx="1" fill="#8b0000"/><text x="268" y="102" font-size="10" font-weight="700" fill="#1e293b">R100313 (Cashew, Raw W...</text><text x="268" y="116" font-size="9" fill="#64748b">$195k · <tspan font-weight="800" fill="#0b2545">5.6%</tspan></text><rect x="250" y="131" width="10" height="10" rx="1" fill="#3b82a0"/><text x="268" y="140" font-size="10" font-weight="700" fill="#1e293b">R100129 (Almond, Carme...</text><text x="268" y="154" font-size="9" fill="#64748b">$142k · <tspan font-weight="800" fill="#0b2545">4.1%</tspan></text><rect x="250" y="169" width="10" height="10" rx="1" fill="#6b7280"/><text x="268" y="178" font-size="10" font-weight="700" fill="#1e293b">R100121 (Almond, Calif...</text><text x="268" y="192" font-size="9" fill="#64748b">$132k · <tspan font-weight="800" fill="#0b2545">3.8%</tspan></text><rect x="250" y="207" width="10" height="10" rx="1" fill="#94a3b8"/><text x="268" y="216" font-size="10" font-weight="700" fill="#1e293b">Other inventory SKUs</text><text x="268" y="230" font-size="9" fill="#64748b">$2.4M · <tspan font-weight="800" fill="#0b2545">68.6%</tspan></text><text x="122" y="145" text-anchor="middle" font-size="10" font-weight="700" fill="#0b2545">$3.5M</text></svg>
+            <div class="chart-note">Source: INV sheet; composition uses positive-value SKUs only. SKU detail total: $3.4M; Balance Sheet inventory: $3.6M (difference $160k; not allocated to individual SKUs). Other nets 3 negative-value SKU lines.</div>
+          </div>
+        </div>
+
+        <!-- Right: Monthly P&L and Adjusted EBITDA Bridge -->
+        <div>
+          <div class="section-title">
+            <span>Oct 2026 P&amp;L Statement ('After' column)</span>
+            <span style="font-size:7pt; color:#64748b;">Source: Sheet PL</span>
+          </div>
+
+          <table class="cfa-table">
+            <thead>
+              <tr><th>P&L Component</th><th class="num">Oct 2026 ($)</th><th class="num">% Rev</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Product Sales & Store Sales</td><td class="num">$1,322,743</td><td class="num">97.3%</td></tr>
+              <tr><td>Custom Processing Fees</td><td class="num">$26,192</td><td class="num">1.9%</td></tr>
+              <tr class="sub-total"><td><strong>TOTAL NET REVENUE</strong></td><td class="num font-bold">$1,358,930</td><td class="num font-bold">100.0%</td></tr>
+              <tr><td>Material & Production COGS</td><td class="num">$1,176,316</td><td class="num">86.6%</td></tr>
+              <tr><td>Direct Labor</td><td class="num">$92,255</td><td class="num">6.8%</td></tr>
+              <tr><td>Factory Overhead</td><td class="num">$179,144</td><td class="num">13.2%</td></tr>
+              <tr class="sub-total"><td><strong>TOTAL COGS</strong></td><td class="num font-bold">$1,447,715</td><td class="num font-bold">106.5%</td></tr>
+              <tr class="total-row"><td><strong>GROSS PROFIT / (LOSS)</strong></td><td class="num font-bold neg">($88,785)</td><td class="num font-bold neg">(6.5%)</td></tr>
+              <tr><td>Admin Expenses</td><td class="num">$3,042</td><td class="num">0.2%</td></tr>
+              <tr><td>Sales Expenses</td><td class="num">$19,100</td><td class="num">1.4%</td></tr>
+              <tr class="total-row"><td><strong>OPERATING INCOME / (LOSS)</strong></td><td class="num font-bold neg">($197,458)</td><td class="num font-bold neg">(14.5%)</td></tr>
+              <tr><td>Interest Expense</td><td class="num">$22,550</td><td class="num">1.7%</td></tr>
+              <tr class="total-row" style="background:#0b2545; color:white;"><td style="color:white;"><strong>NET INCOME / (LOSS)</strong></td><td class="num font-bold" style="color:white;">($219,973)</td><td class="num font-bold" style="color:#fca5a5;">(16.2%)</td></tr>
+            </tbody>
+          </table>
+
+          <div class="section-title" style="margin-top:6px;">
+            <span>EBITDA Bridge & Management Adjustments</span>
+            <span style="font-size:7pt; color:#8b0000;">Source: Sheet CF</span>
+          </div>
+
+          <table class="cfa-table">
+            <thead>
+              <tr><th>Schedule Line Item</th><th class="num">Oct 2026</th><th class="num">YTD 2026</th></tr>
+            </thead>
+            <tbody>
+              <tr class="sub-total"><td><strong>Operational EBITDA (007-DOAU Data)</strong></td><td class="num font-bold neg">($163,471)</td><td class="num font-bold neg">($1,445,829)</td></tr>
+              <tr><td>CF Sheet Baseline EBITDA</td><td class="num">$135,895</td><td class="num">$630,463</td></tr>
+              <tr><td>Addback: FY2025 Don's Consulting Fee</td><td class="num">-</td><td class="num pos">$53,957</td></tr>
+              <tr><td>Addback: Bonus to Vinh Le</td><td class="num">-</td><td class="num pos">$5,000</td></tr>
+              <tr><td>Addback: Employee Loyalty to Victor</td><td class="num pos">$10,000</td><td class="num pos">$30,000</td></tr>
+              <tr><td>Addback: Rent to 1565 Cliveden Ave (Pre-ops)</td><td class="num pos">$32,000</td><td class="num pos">$160,000</td></tr>
+              <tr class="sub-total"><td><strong>Total Extraordinary Addbacks</strong></td><td class="num font-bold pos">$42,000</td><td class="num font-bold pos">$248,957</td></tr>
+              <tr class="total-row" style="background:#0b2545; color:white;"><td style="color:white;"><strong>MANAGEMENT ADJUSTED EBITDA</strong></td><td class="num font-bold" style="color:#86efac;">$177,895</td><td class="num font-bold" style="color:#86efac;">$879,420</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cfa-footer">
+    <div>Dan-D Foods, LLC | Management Business Review</div>
+    <div class="confidential">CONFIDENTIAL — FOR MANAGEMENT USE ONLY</div>
+    <div>Page 5 of 8</div>
+  </div>
+</div>
+
+<!-- PAGE 6: BALANCE SHEET & WORKING CAPITAL -->
+<div class="page">
+  <div>
+    <div class="cfa-header">
+      <div>
+        <div class="brand-title">Dan-D Foods, LLC (DOAU)</div>
+        <div class="brand-sub">Financial Report | Balance Sheet & Working Capital (AR / AP Aging)</div>
+      </div>
+      <div class="doc-meta">
+        <div>Reporting Period: <strong>As of Oct 2026</strong></div>
+        <div>Agenda Item: <strong>Financial Report (4/5)</strong></div>
+      </div>
+    </div>
+
+    <div class="content-body">
+      <div class="two-col">
+        <!-- Left: Full Balance Sheet Statement -->
+        <div>
+          <div class="section-title">
+            <span>Balance Sheet (Statement of Financial Position)</span>
+            <span style="font-size:7pt; color:#64748b;">As of Oct 2026</span>
+          </div>
+
+          <table class="cfa-table">
+            <thead>
+              <tr><th>Balance Sheet Line Item</th><th class="num">Amount ($)</th></tr>
+            </thead>
+            <tbody>
+              <tr class="sub-total"><td colspan="2"><strong>CURRENT ASSETS</strong></td></tr>
+              <tr><td>Cash & Equivalents</td><td class="num">$275,741</td></tr>
+              <tr><td>Accounts Receivable - Gross</td><td class="num">$2,580,976</td></tr>
+              <tr><td>Allowance for Doubtful Accounts</td><td class="num neg">($166,596)</td></tr>
+              <tr><td>Accounts Receivable - Net</td><td class="num font-bold">$2,414,380</td></tr>
+              <tr><td>Inventory Asset (Total)</td><td class="num">$3,609,122</td></tr>
+              <tr><td>Prepaid Expenses & Undeposited</td><td class="num">$3,644,070</td></tr>
+              <tr class="total-row"><td><strong>TOTAL CURRENT ASSETS</strong></td><td class="num font-bold">$6,328,549</td></tr>
+              <tr class="sub-total"><td colspan="2"><strong>NON-CURRENT ASSETS</strong></td></tr>
+              <tr><td>Production & Automation Equipment</td><td class="num">$4,376,199</td></tr>
+              <tr><td>Construction in Progress (CIP)</td><td class="num">$1,920,888</td></tr>
+              <tr><td>Building Improvements & Auto</td><td class="num">$963,205</td></tr>
+              <tr><td>Accumulated Depreciation</td><td class="num neg">($4,358,337)</td></tr>
+              <tr class="total-row"><td><strong>TOTAL FIXED ASSETS</strong></td><td class="num font-bold">$3,033,989</td></tr>
+              <tr class="total-row" style="background:#0b2545; color:white;"><td style="color:white;"><strong>TOTAL ASSETS</strong></td><td class="num font-bold" style="color:white;">$9,453,850</td></tr>
+              
+              <tr class="sub-total"><td colspan="2"><strong>CURRENT LIABILITIES</strong></td></tr>
+              <tr><td>Accounts Payable</td><td class="num">$1,378,168</td></tr>
+              <tr><td>Accrued Expenses & Credit Cards</td><td class="num">$336,598</td></tr>
+              <tr><td>Loan Payable - Dan D Pistachio</td><td class="num">$1,000,000</td></tr>
+              <tr><td>Payroll Liabilities</td><td class="num">$92,787</td></tr>
+              <tr class="total-row"><td><strong>TOTAL CURRENT LIABILITIES</strong></td><td class="num font-bold">$2,808,150</td></tr>
+
+              <tr class="sub-total"><td colspan="2"><strong>LONG-TERM LIABILITIES</strong></td></tr>
+              <tr><td>East West Bank Loans (Term Loans)</td><td class="num">$1,000,000</td></tr>
+              <tr><td>Loan Payable - Danway</td><td class="num">$2,819,900</td></tr>
+              <tr><td>Loan Payable - Dan-D-Foods Ltd</td><td class="num">$1,277,610</td></tr>
+              <tr><td>Loan Payable - Horseshoe & DDP</td><td class="num">$711,907</td></tr>
+              <tr class="total-row"><td><strong>TOTAL LONG-TERM LIABILITIES</strong></td><td class="num font-bold">$5,809,417</td></tr>
+              <tr class="sub-total"><td><strong>TOTAL LIABILITIES</strong></td><td class="num font-bold">$8,617,567</td></tr>
+
+              <tr class="sub-total"><td colspan="2"><strong>MEMBERS' EQUITY</strong></td></tr>
+              <tr><td>Capital Stock & Members Equity</td><td class="num">$2,425,784</td></tr>
+              <tr><td>Retained Earnings</td><td class="num">$459,961</td></tr>
+              <tr><td>Net Income (YTD Loss)</td><td class="num neg">($2,049,462)</td></tr>
+              <tr class="total-row"><td><strong>TOTAL EQUITY</strong></td><td class="num font-bold">$836,283</td></tr>
+              <tr class="total-row" style="background:#0b2545; color:white;"><td style="color:white;"><strong>TOTAL LIABILITIES & EQUITY</strong></td><td class="num font-bold" style="color:white;">$9,453,850</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Right: AR & AP Aging Breakdown -->
+        <div>
+          <div class="section-title">
+            <span>Accounts Receivable Aging Analysis</span>
+            <span style="font-size:7pt; color:#64748b;">Total: $2,414,380</span>
+          </div>
+
+          <table class="cfa-table">
+            <thead>
+              <tr>
+                <th>Bucket</th>
+                <th class="num">Amount ($)</th>
+                <th class="num">% Total</th>
+                <th>Status / Key Exposure</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Current</td><td class="num">$894,481</td><td class="num">37.0%</td><td>Per AR aging sheet</td></tr>
+              <tr><td>1 – 30 Days</td><td class="num">$843,830</td><td class="num">35.0%</td><td>Per AR aging sheet</td></tr>
+              <tr><td>31 – 60 Days</td><td class="num">$115,788</td><td class="num">4.8%</td><td>Per AR aging sheet</td></tr>
+              <tr><td>61 – 90 Days</td><td class="num">$99,060</td><td class="num">4.1%</td><td>Per AR aging sheet</td></tr>
+              <tr class="sub-total"><td>&gt; 90 Days</td><td class="num font-bold pos">$461,221</td><td class="num">19.1%</td><td>Review aged balances with owners</td></tr>
+              <tr class="total-row"><td><strong>Total AR Outstanding</strong></td><td class="num font-bold">$2,414,380</td><td class="num font-bold">100.0%</td><td>Ties to Balance Sheet net AR</td></tr>
+              <tr><td>Intercompany AR</td><td class="num font-bold">$1,188,286</td><td class="num">-</td><td>Per workbook classification</td></tr>
+              <tr><td>Third-Party AR</td><td class="num font-bold">$1,226,094</td><td class="num">-</td><td>Per workbook classification</td></tr>
+            </tbody>
+          </table>
+
+          <div class="section-title" style="margin-top:8px;">
+            <span>Accounts Payable Aging Analysis</span>
+            <span style="font-size:7pt; color:#64748b;">Total: $1,378,168</span>
+          </div>
+
+          <table class="cfa-table">
+            <thead>
+              <tr>
+                <th>AP Category / Bucket</th>
+                <th class="num">Amount ($)</th>
+                <th class="num">% Total</th>
+                <th>Commentary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Current</td><td class="num">$1,415,426</td><td class="num">102.7%</td><td>Per AP aging sheet</td></tr>
+              <tr><td>1 – 30 Days</td><td class="num">$513,769</td><td class="num">37.3%</td><td>Per AP aging sheet</td></tr>
+              <tr><td>31 – 60 Days</td><td class="num">$178,150</td><td class="num">12.9%</td><td>Per AP aging sheet</td></tr>
+              <tr><td>61 – 90 Days</td><td class="num">$579,014</td><td class="num">42.0%</td><td>Per AP aging sheet</td></tr>
+              <tr><td>&gt; 90 Days (per aging sheet)</td><td class="num font-bold neg">($1,308,191)</td><td class="num">(94.9%)</td><td>Includes bucket balances; review debit balances separately</td></tr>
+              <tr class="total-row"><td><strong>Total Accounts Payable</strong></td><td class="num font-bold">$1,378,168</td><td class="num font-bold">100.0%</td><td>Ties to Balance Sheet AP</td></tr>
+              <tr><td>Advance to Suppliers</td><td class="num font-bold neg">($3,864,962)</td><td class="num">-</td><td>Shown separately from trade aging</td></tr>
+              <tr><td>Intercompany AP</td><td class="num font-bold">$4,760,627</td><td class="num">-</td><td>Per workbook classification</td></tr>
+              <tr><td>Payable to 3rd Parties</td><td class="num font-bold">$482,502</td><td class="num">-</td><td>Per workbook classification</td></tr>
+            </tbody>
+          </table>
+
+          <div class="sidebar" style="margin-top:4px;">
+            <div class="section-tag">Working Capital Rebalance</div>
+            <div style="font-size:7pt; color:#334155; line-height:1.35;">
+              Balance-sheet working capital is <strong>$3,520,399</strong> (current assets less current liabilities). This measure is not adjusted for intercompany balances; review those separately.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cfa-footer">
+    <div>Dan-D Foods, LLC | Management Business Review</div>
+    <div class="confidential">CONFIDENTIAL — FOR MANAGEMENT USE ONLY</div>
+    <div>Page 6 of 8</div>
+  </div>
+</div>
+
+<!-- PAGE 7: CAPEX & CASH FLOWS -->
+<div class="page">
+  <div>
+    <div class="cfa-header">
+      <div>
+        <div class="brand-title">Dan-D Foods, LLC (DOAU)</div>
+        <div class="brand-sub">Financial Report | Capital Expenditures (Capex) & Statement of Cash Flows</div>
+      </div>
+      <div class="doc-meta">
+        <div>Reporting Period: <strong>Oct 2026</strong></div>
+        <div>Agenda Item: <strong>Financial Report (5/5)</strong></div>
+      </div>
+    </div>
+
+    <div class="content-body">
+      <div class="two-col cash-flow-two-col">
+        <!-- Left: Capex & Fixed Assets -->
+        <div>
+          <div class="section-title">
+            <span>Capital Expenditures & Fixed Assets</span>
+            <span style="font-size:7pt; color:#64748b;">Schedule of Property, Plant & Equipment</span>
+          </div>
+
+          <table class="cfa-table">
+            <thead>
+              <tr><th>Fixed Asset Line Item</th><th class="num">Book Value ($)</th><th class="num">% Gross</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Production Equipment</td><td class="num">$3,882,177</td><td class="num">52.5%</td></tr>
+              <tr><td>Construction in Progress (CIP)</td><td class="num">$1,920,888</td><td class="num">26.0%</td></tr>
+              <tr><td>Building Improvements</td><td class="num">$767,815</td><td class="num">10.4%</td></tr>
+              <tr><td>Automation Systems</td><td class="num">$494,023</td><td class="num">6.7%</td></tr>
+              <tr><td>Automotive Vehicles</td><td class="num">$195,390</td><td class="num">2.6%</td></tr>
+              <tr><td>Furniture & Equipment</td><td class="num">$63,954</td><td class="num">0.9%</td></tr>
+              <tr><td>Office & Computer Equipment</td><td class="num">$68,079</td><td class="num">0.9%</td></tr>
+              <tr class="sub-total">
+                <td><strong>Total Gross Fixed Assets</strong></td>
+                <td class="num font-bold">$7,392,326</td>
+                <td class="num font-bold">100.0%</td>
+              </tr>
+              <tr>
+                <td>Accumulated Depreciation</td>
+                <td class="num neg">($4,358,337)</td>
+                <td class="num">(59.0%)</td>
+              </tr>
+              <tr class="total-row">
+                <td><strong>NET PROPERTY, PLANT & EQUIP</strong></td>
+                <td class="num font-bold">$3,033,989</td>
+                <td class="num font-bold">41.0%</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="sidebar" style="margin-top:6px;">
+            <div class="section-tag">Asset Interpretation</div>
+            <div style="font-size:7pt; color:#334155; line-height:1.35;">
+              Balance-sheet asset values are not a monthly CapEx trend or a project-status report. The CF statement's property and equipment purchase row reports $41,296; review that cash-flow line separately from book balances.
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Statement of Cash Flows -->
+        <div>
+          <div class="section-title">
+            <span>Statement of Cash Flows (Indirect Method)</span>
+            <span style="font-size:7pt; color:#64748b;">Jan 2026 to Oct 2026</span>
+          </div>
+
+          <table class="cfa-table">
+            <thead>
+              <tr><th>Cash Flow Component ($)</th><th class="num">YTD through Oct 2026 ($)</th></tr>
+            </thead>
+            <tbody>
+              <tr class="sub-total"><td colspan="2"><strong>A. CASH FLOWS FROM OPERATING ACTIVITIES (CFO)</strong></td></tr>
+              <tr><td>Net Operating Income / (Loss)</td><td class="num neg">($1,919,974)</td></tr>
+              <tr><td>Add: Depreciation & Amortisation</td><td class="num pos">$305,568</td></tr>
+              <tr><td>Add: Interest Expense (Reclassified to CFF)</td><td class="num pos">$237,842</td></tr>
+              <tr><td>(Increase)/Decrease in Accounts Receivable</td><td class="num neg">($391,571)</td></tr>
+              <tr><td>(Increase)/Decrease in Inventory Asset</td><td class="num neg">($220,530)</td></tr>
+              <tr><td>Increase/(Decrease) in Accounts Payable</td><td class="num pos">$930,339</td></tr>
+              <tr><td>Other Working Capital Movements (Prepaids, Advances, Accruals)</td><td class="num pos">$186,088</td></tr>
+              <tr class="total-row"><td><strong>Net Cash from Operating Activities (CFO)</strong></td><td class="num font-bold neg">($872,239)</td></tr>
+
+              <tr class="sub-total"><td colspan="2"><strong>B. CASH FLOWS FROM INVESTING ACTIVITIES (CFI)</strong></td></tr>
+              <tr><td>Purchase of Property, Plant & Equipment (Capex)</td><td class="num pos">$41,296</td></tr>
+              <tr><td>Increase/(Decrease) in Security Deposits</td><td class="num pos">$0</td></tr>
+              <tr class="total-row"><td><strong>Net Cash from Investing Activities (CFI)</strong></td><td class="num font-bold pos">$41,296</td></tr>
+
+              <tr class="sub-total"><td colspan="2"><strong>C. CASH FLOWS FROM FINANCING ACTIVITIES (CFF)</strong></td></tr>
+              <tr><td>Net Proceeds of Long-Term & Related Party Borrowings</td><td class="num pos">$1,131,197</td></tr>
+              <tr><td>Interest Paid (Reclassified Operating Financing)</td><td class="num neg">($237,842)</td></tr>
+              <tr><td>Capital & Members Equity Contributions</td><td class="num pos">$1,111</td></tr>
+              <tr class="total-row"><td><strong>Net Cash from Financing Activities (CFF)</strong></td><td class="num font-bold pos">$894,467</td></tr>
+
+              <tr class="total-row" style="background:#0b2545; color:white;">
+                <td style="color:white;"><strong>NET INCREASE / (DECREASE) IN CASH & CASH EQUIVALENTS</strong></td>
+                <td class="num font-bold" style="color:#86efac;">$63,523</td>
+              </tr>
+              <tr><td>Cash & Cash Equivalents — Opening Balance (Jan 2026)</td><td class="num">$212,218</td></tr>
+              <tr class="total-row"><td><strong>Cash & Cash Equivalents — Closing Balance (Oct 2026)</strong></td><td class="num font-bold">$275,741</td></tr>
+            </tbody>
+          </table>
+
+          <p class="narrative-p" style="margin-top:6px;">
+            <strong>Cash Flow Summary:</strong> CFO was ($872,239), CFI was $41,296 and CFF was $894,467, resulting in a net cash change of $63,523. Opening cash of $212,218 reconciles to closing cash of $275,741. Source: parsed CF statement; subtotals are validated during extraction.
+          </p>
+        </div>
+      </div>
+      <div class="chart-box">
+        <div class="chart-title">YTD Cash Flow Components — USD</div>
+        <svg class="report-chart" viewBox="0 0 560 166" role="img" aria-label="Year-to-date cash flow components in US dollars"><title>Year-to-date cash flow components in US dollars</title><line x1="280" y1="8" x2="280" y2="161" stroke="#94a3b8" stroke-width="1"/><text x="4" y="33" font-size="10" fill="#334155">Operating (CFO)</text><rect x="124.0" y="20" width="156.0" height="18" rx="1" fill="#991b1b"/><text class="data-label data-label--inside" x="131.0" y="33" text-anchor="start" font-size="10" font-weight="700" fill="#ffffff">($872,239)</text><text x="4" y="65" font-size="10" fill="#334155">Investing (CFI)</text><rect x="280.0" y="52" width="7.4" height="18" rx="1" fill="#166534"/><text class="data-label data-label--outside" x="294.4" y="65" text-anchor="start" font-size="10" font-weight="700" fill="#1e293b">$41,296</text><text x="4" y="97" font-size="10" fill="#334155">Financing (CFF)</text><rect x="280.0" y="84" width="160.0" height="18" rx="1" fill="#166534"/><text class="data-label data-label--inside" x="433.0" y="97" text-anchor="end" font-size="10" font-weight="700" fill="#ffffff">$894,467</text><text x="4" y="129" font-size="10" fill="#334155">Net cash change</text><rect x="280.0" y="116" width="11.4" height="18" rx="1" fill="#166534"/><text class="data-label data-label--outside" x="298.4" y="129" text-anchor="start" font-size="10" font-weight="700" fill="#1e293b">$63,523</text></svg>
+        <div class="chart-note">Source: indirect cash-flow statement, Jan 2026 to Oct 2026. Bars are signed; totals reconcile to net cash change.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cfa-footer">
+    <div>Dan-D Foods, LLC | Management Business Review</div>
+    <div class="confidential">CONFIDENTIAL — FOR MANAGEMENT USE ONLY</div>
+    <div>Page 7 of 8</div>
+  </div>
+</div>
+
+<!-- PAGE 8: HR REPORT -->
+<div class="page">
+  <div>
+    <div class="cfa-header">
+      <div>
+        <div class="brand-title">Dan-D Foods, LLC (DOAU)</div>
+        <div class="brand-sub">Payroll Cost Report | YTD and Monthly P&amp;L Analysis</div>
+      </div>
+      <div class="doc-meta">
+        <div>Reporting Period: <strong>Oct 2026</strong></div>
+        <div>Agenda Item: <strong>HR Report</strong></div>
+      </div>
+    </div>
+
+    <div class="content-body">
+      <div class="two-col">
+        <!-- Left: Labor Cost Audit -->
+        <div>
+          <div class="section-title">
+            <span>Payroll Cost Analysis</span>
+            <span style="font-size:7pt; color:#64748b;">P&amp;L payroll allocations (YTD &amp; Oct 2026)</span>
+          </div>
+
+          <table class="cfa-table">
+            <thead>
+              <tr><th>Payroll Cost Category ($)</th><th class="num">Oct 2026 ($)</th><th class="num">YTD 2026 ($)</th><th class="num">YTD 2025 ($)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Direct Labor</td><td class="num">$92,255</td><td class="num">$833,083</td><td class="num">$993,993</td></tr>
+              <tr><td>Production Payroll</td><td class="num">$34,432</td><td class="num">$305,254</td><td class="num">$313,766</td></tr>
+              <tr><td>Administration Payroll</td><td class="num">$29,190</td><td class="num">$405,112</td><td class="num">$416,708</td></tr>
+              <tr><td>Payroll Processing Fees</td><td class="num">$2,882</td><td class="num">$29,654</td><td class="num">$30,263</td></tr>
+              <tr class="total-row">
+                <td><strong>Core Payroll (excludes processing fees)</strong></td>
+                <td class="num font-bold">$155,877</td>
+                <td class="num font-bold">$1,543,450</td>
+                <td class="num font-bold">$1,724,467</td>
+              </tr>
+              <tr><td>YoY Core Payroll Change</td><td class="num">-</td><td class="num neg">($181,017)</td><td class="num">(10.5%)</td></tr>
+              <tr><td>Core Payroll as % of Revenue</td><td class="num font-bold">11.5%</td><td class="num font-bold">15.3%</td><td class="num font-bold">11.7%</td></tr>
+            </tbody>
+          </table>
+
+          <div class="sidebar" style="margin-top:6px;">
+            <div class="section-tag">Payroll Observation</div>
+            <div style="font-size:7pt; color:#334155; line-height:1.35;">
+              Core payroll changed by <strong>($181,017) ((10.5%))</strong> year over year. Payroll as a share of revenue changed from 11.7% to 15.3%; this ratio is not a productivity measure without hours and output data.
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Payroll mix and source limitations -->
+        <div>
+          <div class="section-title">
+            <span>Payroll Composition</span>
+            <span style="font-size:7pt; color:#64748b;">YTD through Oct 2026</span>
+          </div>
+          <div class="chart-box">
+            <svg class="report-chart" viewBox="0 0 560 170" role="img" aria-label="Year-to-date payroll composition in US dollars"><title>Year-to-date payroll composition in US dollars</title><rect x="8.00" y="28" width="288.09" height="28" fill="#0b2545"/><text class="data-label data-label--inside" x="152.05" y="46" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">53.0%</text><rect x="296.09" y="28" width="105.56" height="28" fill="#3b82a0"/><text class="data-label data-label--inside" x="348.87" y="46" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">19.4%</text><rect x="401.65" y="28" width="140.09" height="28" fill="#c9a84c"/><text class="data-label data-label--inside" x="471.70" y="46" text-anchor="middle" font-size="10" font-weight="700" fill="#0b2545">25.8%</text><rect x="541.75" y="28" width="10.25" height="28" fill="#94a3b8"/><text x="8" y="17" font-size="9" fill="#64748b">YTD payroll mix · USD</text><rect x="8" y="75" width="10" height="10" rx="1" fill="#0b2545"/><text x="23" y="84" font-size="9" fill="#334155">Direct labor — $833,083 (53.0%)</text><rect x="282" y="75" width="10" height="10" rx="1" fill="#3b82a0"/><text x="297" y="84" font-size="9" fill="#334155">Production payroll — $305,254 (19.4%)</text><rect x="8" y="109" width="10" height="10" rx="1" fill="#c9a84c"/><text x="23" y="118" font-size="9" fill="#334155">Administration payroll — $405,112 (25.8%)</text><rect x="282" y="109" width="10" height="10" rx="1" fill="#94a3b8"/><text x="297" y="118" font-size="9" fill="#334155">Payroll processing fees — $29,654 (1.9%)</text></svg>
+            <div class="chart-note">Source: PL and PL YTD sheets. Payroll processing fees are included in this composition chart but excluded from the core-payroll totals at left.</div>
+          </div>
+          <div class="sidebar-crimson" style="margin-top:6px;">
+            <div class="section-tag" style="color:#8b0000;">Data Availability</div>
+            <div style="font-size:7pt; color:#7f1d1d; line-height:1.35;">
+              The supplied workbooks contain payroll amounts but no headcount, turnover, tenure, labor hours, output or HR project-status data. Those measures are not estimated here. Payroll amounts are unaudited management-account allocations.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cfa-footer">
+    <div>Dan-D Foods, LLC | Management Business Review</div>
+    <div class="confidential">CONFIDENTIAL — FOR MANAGEMENT USE ONLY</div>
+    <div>Page 8 of 8</div>
+  </div>
+</div>
+</body>
+</html>
