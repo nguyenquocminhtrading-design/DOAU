@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Excel / Office temporary & lock files
+~$*.xlsx
+~$*.xlsm
+~$*.docx
+~$*.pptx
+
+# Node
+node_modules/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
