@@ -6,8 +6,9 @@ from report_metrics import build_report_metrics, safe_divide
 
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_FILE = os.path.join(CURRENT_DIR, "data", "extracted_data.json")
-OUTPUT_DIR = os.path.join(CURRENT_DIR, "output")
+REPO_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, "..", ".."))
+DATA_FILE = os.path.join(REPO_ROOT, "data", "generated", "extracted_data.json")
+OUTPUT_DIR = os.path.join(REPO_ROOT, "reports", "generated")
 
 
 def _money(value):

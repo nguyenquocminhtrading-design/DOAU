@@ -5,9 +5,13 @@ import re
 from collections import defaultdict
 from datetime import datetime
 
-EXCEL_PATH = r"c:\Users\minhnq\Documents\A-Q_consol\DOAU\FS DOAU Oct 26_adjust.xlsm"
-CF_EXCEL_PATH = r"c:\Users\minhnq\Documents\A-Q_consol\DOAU\FS_DOAU_Oct_26_CF_Indirect_Fixed_v2.xlsm"
-DATA_OUTPUT_DIR = r"c:\Users\minhnq\Documents\A-Q_consol\DOAU\code\doau_report\data"
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+WORKBOOK_DIR = os.path.join(REPO_ROOT, "inputs", "workbooks")
+EXCEL_PATH = os.path.join(WORKBOOK_DIR, "FS DOAU Oct 26_adjust.xlsm")
+CF_EXCEL_PATH = os.path.join(
+    WORKBOOK_DIR, "FS_DOAU_Oct_26_CF_Indirect_Fixed_v2.xlsm"
+)
+DATA_OUTPUT_DIR = os.path.join(REPO_ROOT, "data", "generated")
 OUTPUT_FILE = os.path.join(DATA_OUTPUT_DIR, "extracted_data.json")
 
 

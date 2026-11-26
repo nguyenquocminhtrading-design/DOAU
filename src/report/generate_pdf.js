@@ -7,11 +7,12 @@ const { execSync } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
-const htmlFile = path.resolve(__dirname, 'output/DOAU_Management_Report_Oct2026.html');
-const pdfFile = path.resolve(__dirname, 'output/DOAU_Management_Report_Oct2026.pdf');
+const outputDir = path.resolve(__dirname, '..', '..', 'reports', 'generated');
+const htmlFile = path.join(outputDir, 'DOAU_Management_Report_Oct2026.html');
+const pdfFile = path.join(outputDir, 'DOAU_Management_Report_Oct2026.pdf');
 
 if (!fs.existsSync(htmlFile)) {
-  console.error('HTML file not found. Run generate_report.py first.');
+  console.error('HTML file not found. Generate the HTML report first.');
   process.exit(1);
 }
 

@@ -6,9 +6,11 @@ from chart_rendering import compact_money, svg_line_chart, svg_pie_chart, svg_pr
 from report_metrics import build_report_metrics, percent_change, safe_divide
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_FILE = os.path.join(CURRENT_DIR, "data", "extracted_data.json")
-OUTPUT_HTML = os.path.join(CURRENT_DIR, "output", "DOAU_Management_Report_Oct2026.html")
-OUTPUT_PDF = os.path.join(CURRENT_DIR, "output", "DOAU_Management_Report_Oct2026.pdf")
+REPO_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, "..", ".."))
+DATA_FILE = os.path.join(REPO_ROOT, "data", "generated", "extracted_data.json")
+OUTPUT_DIR = os.path.join(REPO_ROOT, "reports", "generated")
+OUTPUT_HTML = os.path.join(OUTPUT_DIR, "DOAU_Management_Report_Oct2026.html")
+OUTPUT_PDF = os.path.join(OUTPUT_DIR, "DOAU_Management_Report_Oct2026.pdf")
 LOGO_FILE = os.path.join(CURRENT_DIR, "assets", "doau_logo.png")
 
 with open(DATA_FILE, "r", encoding="utf-8") as f:
@@ -1628,7 +1630,8 @@ html += f"""
 """
 
 if os.path.isfile(LOGO_FILE):
-    logo_html = '<img src="../assets/doau_logo.png" alt="Dan-D Pak company logo" style="max-width:68px; max-height:44px; object-fit:contain;">'
+    logo_src = os.path.relpath(LOGO_FILE, OUTPUT_DIR).replace(os.sep, "/")
+    logo_html = f'<img src="{logo_src}" alt="Dan-D Pak company logo" style="max-width:68px; max-height:44px; object-fit:contain;">'
     html = html.replace(
         '<div class="brand-title">Dan-D Foods, LLC (DOAU)',
         f'<div class="brand-title">{logo_html}Dan-D Foods, LLC (DOAU)',
