@@ -77,7 +77,8 @@ if %errorlevel% neq 0 (
 
 :: 9. Push code
 echo.
-echo [*] Dang day code len branch %current_branch%...
+echo [*] Dang dong bo va day code len branch %current_branch%...
+git pull origin %current_branch% --no-rebase >nul 2>nul
 git push -u origin %current_branch%
 
 if %errorlevel% equ 0 (
