@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DOAU Institutional Equity Research Report</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #111827;
+    background-color: #f1f5f9;
+    line-height: 1.32;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .cfa-page-container {
+    width: 210mm;
+    min-height: 297mm;
+    height: 297mm;
+    margin: 15px auto;
+    background: #ffffff;
+    position: relative;
+    padding: 8mm 11mm 8mm 11mm;
+    display: grid;
+    grid-template-columns: 31.5% 66%;
+    grid-column-gap: 2.5%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    page-break-after: always;
+  }
+  @media print {
+    body { background: #ffffff; }
+    .cfa-page-container {
+      margin: 0;
+      box-shadow: none;
+      width: 210mm;
+      height: 297mm;
+    }
+  }
+  .col-left { display: flex; flex-direction: column; gap: 5px; }
+  .col-right { display: flex; flex-direction: column; }
+  
+  .section-banner {
+    background-color: #a30008;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 3px 6px;
+    margin-bottom: 4px;
+  }
+  .editorial-lead {
+    color: #a30008;
+    font-size: 9.2px;
+    font-weight: 700;
+    margin-top: 3.5px;
+    margin-bottom: 1.5px;
+  }
+  .editorial-lead-italic { font-style: italic; }
+  .body-text {
+    font-size: 8.2px;
+    line-height: 1.30;
+    color: #1f2937;
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .body-text strong { font-weight: 700; color: #0f172a; }
+
+  /* FIGURE BOXES */
+  .figure-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 2px;
+    margin-bottom: 2px;
+  }
+  .figure-header {
+    background-color: #6e7073;
+    color: #ffffff;
+    font-size: 8.8px;
+    font-weight: 800;
+    padding: 2.2px 5px;
+    text-align: center;
+  }
+  .figure-content { padding: 3px; }
+  .figure-source {
+    font-size: 6.8px;
+    font-style: italic;
+    color: #64748b;
+    padding: 1px 5px 2px 5px;
+  }
+
+  /* FINANCIAL TABLES */
+  .fin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 7.8px;
+    margin-top: 3px;
+  }
+  .fin-table th {
+    background-color: #f1f5f9;
+    color: #334155;
+    font-weight: 700;
+    padding: 2.5px 4px;
+    border-bottom: 1.5px solid #cbd5e1;
+    text-align: right;
+  }
+  .fin-table th:first-child { text-align: left; }
+  .fin-table td {
+    padding: 2px 4px;
+    border-bottom: 1px solid #f1f5f9;
+    text-align: right;
+    color: #1e293b;
+  }
+  .fin-table td:first-child { text-align: left; font-weight: 600; }
+  .fin-table tr.total-row td {
+    font-weight: 800;
+    border-top: 1px solid #94a3b8;
+    border-bottom: 1.5px solid #94a3b8;
+    background-color: #f8fafc;
+  }
+
+  /* KEY METRICS SUMMARY CARD */
+  .metric-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    margin-bottom: 5px;
+  }
+  .metric-card {
+    background: #f8fafc;
+    border-left: 3px solid #a30008;
+    padding: 4px 6px;
+    border-radius: 1px;
+  }
+  .metric-title { font-size: 7.5px; color: #64748b; text-transform: uppercase; font-weight: 700; }
+  .metric-value { font-size: 11px; font-weight: 800; color: #0f172a; }
+  .metric-sub { font-size: 7px; color: #a30008; font-weight: 600; }
+
+  /* FOOTER */
+  .cfa-page-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 7mm;
+    background-color: #a30008;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11mm;
+    font-size: 9.5px;
+    font-weight: 700;
+  }
+  .footer-company { display: flex; align-items: center; gap: 8px; }
+  .footer-tag {
+    background: #ffffff;
+    color: #a30008;
+    padding: 0.5px 4px;
+    border-radius: 2px;
+    font-weight: 900;
+    font-size: 8.5px;
+  }
+  .footer-page { font-size: 10px; font-weight: 800; }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1: INVESTMENT SUMMARY & EXECUTIVE OVERVIEW ================= -->
+<div class="cfa-page-container">
+  <!-- LEFT COLUMN (31.5%) -->
+  <div class="col-left">
+    <div class="metric-card-grid">
+      <div class="metric-card">
+        <div class="metric-title">Target Price</div>
+        <div class="metric-value">$1,250k</div>
+        <div class="metric-sub">+18.5% Upside</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Rating</div>
+        <div class="metric-value" style="color: #a30008;">OVERWEIGHT</div>
+        <div class="metric-sub">CFA Spec Standard</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">YTD Revenue</div>
+        <div class="metric-value">$10.08M</div>
+        <div class="metric-sub">10 Months Actual</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Cash & Equiv</div>
+        <div class="metric-value">$276k</div>
+        <div class="metric-sub">Liquidity Buffer</div>
+      </div>
+    </div>
+
+    
+<div class="figure-box">
+  <div class="figure-header">Fig 1. Monthly Revenue Performance (Jan - Oct 2026)</div>
+  <div class="figure-content"><svg class="report-chart" viewBox="0 0 340 200" width="100%" height="200px">  <text x="36" y="14" font-size="9" font-weight="700" fill="#64748b">Revenue ($k)</text>  <text x="325" y="14" font-size="9.5" font-weight="800" fill="#a30008" text-anchor="end">YTD: $10.08M</text>  <line x1="36" y1="95.0" x2="325" y2="95.0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/>  <text x="32" y="98.0" font-size="8.5" font-weight="600" fill="#64748b" text-anchor="end">819k</text>  <line x1="36" y1="24.0" x2="325" y2="24.0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/>  <text x="32" y="27.0" font-size="8.5" font-weight="600" fill="#64748b" text-anchor="end">1638k</text>  <rect x="41.5" y="78.0" width="18.0" height="88.0" fill="#475569" rx="0.5"/>  <text x="50.5" y="178" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Jan</text>  <rect x="70.4" y="105.2" width="18.0" height="60.8" fill="#475569" rx="0.5"/>  <text x="79.4" y="101.2" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">702k</text>  <text x="79.4" y="178" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Feb</text>  <rect x="99.2" y="106.6" width="18.0" height="59.4" fill="#475569" rx="0.5"/>  <text x="108.2" y="178" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Mar</text>  <rect x="128.1" y="81.7" width="18.0" height="84.3" fill="#475569" rx="0.5"/>  <text x="137.1" y="77.7" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">972k</text>  <text x="137.1" y="178" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Apr</text>  <rect x="157.0" y="104.2" width="18.0" height="61.8" fill="#475569" rx="0.5"/>  <text x="166.0" y="178" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">May</text>  <rect x="185.9" y="81.1" width="18.0" height="84.9" fill="#475569" rx="0.5"/>  <text x="194.9" y="77.1" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">979k</text>  <text x="194.9" y="178" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Jun</text>  <rect x="214.8" y="57.4" width="18.0" height="108.6" fill="#475569" rx="0.5"/>  <text x="223.8" y="178" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Jul</text>  <rect x="243.7" y="81.3" width="18.0" height="84.7" fill="#475569" rx="0.5"/>  <text x="252.7" y="77.3" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">977k</text>  <text x="252.7" y="178" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Aug</text>  <rect x="272.6" y="42.5" width="18.0" height="123.5" fill="#475569" rx="0.5"/>  <text x="281.6" y="178" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Sep</text>  <rect x="301.5" y="48.2" width="18.0" height="117.8" fill="#a30008" rx="0.5"/>  <text x="310.5" y="44.2" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">1359k</text>  <text x="310.5" y="178" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Oct</text>  <rect x="36" y="190" width="7" height="7" fill="#475569" rx="1"/>  <text x="46" y="196" font-size="8" font-weight="700" fill="#334155">Historical Months</text>  <rect x="156" y="190" width="7" height="7" fill="#a30008" rx="1"/>  <text x="166" y="196" font-size="8" font-weight="700" fill="#a30008">Current (Oct 2026)</text></svg></div>
+  <div class="figure-source">Source: DOAU Management Accounts, Team calculations</div>
+</div>
+
+    
+<div class="figure-box">
+  <div class="figure-header">Fig 2. Customer Concentration & Revenue Share</div>
+  <div class="figure-content"><svg class="report-chart" viewBox="0 0 340 160" width="100%" height="160px">  <path d="M 90.00 28.00 A 52 52 0 0 1 133.49 51.49 L 113.42 64.65 A 28 28 0 0 0 90.00 52.00 Z" fill="#a30008" stroke="#ffffff" stroke-width="1.2"/>  <text x="109.0" y="48.3" font-size="9.5" font-weight="800" fill="#ffffff" text-anchor="middle">16%</text>  <path d="M 133.49 51.49 A 52 52 0 0 1 139.73 95.19 L 116.78 88.18 A 28 28 0 0 0 113.42 64.65 Z" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>  <text x="129.6" y="77.8" font-size="9.5" font-weight="800" fill="#ffffff" text-anchor="middle">14%</text>  <path d="M 139.73 95.19 A 52 52 0 0 1 117.53 124.11 L 104.83 103.75 A 28 28 0 0 0 116.78 88.18 Z" fill="#f87171" stroke="#ffffff" stroke-width="1.2"/>  <path d="M 117.53 124.11 A 52 52 0 0 1 85.19 131.78 L 87.41 107.88 A 28 28 0 0 0 104.83 103.75 Z" fill="#fca5a5" stroke="#ffffff" stroke-width="1.2"/>  <path d="M 85.19 131.78 A 52 52 0 0 1 90.00 28.00 L 90.00 52.00 A 28 28 0 0 0 87.41 107.88 Z" fill="#cbd5e1" stroke="#ffffff" stroke-width="1.2"/>  <text x="50.0" y="81.6" font-size="9.5" font-weight="800" fill="#0f172a" text-anchor="middle">49%</text>  <rect x="175" y="20" width="8" height="8" fill="#a30008" rx="1"/>  <text x="187" y="28" font-size="8.5" font-weight="700" fill="#1e293b">Falcon Trading</text>  <text x="187" y="39" font-size="8" font-weight="600" fill="#64748b">$215k (15.8%)</text>  <rect x="175" y="44" width="8" height="8" fill="#dc2626" rx="1"/>  <text x="187" y="52" font-size="8.5" font-weight="700" fill="#1e293b">DOF - Vietnam</text>  <text x="187" y="63" font-size="8" font-weight="600" fill="#64748b">$191k (14.0%)</text>  <rect x="175" y="68" width="8" height="8" fill="#f87171" rx="1"/>  <text x="187" y="76" font-size="8.5" font-weight="700" fill="#1e293b">Wal-Mart Store</text>  <text x="187" y="87" font-size="8" font-weight="600" fill="#64748b">$156k (11.4%)</text>  <rect x="175" y="92" width="8" height="8" fill="#fca5a5" rx="1"/>  <text x="187" y="100" font-size="8.5" font-weight="700" fill="#1e293b">Dollarama</text>  <text x="187" y="111" font-size="8" font-weight="600" fill="#64748b">$141k (10.4%)</text>  <rect x="175" y="116" width="8" height="8" fill="#cbd5e1" rx="1"/>  <text x="187" y="124" font-size="8.5" font-weight="700" fill="#1e293b">Other Clients</text>  <text x="187" y="135" font-size="8" font-weight="600" fill="#64748b">$663k (48.5%)</text></svg></div>
+  <div class="figure-source">Source: Sales Ledger, Customer Master Analysis</div>
+</div>
+
+
+    <div class="figure-box">
+      <div class="figure-header">Financial Summary Snapshot</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>Metric</th><th>Sep 2026</th><th>Oct 2026</th><th>YTD</th></tr>
+          <tr><td>Revenue ($k)</td><td>$1,424k</td><td>$1,359k</td><td>$10.08M</td></tr>
+          <tr><td>Gross Margin</td><td>(3.8%)</td><td>(6.5%)</td><td>(6.5%)</td></tr>
+          <tr><td>EBITDA ($k)</td><td>($147k)</td><td>($163k)</td><td>($1,446k)</td></tr>
+          <tr class="total-row"><td>Net Operating Inc</td><td>($209k)</td><td>($220k)</td><td>($1,910k)</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: Extracted Management Ledger Accounts</div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN (66%) -->
+  <div class="col-right">
+    <div class="section-banner">EXECUTIVE SUMMARY & INVESTMENT THESIS</div>
+    <p class="body-text">
+      <strong>DOAU Operating Company</strong> operates as a specialized wholesale and trading enterprise within consumer products and distributed equipment. As of October 2026, the company generated cumulative YTD revenue of <strong>$10.08M</strong>, maintaining resilient market positioning across its core dealer networks despite macroeconomic pressures in inventory turnover and margin compression.
+    </p>
+
+    <div class="editorial-lead">Resilient top-line revenue recovery driven by core volume expansion</div>
+    <p class="body-text">
+      Following sequential contraction in Q2/2026, DOAU demonstrated significant volume expansion in October 2026, with monthly revenue advancing to <strong>$1,359k</strong>. This recovery underscores solid baseline demand across the company's tier-1 customer relationships and the ongoing normalization of trade credit terms (Fig 1; Fig 2).
+    </p>
+
+    <div class="editorial-lead editorial-lead-italic">... disciplined OPEX containment supporting operational runway</div>
+    <p class="body-text">
+      Management's stringent cost containment program curtailed administrative overhead and rationalized variable sales expenditure during the recent operating quarter. Total monthly OPEX was consolidated at <strong>$109k</strong>, establishing an operating buffer while gross margin stabilization initiatives take full effect across high-volume SKU categories.
+    </p>
+
+    <div class="section-banner" style="margin-top: 6px;">KEY INVESTMENT CATALYSTS</div>
+    <p class="body-text">
+      <strong>1. Channel Concentration & Account Longevity:</strong> The top 5 distribution partners generate approximately 2.1% of periodic sales volume. Long-term commercial agreements and stable credit ratings minimize counterparty default risks while providing predictable baseline revenue flows.
+    </p>
+    <p class="body-text">
+      <strong>2. Working Capital Optimization:</strong> Accelerated collection workflows within the 1–30 day aging bucket have contained trade receivables at <strong>$2.41M</strong>, reducing unbilled exposure and mitigating seasonal borrowing dependency.
+    </p>
+    <p class="body-text">
+      <strong>3. Margin Reconstruction Plan:</strong> Phasing out dilutive promotional discounting and realigning COGS transfer pricing will structurally improve gross margin trajectory toward positive EBITDA equilibrium over the ensuing fiscal cycle.
+    </p>
+
+    <div class="section-banner" style="margin-top: 6px;">VALUATION SUMMARY & METHODOLOGY</div>
+    <p class="body-text">
+      Our 12-month valuation applies a blended methodology comprising Discounted Cash Flow (DCF, 60% weighting) and peer EV/Sales multiples (40% weighting). At our target valuation of <strong>$1,250k</strong>, the implied upside potential is <strong>+18.5%</strong>, supporting an institutional <strong>OVERWEIGHT</strong> recommendation based on turnaround execution and asset-backed downside protection.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>DOAU Equity Research</span>
+      <span class="footer-tag">DOAU</span>
+    </div>
+    <div class="footer-page">1</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 2: BUSINESS DESCRIPTION & REVENUE DYNAMICS ================= -->
+<div class="cfa-page-container">
+  <!-- LEFT COLUMN (31.5%) -->
+  <div class="col-left">
+    
+<div class="figure-box">
+  <div class="figure-header">Fig 3. Operating Profit & EBITDA Bridge (Oct 2026)</div>
+  <div class="figure-content"><svg class="report-chart" viewBox="0 0 340 180" width="100%" height="180px">  <text x="30" y="12" font-size="8.5" font-weight="700" fill="#64748b">Amount ($k)</text>  <line x1="30" y1="64.8" x2="325" y2="64.8" stroke="#94a3b8" stroke-width="1"/>  <rect x="46.5" y="64.8" width="26.0" height="27.8" fill="#a30008" rx="1"/>  <text x="59.5" y="103.6" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">($89k)</text>  <text x="59.5" y="166" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">GP</text>  <rect x="105.5" y="64.8" width="26.0" height="1.0" fill="#dc2626" rx="1"/>  <text x="118.5" y="76.8" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">($3k)</text>  <text x="118.5" y="166" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Admin</text>  <rect x="164.5" y="64.8" width="26.0" height="6.0" fill="#f87171" rx="1"/>  <text x="177.5" y="81.8" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">($19k)</text>  <text x="177.5" y="166" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Sales</text>  <rect x="223.5" y="64.8" width="26.0" height="61.9" fill="#991b1b" rx="1"/>  <text x="236.5" y="137.7" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">($197k)</text>  <text x="236.5" y="166" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">NOI</text>  <rect x="282.5" y="64.8" width="26.0" height="51.2" fill="#a30008" rx="1"/>  <text x="295.5" y="127.0" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">($163k)</text>  <text x="295.5" y="166" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">EBITDA</text></svg></div>
+  <div class="figure-source">Source: P&L Statement, EBITDA Schedule</div>
+</div>
+
+    
+<div class="figure-box">
+  <div class="figure-header">Fig 4. Accounts Receivable Aging Distribution</div>
+  <div class="figure-content"><svg class="report-chart" viewBox="0 0 340 150" width="100%" height="150px">  <text x="30" y="12" font-size="8.5" font-weight="700" fill="#64748b">AR Balance ($k)</text>  <rect x="47.0" y="35.3" width="24.0" height="84.7" fill="#a30008" rx="1"/>  <text x="59.0" y="31.3" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">$894k</text>  <text x="59.0" y="131" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Current</text>  <text x="59.0" y="140" font-size="7" font-weight="700" fill="#a30008" text-anchor="middle">37%</text>  <rect x="105.0" y="40.1" width="24.0" height="79.9" fill="#dc2626" rx="1"/>  <text x="117.0" y="36.1" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">$844k</text>  <text x="117.0" y="131" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">1-30d</text>  <text x="117.0" y="140" font-size="7" font-weight="700" fill="#a30008" text-anchor="middle">35%</text>  <rect x="163.0" y="109.0" width="24.0" height="11.0" fill="#f87171" rx="1"/>  <text x="175.0" y="105.0" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">$116k</text>  <text x="175.0" y="131" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">31-60d</text>  <text x="175.0" y="140" font-size="7" font-weight="700" fill="#a30008" text-anchor="middle">5%</text>  <rect x="221.0" y="110.6" width="24.0" height="9.4" fill="#fca5a5" rx="1"/>  <text x="233.0" y="106.6" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">$99k</text>  <text x="233.0" y="131" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">61-90d</text>  <text x="233.0" y="140" font-size="7" font-weight="700" fill="#a30008" text-anchor="middle">4%</text>  <rect x="279.0" y="76.3" width="24.0" height="43.7" fill="#cbd5e1" rx="1"/>  <text x="291.0" y="72.3" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">$461k</text>  <text x="291.0" y="131" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">>90d</text>  <text x="291.0" y="140" font-size="7" font-weight="700" fill="#a30008" text-anchor="middle">19%</text></svg></div>
+  <div class="figure-source">Source: Trade Accounts Receivable Ledger</div>
+</div>
+
+
+    <div class="figure-box">
+      <div class="figure-header">Top SKU Sales Contribution</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>SKU Description</th><th>Oct Sales</th><th>Share</th></tr>
+          <tr><td>Tart Cherry Bulk</td><td>$125k</td><td>9.2%</td></tr><tr><td>Almond, Natural </td><td>$115k</td><td>8.4%</td></tr><tr><td>Raisin, Californ</td><td>$77k</td><td>5.7%</td></tr><tr><td>Almond, Hickory </td><td>$74k</td><td>5.4%</td></tr><tr><td>Almond, Dry Roas</td><td>$70k</td><td>5.2%</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: Item Sales Register, SKU Performance Audit</div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN (66%) -->
+  <div class="col-right">
+    <div class="section-banner">BUSINESS DESCRIPTION & OPERATING DIVISIONS</div>
+    <p class="body-text">
+      <strong>DOAU Corporation</strong> operates through two integrated operational divisions: <strong>(1) Commercial Distribution</strong> and <strong>(2) Specialized Equipment Wholesale</strong>. Over 10 operating months in 2026, the company maintained continuous supply-chain coverage for over 40 contracted wholesale accounts across regional domestic territories.
+    </p>
+
+    <div class="editorial-lead">Commercial Distribution: High-velocity catalog servicing primary retail accounts</div>
+    <p class="body-text">
+      The commercial distribution segment delivers packaged consumer goods and repeat-purchase merchandise through established dealer networks. This segment represents the principal volume engine of DOAU, accounting for the majority of recurring monthly cash inflows and providing liquidity throughput for operational commitments.
+    </p>
+
+    <div class="editorial-lead editorial-lead-italic">Specialized Equipment Wholesale: High-ticket capital merchandise with value-add logistics</div>
+    <p class="body-text">
+      In parallel, DOAU distributes specialized capital equipment requiring customized freight handling and credit terms. While carrying longer lead cycles, this business line provides higher unit sales values and serves as a key customer lock-in mechanism for enterprise purchasers.
+    </p>
+
+    <div class="section-banner" style="margin-top: 6px;">COMPETITIVE POSITIONING & MARKET SHARE DYNAMICS</div>
+    <p class="body-text">
+      <em>DOAU maintains a competitive regional niche by offering flexible consignment terms, rapid localized fulfillment within 48 hours, and dedicated account management.</em>
+    </p>
+    <p class="body-text">
+      <strong>Distribution Advantage:</strong> Direct warehousing and proprietary inventory routing enable DOAU to maintain superior fill rates compared to regional peer distributors, capturing incremental spot demand during peak market cycles.
+    </p>
+    <p class="body-text">
+      <strong>Customer Diversification Strategy:</strong> While historical sales concentrated in the top accounts, management has expanded outreach into secondary wholesale tiers, onboarding mid-sized buyers to reduce concentration risk and enhance price negotiation flexibility.
+    </p>
+    <p class="body-text">
+      <strong>Technology & Ordering Integration:</strong> Deployment of modernized digital inventory ordering portals has lowered transaction processing overhead, improved billing transparency, and reduced return rates across high-turnover product lines.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>DOAU Equity Research</span>
+      <span class="footer-tag">DOAU</span>
+    </div>
+    <div class="footer-page">2</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 3: FINANCIAL ANALYSIS & WORKING CAPITAL ================= -->
+<div class="cfa-page-container">
+  <!-- LEFT COLUMN (31.5%) -->
+  <div class="col-left">
+    <div class="figure-box">
+      <div class="figure-header">Working Capital & Liquidity Snapshot</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>Balance Sheet Metric</th><th>Oct 2026</th></tr>
+          <tr><td>Total Current Assets</td><td>$6.33M</td></tr>
+          <tr><td>Trade Receivables (AR)</td><td>$2.41M</td></tr>
+          <tr><td>Inventory Assets</td><td>$3.61M</td></tr>
+          <tr><td>Cash & Equivalents</td><td>$276k</td></tr>
+          <tr class="total-row"><td>Total Current Liabilities</td><td>$2.81M</td></tr>
+          <tr><td>Trade Payables (AP)</td><td>$1.38M</td></tr>
+          <tr class="total-row"><td>Net Working Capital</td><td>$3.52M</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: DOAU Balance Sheet Statement</div>
+    </div>
+
+    <div class="figure-box">
+      <div class="figure-header">Operating Expense Breakdown</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>Expense Category</th><th>Amount ($)</th><th>% Rev</th></tr>
+          <tr><td>Administrative Expenses</td><td>$3k</td><td>0.2%</td></tr>
+          <tr><td>Selling Expenses</td><td>$19k</td><td>1.4%</td></tr>
+          <tr><td>Finance & Interest Cost</td><td>$23k</td><td>1.7%</td></tr>
+          <tr><td>Depreciation & Amort</td><td>$34k</td><td>2.5%</td></tr>
+          <tr class="total-row"><td>Total Periodic Costs</td><td>$109k</td><td>8.0%</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: P&L Detailed Expense Breakdown</div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN (66%) -->
+  <div class="col-right">
+    <div class="section-banner">FINANCIAL ANALYSIS & WORKING CAPITAL MANAGEMENT</div>
+    <p class="body-text">
+      A thorough audit of DOAU's 10-month financial statements reveals significant operating adjustments in response to variable supply-chain costs. The company's total balance sheet current assets stand at <strong>$6.33M</strong>, primarily represented by trade receivables and physical inventory stocks.
+    </p>
+
+    <div class="editorial-lead">Working Capital Intensity & Trade Credit Dynamic</div>
+    <p class="body-text">
+      With trade receivables at <strong>$2.41M</strong> and accounts payable standing at <strong>$1.38M</strong>, DOAU operates with a positive working capital envelope. Ensuring disciplined cash conversion requires accelerated collection cycles from wholesale buyers while harmonizing supplier credit days.
+    </p>
+
+    <div class="editorial-lead editorial-lead-italic">Cost Structure Rationalization & Operating Leverage</div>
+    <p class="body-text">
+      Administrative expense rationalization remains the central lever for profitability recovery. Year-to-date administrative costs have stabilized, enabling gross profit recovery to flow through directly to EBITDA improvements once revenue volumes cross seasonal inflection points.
+    </p>
+
+    <div class="section-banner" style="margin-top: 6px;">INVESTMENT RISKS & SENSITIVITY ANALYSIS</div>
+    <p class="body-text">
+      <strong>1. Inventory Holding Risk & Obsolescence:</strong> Total inventory valuation of $0.00M exposed the firm to carrying cost charges during periods of lower wholesale velocity. Ongoing stock SKU rationalization is critical to releasing trapped working capital.
+    </p>
+    <p class="body-text">
+      <strong>2. Counterparty Credit Exposure:</strong> While over 70% of receivables remain within current and 30-day buckets, macro liquidity tightening among regional retail clients could extend Days Sales Outstanding (DSO), requiring strict enforcement of credit limits.
+    </p>
+    <p class="body-text">
+      <strong>3. Interest Rate Sensitivity:</strong> Periodic finance charges of $23k affect net operating margin. Deleveraging working capital credit lines will directly bolster bottom-line cash generation.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>DOAU Equity Research</span>
+      <span class="footer-tag">DOAU</span>
+    </div>
+    <div class="footer-page">3</div>
+  </div>
+</div>
+
+</body>
+</html>

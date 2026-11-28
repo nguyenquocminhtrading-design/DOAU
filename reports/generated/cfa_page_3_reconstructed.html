@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CFA Equity Research Report - Page 3</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #111827;
+    background-color: #f1f5f9;
+    line-height: 1.32;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cfa-page-container {
+    width: 210mm;
+    min-height: 297mm;
+    height: 297mm;
+    margin: 15px auto;
+    background: #ffffff;
+    position: relative;
+    padding: 8mm 11mm 8mm 11mm;
+    display: grid;
+    grid-template-columns: 31.5% 66%;
+    grid-column-gap: 2.5%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+
+  @media print {
+    body {
+      background: #ffffff;
+    }
+    .cfa-page-container {
+      margin: 0;
+      box-shadow: none;
+      width: 210mm;
+      height: 297mm;
+      page-break-after: always;
+    }
+  }
+
+  /* LEFT COLUMN (31.5%) */
+  .col-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  /* RIGHT COLUMN (66%) */
+  .col-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* SECTION HEADERS */
+  .section-banner {
+    background-color: #a30008;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 3px 6px;
+    margin-bottom: 4px;
+  }
+
+  .editorial-lead {
+    color: #a30008;
+    font-size: 9.2px;
+    font-weight: 700;
+    margin-top: 3.5px;
+    margin-bottom: 1.5px;
+  }
+
+  .editorial-lead-italic {
+    font-style: italic;
+  }
+
+  .body-text {
+    font-size: 8.2px;
+    line-height: 1.30;
+    color: #1f2937;
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+
+  .body-text strong {
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  /* FIGURE BOXES (Left Column) */
+  .figure-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 2px;
+    margin-bottom: 2px;
+  }
+
+  .figure-header {
+    background-color: #6e7073;
+    color: #ffffff;
+    font-size: 8.8px;
+    font-weight: 800;
+    padding: 2px 5px;
+    text-align: center;
+  }
+
+  .figure-content {
+    padding: 3px;
+  }
+
+  .figure-source {
+    font-size: 6.8px;
+    font-style: italic;
+    color: #64748b;
+    padding: 1px 5px 2px 5px;
+  }
+
+  /* BADGE CARDS (Figure 4) */
+  .badge-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;
+  }
+
+  .badge-card-row {
+    display: flex;
+    align-items: center;
+    border: 1px solid #cbd5e1;
+    border-radius: 3px;
+    padding: 2px 3.5px;
+    background: #f8fafc;
+  }
+
+  .badge-label {
+    width: 38%;
+    font-size: 7.8px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.1;
+  }
+
+  .badge-pills {
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5px;
+  }
+
+  .badge-pill {
+    display: block;
+    text-align: center;
+    font-size: 7.2px;
+    font-weight: 700;
+    padding: 1px 3px;
+    border-radius: 9999px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .badge-mini-legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-top: 2px;
+  }
+
+  .legend-chip {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 1px;
+  }
+
+  .legend-lbl {
+    font-size: 7.5px;
+    font-weight: 600;
+    color: #475569;
+  }
+
+  /* FOOTER */
+  .cfa-page-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 7mm;
+    background-color: #a30008;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11mm;
+    font-size: 9.5px;
+    font-weight: 700;
+  }
+
+  .footer-company {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .footer-tag {
+    background: #ffffff;
+    color: #a30008;
+    padding: 0.5px 4px;
+    border-radius: 2px;
+    font-weight: 900;
+    font-size: 8.5px;
+  }
+
+  .footer-page {
+    font-size: 10px;
+    font-weight: 800;
+  }
+</style>
+</head>
+<body>
+
+<div class="cfa-page-container">
+  <!-- LEFT COLUMN (31.5%) -->
+  <div class="col-left">
+    <div class="figure-box">
+  <div class="figure-header">Fig 4. SSI holistic investment solutions</div>
+  <div class="figure-content badge-cards-container">
+    <div class="badge-card-row">
+      <div class="badge-label">Margin lending</div>
+      <div class="badge-pills">
+        <span class="badge-pill" style="background-color: #a30008; color: #ffffff;">#2 market share, #1 margin loan room</span>
+      </div>
+    </div>
+    <div class="badge-card-row">
+      <div class="badge-label">Brokerage service</div>
+      <div class="badge-pills">
+        <span class="badge-pill" style="background-color: #f87171; color: #ffffff;">#2 market share</span>
+        <span class="badge-pill" style="background-color: #dc2626; color: #ffffff;">#3 market share</span>
+        <span class="badge-pill" style="background-color: #a30008; color: #ffffff;">#2 Asia overall broker</span>
+      </div>
+    </div>
+    <div class="badge-card-row">
+      <div class="badge-label">Proprietary trading</div>
+      <div class="badge-pills">
+        <span class="badge-pill" style="background-color: #a30008; color: #ffffff;">#1 revenue</span>
+      </div>
+    </div>
+    <div class="badge-card-row">
+      <div class="badge-label">Asset management</div>
+      <div class="badge-pills">
+        <span class="badge-pill" style="background-color: #a30008; color: #ffffff;">#1 OEF performance</span>
+        <span class="badge-pill" style="background-color: #880e4f; color: #ffffff;">#1 fastest growing AM</span>
+      </div>
+    </div>
+    <div class="badge-card-row">
+      <div class="badge-label">Investment banking</div>
+      <div class="badge-pills">
+        <span class="badge-pill" style="background-color: #a30008; color: #ffffff;">#1 ECM</span>
+      </div>
+    </div>
+  </div>
+  <div class="badge-mini-legend">
+    <span class="legend-chip" style="background:#cbd5e1;"></span><span class="legend-lbl">General</span>
+    <span class="legend-chip" style="background:#f87171;"></span><span class="legend-lbl">Retail</span>
+    <span class="legend-chip" style="background:#a30008;"></span><span class="legend-lbl">Institutional</span>
+  </div>
+  <div class="figure-source">Source: SSI, Team analysis</div>
+</div>
+    
+<div class="figure-box">
+  <div class="figure-header">Fig 5. SSI revenue segments breakdown</div>
+  <div class="figure-content">
+    <svg class="report-chart" viewBox="0 0 340 205" width="100%" height="205px" xmlns="http://www.w3.org/2000/svg">  <text x="26" y="14" font-size="9" font-weight="700" fill="#64748b">(bn VND)</text>  <text x="170.0" y="14" font-size="10.5" font-weight="800" fill="#a30008" text-anchor="middle">21.96% CAGR</text>  <rect x="298" y="12" width="38" height="12" fill="#a30008" rx="2"/>  <text x="317" y="21" font-size="7.5" font-weight="800" fill="#ffffff" text-anchor="middle">'19-'23 CAGR</text>  <rect x="298" y="28" width="38" height="11" fill="#f87171" rx="1.5"/>  <text x="317" y="36.5" font-size="8" font-weight="800" fill="#ffffff" text-anchor="middle">26.75%</text>  <rect x="298" y="41" width="38" height="11" fill="#f87171" rx="1.5"/>  <text x="317" y="49.5" font-size="8" font-weight="800" fill="#ffffff" text-anchor="middle">23.33%</text>  <rect x="298" y="54" width="38" height="11" fill="#f87171" rx="1.5"/>  <text x="317" y="62.5" font-size="8" font-weight="800" fill="#ffffff" text-anchor="middle">19.75%</text>  <rect x="298" y="67" width="38" height="11" fill="#f87171" rx="1.5"/>  <text x="317" y="75.5" font-size="8" font-weight="800" fill="#ffffff" text-anchor="middle">21.59%</text>  <rect x="34.5" y="151.5" width="27.7" height="19.5" fill="#f87171" rx="0.5"/>  <text x="48.3" y="164.8" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">1200</text>  <rect x="34.5" y="136.9" width="27.7" height="14.6" fill="#dc2626" rx="0.5"/>  <text x="48.3" y="147.7" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">900</text>  <rect x="34.5" y="123.9" width="27.7" height="13.0" fill="#991b1b" rx="0.5"/>  <rect x="34.5" y="118.5" width="27.7" height="5.4" fill="#cbd5e1" rx="0.5"/>  <text x="48.3" y="114.5" font-size="10" font-weight="800" fill="#0f172a" text-anchor="middle">3235</text>  <text x="48.3" y="184" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">19A</text>  <rect x="79.2" y="145.0" width="27.7" height="26.0" fill="#f87171" rx="0.5"/>  <text x="93.0" y="161.5" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">1600</text>  <rect x="79.2" y="125.5" width="27.7" height="19.5" fill="#dc2626" rx="0.5"/>  <text x="93.0" y="138.8" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">1200</text>  <rect x="79.2" y="107.7" width="27.7" height="17.9" fill="#991b1b" rx="0.5"/>  <text x="93.0" y="120.1" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">1100</text>  <rect x="79.2" y="100.1" width="27.7" height="7.6" fill="#cbd5e1" rx="0.5"/>  <text x="93.0" y="96.1" font-size="10" font-weight="800" fill="#0f172a" text-anchor="middle">4367</text>  <text x="93.0" y="184" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">20A</text>  <rect x="123.8" y="125.5" width="27.7" height="45.5" fill="#f87171" rx="0.5"/>  <text x="137.7" y="151.8" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">2800</text>  <rect x="123.8" y="91.4" width="27.7" height="34.1" fill="#dc2626" rx="0.5"/>  <text x="137.7" y="112.0" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">2100</text>  <rect x="123.8" y="62.2" width="27.7" height="29.2" fill="#991b1b" rx="0.5"/>  <text x="137.7" y="80.3" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">1800</text>  <rect x="123.8" y="50.1" width="27.7" height="12.1" fill="#cbd5e1" rx="0.5"/>  <text x="137.7" y="46.1" font-size="10" font-weight="800" fill="#0f172a" text-anchor="middle">7443</text>  <text x="137.7" y="184" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">21A</text>  <rect x="168.5" y="135.3" width="27.7" height="35.7" fill="#f87171" rx="0.5"/>  <text x="182.3" y="156.6" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">2200</text>  <rect x="168.5" y="104.4" width="27.7" height="30.9" fill="#dc2626" rx="0.5"/>  <text x="182.3" y="123.3" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">1900</text>  <rect x="168.5" y="78.4" width="27.7" height="26.0" fill="#991b1b" rx="0.5"/>  <text x="182.3" y="94.9" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">1600</text>  <rect x="168.5" y="68.1" width="27.7" height="10.3" fill="#cbd5e1" rx="0.5"/>  <text x="182.3" y="64.1" font-size="10" font-weight="800" fill="#0f172a" text-anchor="middle">6336</text>  <text x="182.3" y="184" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">22A</text>  <rect x="213.2" y="130.4" width="27.7" height="40.6" fill="#f87171" rx="0.5"/>  <text x="227.0" y="154.2" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">2500</text>  <rect x="213.2" y="95.5" width="27.7" height="34.9" fill="#dc2626" rx="0.5"/>  <text x="227.0" y="116.4" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">2150</text>  <rect x="213.2" y="67.9" width="27.7" height="27.6" fill="#991b1b" rx="0.5"/>  <text x="227.0" y="85.2" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">1700</text>  <rect x="213.2" y="54.8" width="27.7" height="13.1" fill="#cbd5e1" rx="0.5"/>  <text x="227.0" y="64.8" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">808</text>  <text x="227.0" y="50.8" font-size="10" font-weight="800" fill="#0f172a" text-anchor="middle">7158</text>  <text x="227.0" y="184" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">23A</text>  <rect x="257.8" y="136.9" width="27.7" height="34.1" fill="#f87171" rx="0.5"/>  <text x="271.7" y="157.4" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">2100</text>  <rect x="257.8" y="106.0" width="27.7" height="30.9" fill="#dc2626" rx="0.5"/>  <text x="271.7" y="125.0" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">1900</text>  <rect x="257.8" y="80.9" width="27.7" height="25.2" fill="#991b1b" rx="0.5"/>  <text x="271.7" y="97.0" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">1550</text>  <rect x="257.8" y="68.6" width="27.7" height="12.3" fill="#cbd5e1" rx="0.5"/>  <text x="271.7" y="64.6" font-size="10" font-weight="800" fill="#0f172a" text-anchor="middle">6308</text>  <text x="271.7" y="184" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">9M24</text>  <rect x="26" y="182" width="7.5" height="7.5" fill="#f87171" rx="1"/>  <text x="36" y="189" font-size="8" font-weight="700" fill="#334155">Brokerage</text>  <rect x="136" y="182" width="7.5" height="7.5" fill="#dc2626" rx="1"/>  <text x="146" y="189" font-size="8" font-weight="700" fill="#334155">Margin Lending</text>  <rect x="26" y="193" width="7.5" height="7.5" fill="#991b1b" rx="1"/>  <text x="36" y="200" font-size="8" font-weight="700" fill="#334155">Proprietary Trading</text>  <rect x="136" y="193" width="7.5" height="7.5" fill="#cbd5e1" rx="1"/>  <text x="146" y="200" font-size="8" font-weight="700" fill="#334155">IB &amp; Others</text></svg>
+  </div>
+  <div class="figure-source">Source: SSI, Team analysis</div>
+</div>
+
+    
+<div class="figure-box">
+  <div class="figure-header">Fig 6. Brokerage market share in H1/2024</div>
+  <div class="figure-content">
+    <svg class="report-chart" viewBox="0 0 340 155" width="100%" height="155px" xmlns="http://www.w3.org/2000/svg">  <text x="85" y="14" font-size="9" font-weight="700" fill="#1e293b" text-anchor="middle">Overall market share</text>  <path d="M 85.00 20.00 A 40 40 0 0 1 122.19 45.28 L 104.53 52.27 A 21 21 0 0 0 85.00 39.00 Z" fill="#a30008" stroke="#ffffff" stroke-width="1.2"/>  <text x="102.1" y="38.3" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">19%</text>  <path d="M 122.19 45.28 A 40 40 0 0 1 124.29 67.50 L 105.63 63.94 A 21 21 0 0 0 104.53 52.27 Z" fill="#f87171" stroke="#ffffff" stroke-width="1.2"/>  <text x="115.4" y="60.6" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">9%</text>  <path d="M 124.29 67.50 A 40 40 0 0 1 117.36 83.51 L 101.99 72.34 A 21 21 0 0 0 105.63 63.94 Z" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>  <path d="M 117.36 83.51 A 40 40 0 1 1 85.00 20.00 L 85.00 39.00 A 21 21 0 1 0 101.99 72.34 Z" fill="#cbd5e1" stroke="#ffffff" stroke-width="1.2"/>  <text x="57.8" y="77.3" font-size="9" font-weight="800" fill="#1e293b" text-anchor="middle">65%</text>  <text x="255" y="14" font-size="9" font-weight="700" fill="#1e293b" text-anchor="middle">Foreign institutional market share</text>  <path d="M 255.00 20.00 A 40 40 0 0 1 295.00 60.00 L 276.00 60.00 A 21 21 0 0 0 255.00 39.00 Z" fill="#a30008" stroke="#ffffff" stroke-width="1.2"/>  <text x="276.6" y="41.9" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">25%</text>  <path d="M 295.00 60.00 A 40 40 0 0 1 260.01 99.68 L 257.63 80.83 A 21 21 0 0 0 276.00 60.00 Z" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>  <text x="277.9" y="83.7" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">23%</text>  <path d="M 260.01 99.68 A 40 40 0 0 1 216.26 69.95 L 234.66 65.22 A 21 21 0 0 0 257.63 80.83 Z" fill="#f87171" stroke="#ffffff" stroke-width="1.2"/>  <text x="237.9" y="88.7" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">23%</text>  <path d="M 216.26 69.95 A 40 40 0 0 1 255.00 20.00 L 255.00 39.00 A 21 21 0 0 0 234.66 65.22 Z" fill="#cbd5e1" stroke="#ffffff" stroke-width="1.2"/>  <text x="230.9" y="44.8" font-size="9" font-weight="800" fill="#1e293b" text-anchor="middle">29%</text>  <rect x="25" y="118" width="7" height="7" fill="#a30008" rx="1"/>  <text x="35" y="125" font-size="8" font-weight="700" fill="#334155">VPS</text>  <rect x="85" y="118" width="7" height="7" fill="#f87171" rx="1"/>  <text x="95" y="125" font-size="8" font-weight="700" fill="#334155">SSI</text>  <rect x="25" y="130" width="7" height="7" fill="#dc2626" rx="1"/>  <text x="35" y="137" font-size="8" font-weight="700" fill="#334155">TCBS</text>  <rect x="85" y="130" width="7" height="7" fill="#cbd5e1" rx="1"/>  <text x="95" y="137" font-size="8" font-weight="700" fill="#334155">Others</text>  <rect x="195" y="118" width="7" height="7" fill="#a30008" rx="1"/>  <text x="205" y="125" font-size="8" font-weight="700" fill="#334155">SSI</text>  <rect x="260" y="118" width="7" height="7" fill="#dc2626" rx="1"/>  <text x="270" y="125" font-size="8" font-weight="700" fill="#334155">Vietcap</text>  <rect x="195" y="130" width="7" height="7" fill="#f87171" rx="1"/>  <text x="205" y="137" font-size="8" font-weight="700" fill="#334155">HSC</text>  <rect x="260" y="130" width="7" height="7" fill="#cbd5e1" rx="1"/>  <text x="270" y="137" font-size="8" font-weight="700" fill="#334155">Others</text></svg>
+  </div>
+  <div class="figure-source">Source: FiinPro, Team analysis</div>
+</div>
+
+    
+<div class="figure-box">
+  <div class="figure-header">Fig 7. SSI&#x27;s strategy of customer base expansion</div>
+  <div class="figure-content">
+    
+    <svg class="report-chart" viewBox="0 0 340 150" width="100%" height="150px" xmlns="http://www.w3.org/2000/svg">
+      <!-- Axes -->
+      <line x1="30" y1="125" x2="320" y2="125" stroke="#94a3b8" stroke-width="1.5"/>
+      <line x1="30" y1="125" x2="30" y2="15" stroke="#94a3b8" stroke-width="1.5"/>
+      <text x="30" y="10" font-size="8" font-weight="700" fill="#64748b">Assets</text>
+      <text x="320" y="138" font-size="8" font-weight="700" fill="#64748b" text-anchor="end">Age</text>
+      
+      <!-- Growth curves -->
+      <path d="M 35 120 Q 120 115 170 85 T 300 35" fill="none" stroke="#cbd5e1" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 35 120 Q 120 110 170 75 T 280 25" fill="none" stroke="#f1f5f9" stroke-width="22" stroke-linecap="round"/>
+
+      <!-- Milestone Circles -->
+      <!-- 1. Young customer -->
+      <circle cx="65" cy="108" r="16" fill="#fca5a5"/>
+      <text x="65" y="106" font-size="7.5" font-weight="800" fill="#ffffff" text-anchor="middle">Young</text>
+      <text x="65" y="115" font-size="7.5" font-weight="800" fill="#ffffff" text-anchor="middle">customer</text>
+
+      <!-- 2. Affluent-class -->
+      <circle cx="125" cy="85" r="19" fill="#dc2626"/>
+      <text x="125" y="83" font-size="8" font-weight="800" fill="#ffffff" text-anchor="middle">Affluent-</text>
+      <text x="125" y="92" font-size="8" font-weight="800" fill="#ffffff" text-anchor="middle">class</text>
+
+      <!-- 3. Wealthy customer -->
+      <circle cx="195" cy="60" r="17" fill="#fca5a5"/>
+      <text x="195" y="58" font-size="7.5" font-weight="800" fill="#ffffff" text-anchor="middle">Wealthy</text>
+      <text x="195" y="67" font-size="7.5" font-weight="800" fill="#ffffff" text-anchor="middle">customer</text>
+
+      <!-- 4. Elderly customers -->
+      <circle cx="265" cy="40" r="18" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="265" y="38" font-size="7.5" font-weight="800" fill="#334155" text-anchor="middle">Elderly</text>
+      <text x="265" y="47" font-size="7.5" font-weight="800" fill="#334155" text-anchor="middle">customers</text>
+
+      <!-- X-axis Age milestones -->
+      <text x="50" y="137" font-size="7.5" font-weight="600" fill="#64748b" text-anchor="middle">Adolescence</text>
+      <text x="130" y="137" font-size="7.5" font-weight="600" fill="#64748b" text-anchor="middle">Middle age</text>
+      <text x="210" y="137" font-size="7.5" font-weight="600" fill="#64748b" text-anchor="middle">Retirement</text>
+      <text x="280" y="137" font-size="7.5" font-weight="600" fill="#64748b" text-anchor="middle">Inheritance</text>
+    </svg>
+    
+  </div>
+  <div class="figure-source">Source: SSI, TCBS, VPS, Team analysis</div>
+</div>
+
+    
+<div class="figure-box">
+  <div class="figure-header">Fig 8. AUM in other Asia countries</div>
+  <div class="figure-content">
+    <svg class="report-chart" viewBox="0 0 340 160" width="100%" height="160px" xmlns="http://www.w3.org/2000/svg">  <text x="30" y="13" font-size="8.5" font-weight="700" fill="#64748b">Total AUM ($B)</text>  <rect x="43.6" y="23.6" width="22.0" height="90.4" fill="#a30008" rx="0.5"/>  <text x="54.6" y="19.6" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">3400</text>  <text x="54.6" y="126" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">China</text>  <rect x="41.6" y="130" width="26.0" height="14" fill="#fca5a5" rx="1"/>  <text x="54.6" y="140.5" font-size="7.5" font-weight="800" fill="#7f1d1d" text-anchor="middle">30.9%</text>  <rect x="92.7" y="43.7" width="22.0" height="70.3" fill="#dc2626" rx="0.5"/>  <text x="103.7" y="39.7" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">555</text>  <text x="103.7" y="126" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">S.Korea</text>  <rect x="90.7" y="130" width="26.0" height="14" fill="#fca5a5" rx="1"/>  <text x="103.7" y="140.5" font-size="7.5" font-weight="800" fill="#7f1d1d" text-anchor="middle">30.0%</text>  <rect x="141.9" y="54.7" width="22.0" height="59.3" fill="#f87171" rx="0.5"/>  <text x="152.9" y="50.7" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">206</text>  <text x="152.9" y="126" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Malaysia</text>  <rect x="139.9" y="130" width="26.0" height="14" fill="#fca5a5" rx="1"/>  <text x="152.9" y="140.5" font-size="7.5" font-weight="800" fill="#7f1d1d" text-anchor="middle">50.8%</text>  <rect x="191.1" y="62.1" width="22.0" height="51.9" fill="#fca5a5" rx="0.5"/>  <text x="202.1" y="58.1" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">106</text>  <text x="202.1" y="126" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Thailand</text>  <rect x="189.1" y="130" width="26.0" height="14" fill="#fca5a5" rx="1"/>  <text x="202.1" y="140.5" font-size="7.5" font-weight="800" fill="#7f1d1d" text-anchor="middle">18.8%</text>  <rect x="240.2" y="77.8" width="22.0" height="36.2" fill="#cbd5e1" rx="0.5"/>  <text x="251.2" y="73.8" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">26</text>  <text x="251.2" y="126" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Philippines</text>  <rect x="238.2" y="130" width="26.0" height="14" fill="#fca5a5" rx="1"/>  <text x="251.2" y="140.5" font-size="7.5" font-weight="800" fill="#7f1d1d" text-anchor="middle">6.5%</text>  <rect x="289.4" y="78.2" width="22.0" height="35.8" fill="#ef4444" rx="0.5"/>  <text x="300.4" y="74.2" font-size="9" font-weight="800" fill="#0f172a" text-anchor="middle">25</text>  <text x="300.4" y="126" font-size="8" font-weight="700" fill="#334155" text-anchor="middle">Vietnam</text>  <rect x="287.4" y="130" width="26.0" height="14" fill="#fca5a5" rx="1"/>  <text x="300.4" y="140.5" font-size="7.5" font-weight="800" fill="#7f1d1d" text-anchor="middle">10.7%</text>  <text x="2" y="140.5" font-size="7" font-weight="700" fill="#64748b">% Cap</text></svg>
+  </div>
+  <div class="figure-source">Source: FiinPro, Team analysis</div>
+</div>
+
+  </div>
+
+  <!-- RIGHT COLUMN (66%) -->
+  <div class="col-right">
+    <div class="section-banner">BUSINESS DESCRIPTION</div>
+    <p class="body-text">
+      <strong>SSI Securities Corporation (HOSE: SSI)</strong> has solidified its position as the longest-established securities firm with 24 years of development alongside the country's capital markets. Notably, SSI is the largest security firm in SEA by charter capital, totaling VND 18,130bn (as of Q3/2024). Utilizing the capital base, SSI has achieved top revenue performance with VND 7,108bn in 2023 and VND 6,308bn in 9M/2024, serving 600,000+ clients across Vietnam.
+    </p>
+
+    <div class="editorial-lead">A leading securities firm offers the most extensive product ecosystem,...</div>
+    <p class="body-text">
+      SSI offers a comprehensive investment product and service ecosystem targeting the highest standards. These offerings are designed to serve the investment preferences of all investor types in any economic conditions (Fig 4; Appendix F).
+    </p>
+
+    <div class="editorial-lead editorial-lead-italic">... yielding exceptional business performance across all key business sectors</div>
+    <p class="body-text">
+      SSI has held its position as a revenue leader for years from four main segments: <strong>(1)</strong> Brokerage, <strong>(2)</strong> Margin Lending, <strong>(3)</strong> Proprietary trading, and <strong>(4)</strong> Investment Banking, Asset Management, and Others (Fig 5).
+    </p>
+    <p class="body-text">
+      <strong>Brokerage:</strong> By consistently building best-in-country research and broker teams for both retail and institutional clients, SSI market share consistently maintains 2nd rank (Fig 4). Notably, SSI is the only securities company that is consistently positioned in the top 3 across both customer segments (Fig 6).
+    </p>
+    <p class="body-text">
+      <strong>Margin Lending:</strong> While SSI currently ranks 2nd in margin loan balance, they have the largest capacity for margin loan expansion with the available owner equity of 119.14% for further margin loans. In 2024F, SSI raised its charter capital to enhance margin lending capacity and solidify this segment as its primary growth driver.
+    </p>
+    <p class="body-text">
+      <strong>Proprietary Trading:</strong> With top-tier asset base, SSI allocates 57.50% of assets on 2019-2023 average to proprietary trading, which generates substantial earnings and secures leadership in the segment. On average, over the past 5 years, SSI prioritizes stable investment assets with its main focus on CDs (49.53%), bonds (32.43%), and 11.66%, mostly in blue-chip equities.
+    </p>
+    <p class="body-text">
+      <strong>Asset Management:</strong> SSI is recognized as the pioneering securities firm in asset management. By 2023, SSIAM managed a total AUM of VND 13,649bn and consistently outperformed the market. Notably, SSI-SCA delivered a 28.40% 3Y-return in 2021–2023 – the top performer among all open-ended funds.
+    </p>
+    <p class="body-text">
+      <strong>Investment Banking:</strong> is an important attractor for institutional investors. Leading in ECM, SSI has mobilized USD 14bn+ through groundbreaking deals for Vietnam, reinforcing its network with major domestic and international institutions. SSI also plays a major role in SCIC's divestment deals, indicating solid growth prospects given promising pipelines ahead. Regarding DCM, SSI's bond issuance will be further supported by S&I Ratings, currently ranked fourth, within the limit of five credit rating agencies licensed by the government.
+    </p>
+    <p class="body-text">
+      <em>Overall, SSI is the only securities firm with all four business segments consistently at the top ranking. This exceptional performance is expected to further accelerate, driven by the company's robust strategy and favorable industry conditions.</em>
+    </p>
+
+    <div class="section-banner" style="margin-top: 5px;">COMPANY STRATEGY</div>
+    <p class="body-text">
+      <em>SSI is known for its stability-focused business approach, which has successfully built a reputation for financial resilience. Nevertheless, this approach held SSI back in an intense race. Thus, SSI has actively transformed into a more dynamic business to seize the market potential. Evidently, SSI has been actively <strong>(1)</strong> promoting margin lending to meet expected rising demand, <strong>(2)</strong> broadening customer base, and <strong>(3)</strong> developing new products for investors of all asset levels, reinforcing its top-tier position.</em>
+    </p>
+
+    <div class="editorial-lead">Driving proactive leap towards margin lending to best absorb the upcoming market demand</div>
+    <p class="body-text">
+      SSI is strategically scaling margin lending operations to capitalize on rapid market participation growth. Evidently, recent charter capital raised an additional VND 4,533bn strengthening its capital foundation to expand the margin balance and promote lending activities. Additionally, SSI has crafted specialized product groups tailored to distinct customer segments, working closely with the broker team to effectively promote margin lending outreach. Moreover, by also providing competitive lending rates, SSI's substantial margin lending room is expected to fill up. While becoming more vibrant in margin lending, SSI will still maintain a prudent investment portfolio, focusing on CDs and bonds to sustain its principle of cautious practice. These improvements not only bolster SSI's competitive edge but also enable it to seize growing market potential, ultimately increasing margin lending market share.
+    </p>
+
+    <div class="editorial-lead">Expanding foreign institutional customer base through global partnerships and strong financial capability</div>
+    <p class="body-text">
+      After securing strong local corporations' network (~90% of total market cap), SSI is pivoting towards expanding its foreign institutional customer base. By expanding partnership with leading global financial institutions (e.g. Goldman Sachs), this portrays SSI as a credible business partner in eyes of investment community, hence enhancing their attractiveness with potential global institutional investors. Besides, SSI's well-prepared financial capabilities will accommodate the expected influx of foreign institutional investors in the light of Vietnam's upcoming upgrades to EM (Appendix N).
+    </p>
+
+    <div class="editorial-lead">Building bridge to young generation: SSI's pathway to conquer this future retail customer group</div>
+    <p class="body-text">
+      In response to Vietnam's evolving investor landscape, SSI is focusing on expanding its younger customers (aged 18–35), comprising 20% of its current clientele through a focused "technology-internet plus" customer acquisition strategy, via account opening promotions, financial education, and frequent trading platforms upgrades (IBoard Pro's user-friendliness to make stock investing more accessible). In fact, SSI is promoting partnerships with reputable media to organize numerous advisory programs, especially targeting students like "The Moneyverse" (+15,000 student participation) (Appendix F4). Given Vietnam's retail-driven stock market, this strategy will attract a broad retail investor base, particularly tech-savvy young customers, to grab a competitive share of this key future demographic.
+    </p>
+
+    <div class="editorial-lead">Focusing on product development to enhance accessibility for investors of all asset levels</div>
+    <p class="body-text">
+      <strong>Strategic product development to cater to the growing mass affluent clients, emerging as the primary segment,...</strong><br/>
+      SSI is well-known serving the high net-worth customer segment. Moreover, with Vietnam's rising middle-class income, the mass affluent investors are emerging as a key customer group, accounting for 72.12% of total clients. Recognizing this trend, SSI is set to launch its wealth management products in early 2025, strategically catering to this growing customer segment. This also lays the foundation for future development to capture long-term trends of wealth management, driven by <strong>(1)</strong> intergenerational wealth transfers and <strong>(2)</strong> Vietnam's AUM by securities firms trailing behind Asian counterparts (Fig 8). Notably, the offered wealth management services will streamline SSI's product range, enhancing customer lifetime value and ensuring sustainable development.
+    </p>
+    <p class="body-text">
+      <strong>...while ensuring inclusivity for all investors</strong><br/>
+      Furthermore, SSI also crafts products to serve the smaller investment value investor brackets. Evidently, in 2023, SSI introduced iFollow – a convenient investment solution allowing users to replicate sample portfolio with an investment value of only VND 30mn.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>SSI Securities Corporation</span>
+      <span class="footer-tag">SSI</span>
+    </div>
+    <div class="footer-page">3</div>
+  </div>
+</div>
+
+</body>
+</html>

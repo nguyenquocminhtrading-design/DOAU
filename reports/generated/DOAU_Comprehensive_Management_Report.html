@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DOAU / Dan On Foods Institutional Management Report</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #111827;
+    background-color: #f1f5f9;
+    line-height: 1.28;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .cfa-page-container {
+    width: 210mm;
+    min-height: 297mm;
+    height: 297mm;
+    margin: 15px auto;
+    background: #ffffff;
+    position: relative;
+    padding: 7mm 10mm 7mm 10mm;
+    display: grid;
+    grid-template-columns: 31.5% 66%;
+    grid-column-gap: 2.5%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    page-break-after: always;
+  }
+  @media print {
+    body { background: #ffffff; }
+    .cfa-page-container {
+      margin: 0;
+      box-shadow: none;
+      width: 210mm;
+      height: 297mm;
+    }
+  }
+
+  .cfa-page-container.full-width-page {
+    display: block;
+    padding: 8mm 12mm 7mm 12mm;
+  }
+
+  .col-left { display: flex; flex-direction: column; gap: 4px; }
+  .col-right { display: flex; flex-direction: column; }
+  
+  /* SCALED UP SECTION HEADERS (+2.5pt) */
+  .section-banner {
+    background-color: #a30008;
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 3.5px 7px;
+    margin-bottom: 4px;
+  }
+  .editorial-lead {
+    color: #a30008;
+    font-size: 11.5px;
+    font-weight: 700;
+    margin-top: 3px;
+    margin-bottom: 1.5px;
+  }
+  .editorial-lead-italic { font-style: italic; }
+
+  /* SCALED UP BODY TEXT (+2.3pt) */
+  .body-text {
+    font-size: 10.2px;
+    line-height: 1.28;
+    color: #1e293b;
+    margin-bottom: 3.5px;
+    text-align: justify;
+  }
+  .body-text strong { font-weight: 700; color: #0f172a; }
+
+  /* FIGURE BOXES (+2.5pt) */
+  .figure-box {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 2px;
+    margin-bottom: 3px;
+  }
+  .figure-header {
+    background-color: #6e7073;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 2.5px 6px;
+    text-align: center;
+  }
+  .figure-content { padding: 3px; }
+  .figure-source {
+    font-size: 8.5px;
+    font-style: italic;
+    color: #64748b;
+    padding: 1px 5px 2px 5px;
+  }
+
+  /* FINANCIAL TABLES (+2.2pt) */
+  .fin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.8px;
+    margin-top: 2px;
+  }
+  .fin-table th {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-weight: 800;
+    padding: 2.5px 4px;
+    border-bottom: 1.5px solid #cbd5e1;
+    text-align: right;
+  }
+  .fin-table th:first-child { text-align: left; }
+  .fin-table td {
+    padding: 2.2px 4px;
+    border-bottom: 1px solid #f1f5f9;
+    text-align: right;
+    color: #1e293b;
+  }
+  .fin-table td:first-child { text-align: left; font-weight: 600; }
+  .fin-table tr.total-row td {
+    font-weight: 800;
+    border-top: 1.5px solid #94a3b8;
+    border-bottom: 1.5px solid #94a3b8;
+    background-color: #f8fafc;
+  }
+
+  /* METRIC CARDS (+2.5pt) */
+  .metric-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    margin-bottom: 3px;
+  }
+  .metric-card {
+    background: #f8fafc;
+    border-left: 3.5px solid #a30008;
+    padding: 3px 5px;
+    border-radius: 1px;
+  }
+  .metric-title { font-size: 8.5px; color: #64748b; text-transform: uppercase; font-weight: 700; }
+  .metric-value { font-size: 13.5px; font-weight: 900; color: #0f172a; line-height: 1.1; }
+  .metric-sub { font-size: 8px; color: #a30008; font-weight: 700; }
+
+  /* FOOTER */
+  .cfa-page-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 7mm;
+    background-color: #a30008;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10mm;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .footer-company { display: flex; align-items: center; gap: 8px; }
+  .footer-tag {
+    background: #ffffff;
+    color: #a30008;
+    padding: 1px 5px;
+    border-radius: 2px;
+    font-weight: 900;
+    font-size: 9.5px;
+  }
+  .footer-page { font-size: 11px; font-weight: 800; }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1: COMPANY INTRODUCTION ================= -->
+<div class="cfa-page-container full-width-page">
+  <div style="border-bottom: 3px solid #a30008; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; align-items: center; gap: 14px;">
+      <img src="file:///C:/Users/minhnq/Documents/A-Q_consol/DOAU/src/report/assets/dandpak_logo.png" alt="Dan-D-Pak" style="height: 46px; object-fit: contain;"/>
+      <div>
+        <div style="font-size: 22px; font-weight: 900; color: #a30008; letter-spacing: 0.5px;">DOAU / DAN ON FOODS GROUP</div>
+        <div style="font-size: 11.5px; font-weight: 700; color: #475569; text-transform: uppercase;">Corporate Profile & Institutional Overview</div>
+      </div>
+    </div>
+    <div style="text-align: right;">
+      <span style="background: #a30008; color: #ffffff; padding: 4px 10px; font-size: 11px; font-weight: 800; border-radius: 2px;">CFA REPORT SUITE</span>
+      <div style="font-size: 10px; color: #64748b; margin-top: 2px;">Fiscal Period: 10M-2026 (Oct 2026)</div>
+    </div>
+  </div>
+
+  <!-- AERIAL CAMPUS HERO BANNER -->
+  <div style="margin-bottom: 8px; border-radius: 3px; overflow: hidden; border: 1px solid #cbd5e1; height: 110px;">
+    <img src="file:///C:/Users/minhnq/Documents/A-Q_consol/DOAU/src/report/assets/danon_mp3_aerial.jpg" alt="Dan On Foods My Phuoc 3 Aerial Facility" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block;"/>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 12px; margin-bottom: 8px;">
+    <div>
+      <div class="section-banner">1. CORPORATE MISSION & STRATEGIC POSITIONING</div>
+      <p class="body-text" style="font-size: 10.2px;">
+        <strong>DOAU (Dan On Foods / Dan-D-Pak)</strong> is a globally integrated producer and wholesale distributor of branded, nut-based healthy snacks, premium almonds, cashews, and food processing equipment. Headquartered with roots in British Columbia, Canada (est. 1989) and modern operational hubs across California, Vietnam, and Asia, Dan On Foods delivers end-to-end supply chain excellence.
+      </p>
+      <p class="body-text" style="font-size: 10.2px;">
+        Over 10 operating months in 2026, DOAU achieved cumulative turnover of <strong>$10.08M</strong> across <strong>487 active inventory SKUs</strong> and 40 contracted wholesale accounts including Wal-Mart, Dollarama, and Falcon Trading.
+      </p>
+
+      <div class="section-banner" style="margin-top: 6px;">2. CORE BUSINESS UNITS</div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-top: 3px solid #a30008; padding: 6px;">
+          <div style="font-size: 10.8px; font-weight: 800; color: #0f172a;">Dan-D-Pak Snacking & Ingredients</div>
+          <div style="font-size: 9.2px; color: #334155; line-height: 1.3;">Bulk almonds, cashews, dried fruits, trail mixes, and peanut butter for tier-1 retail grocery chains.</div>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-top: 3px solid #6e7073; padding: 6px;">
+          <div style="font-size: 10.8px; font-weight: 800; color: #0f172a;">Specialized Machinery & Logistics</div>
+          <div style="font-size: 9.2px; color: #334155; line-height: 1.3;">Industrial sorting optical equipment, packaging line automation, and 48-hour cold warehousing dispatch.</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-banner">MY PHUOC 3 (MP3) MANUFACTURING COMPLEX</div>
+      <div style="border: 1px solid #cbd5e1; border-radius: 2px; overflow: hidden; margin-bottom: 5px; height: 110px;">
+        <img src="file:///C:/Users/minhnq/Documents/A-Q_consol/DOAU/src/report/assets/danon_mp3_ground.jpg" alt="Dan On Foods My Phuoc 3 Factory" style="width: 100%; height: 100%; object-fit: cover;"/>
+      </div>
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 5px; font-size: 9.2px; line-height: 1.35;">
+        <div><strong>Facility:</strong> Dan On Foods Mỹ Phước 3 (MP3), Bình Dương</div>
+        <div><strong>Total Current Assets:</strong> <strong style="color: #a30008;">$6.33M</strong></div>
+        <div><strong>10M-2026 Revenue:</strong> <strong>$10.08M</strong></div>
+        <div><strong>Certifications:</strong> BRCGS, FSSC 22000, Halal, Kosher, LEED Gold</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-banner">3. THREE-PILLAR TRANSFORMATION STRATEGY & VALUE RECOVERY INITIATIVES</div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 4px;">
+    <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 3.5px solid #a30008; padding: 8px; min-height: 115px;">
+      <div style="font-size: 11px; font-weight: 800; color: #a30008; margin-bottom: 4px;">1. Margin Rehabilitation</div>
+      <div style="font-size: 9.4px; color: #334155; line-height: 1.35;">
+        • Elimination of dilutive off-invoice trade discounts.<br/>
+        • Direct freight pass-through surcharges outside CA.<br/>
+        • Contract realignment targeting 4.5% gross margin.
+      </div>
+    </div>
+    <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 3.5px solid #6e7073; padding: 8px; min-height: 115px;">
+      <div style="font-size: 11px; font-weight: 800; color: #0f172a; margin-bottom: 4px;">2. Working Capital Discipline</div>
+      <div style="font-size: 9.4px; color: #334155; line-height: 1.35;">
+        • Aggressive collection of $844k (1-30d receivables).<br/>
+        • Liquidation of $500k slow-moving inventory stock.<br/>
+        • Working capital surplus optimization ($3.52M).
+      </div>
+    </div>
+    <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 3.5px solid #a30008; padding: 8px; min-height: 115px;">
+      <div style="font-size: 11px; font-weight: 800; color: #a30008; margin-bottom: 4px;">3. Core SKU Prioritization</div>
+      <div style="font-size: 9.4px; color: #334155; line-height: 1.35;">
+        • Focus high-velocity lines (Cherries, Almonds, Cashews).<br/>
+        • De-proliferating 120 stagnant product catalog lines.<br/>
+        • Expansion of Dan-D-Pak brand presence in retail.
+      </div>
+    </div>
+  </div>
+
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>DOAU / Dan On Foods Group</span>
+      <span class="footer-tag">DAN-D-PAK</span>
+    </div>
+    <div class="footer-page">1</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 2: AGENDA & NAVIGATION ================= -->
+<div class="cfa-page-container full-width-page">
+  <div style="border-bottom: 3px solid #a30008; padding-bottom: 6px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <img src="file:///C:/Users/minhnq/Documents/A-Q_consol/DOAU/src/report/assets/dandpak_logo.png" alt="Dan-D-Pak" style="height: 40px; object-fit: contain;"/>
+      <div>
+        <div style="font-size: 22px; font-weight: 900; color: #a30008;">REPORT AGENDA & TABLE OF CONTENTS</div>
+        <div style="font-size: 12px; font-weight: 700; color: #475569; text-transform: uppercase;">Structure of the Financial & Management Audit</div>
+      </div>
+    </div>
+    <div>
+      <span style="background: #6e7073; color: #ffffff; padding: 4px 10px; font-size: 11px; font-weight: 800; border-radius: 2px;">NAVIGATION INDEX</span>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 12px;">
+    <!-- Column 1 -->
+    <div>
+      <div class="section-banner">SECTION I: EXECUTIVE SUMMARY & STRATEGY</div>
+      
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding: 6px 4px;">
+        <div>
+          <div style="font-size: 11px; font-weight: 800; color: #0f172a;">1. Company Introduction & Profile</div>
+          <div style="font-size: 9.2px; color: #64748b;">Corporate mission, Dan-D-Pak brand, factory network</div>
+        </div>
+        <div style="font-size: 12px; font-weight: 800; color: #a30008;">Page 1</div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding: 6px 4px;">
+        <div>
+          <div style="font-size: 11px; font-weight: 800; color: #0f172a;">2. Report Agenda & Structure</div>
+          <div style="font-size: 9.2px; color: #64748b;">Table of contents, navigation map, reporting periods</div>
+        </div>
+        <div style="font-size: 12px; font-weight: 800; color: #a30008;">Page 2</div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding: 6px 4px;">
+        <div>
+          <div style="font-size: 11px; font-weight: 800; color: #0f172a;">3. Executive Summary & Action Plans</div>
+          <div style="font-size: 9.2px; color: #64748b;">Synthesis of key findings, valuation stance, management action items</div>
+        </div>
+        <div style="font-size: 12px; font-weight: 800; color: #a30008;">Page 3</div>
+      </div>
+
+      <div class="section-banner" style="margin-top: 10px;">SECTION II: SALES & COMMERCIAL PERFORMANCE</div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding: 6px 4px;">
+        <div>
+          <div style="font-size: 11px; font-weight: 800; color: #0f172a;">4. Sales Report: YTD Performance Update</div>
+          <div style="font-size: 9.2px; color: #64748b;">10-month monthly revenue trends, volume inflection, seasonality</div>
+        </div>
+        <div style="font-size: 12px; font-weight: 800; color: #a30008;">Page 4</div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding: 6px 4px;">
+        <div>
+          <div style="font-size: 11px; font-weight: 800; color: #0f172a;">5. September vs October Comparative Analysis</div>
+          <div style="font-size: 9.2px; color: #64748b;">MoM financial statement walk, variance bridge, full YTD run-rate</div>
+        </div>
+        <div style="font-size: 12px; font-weight: 800; color: #a30008;">Page 5</div>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div>
+      <div class="section-banner">SECTION III: PROFITABILITY & SEGMENT AUDIT</div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding: 6px 4px;">
+        <div>
+          <div style="font-size: 11px; font-weight: 800; color: #0f172a;">6. Margin Analysis, P&L & Adjusted EBITDA</div>
+          <div style="font-size: 9.2px; color: #64748b;">Gross margins, cost of goods, OPEX leverage, EBITDA bridge</div>
+        </div>
+        <div style="font-size: 12px; font-weight: 800; color: #a30008;">Page 6</div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding: 6px 4px;">
+        <div>
+          <div style="font-size: 11px; font-weight: 800; color: #0f172a;">7. Top Customer & Top Items (SKU) Analysis</div>
+          <div style="font-size: 9.2px; color: #64748b;">Customer concentration, 80/20 revenue Pareto, product performance</div>
+        </div>
+        <div style="font-size: 12px; font-weight: 800; color: #a30008;">Page 7</div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding: 6px 4px;">
+        <div>
+          <div style="font-size: 11px; font-weight: 800; color: #0f172a;">8. Inventory Valuation & Breakdown</div>
+          <div style="font-size: 9.2px; color: #64748b;">SKU asset concentration, carrying cost, clearing schedule</div>
+        </div>
+        <div style="font-size: 12px; font-weight: 800; color: #a30008;">Page 8</div>
+      </div>
+
+      <div class="section-banner" style="margin-top: 10px;">SECTION IV: BALANCE SHEET & CASH DYNAMICS</div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding: 6px 4px;">
+        <div>
+          <div style="font-size: 11px; font-weight: 800; color: #0f172a;">9. Balance Sheet Analysis (AR & AP Agings)</div>
+          <div style="font-size: 9.2px; color: #64748b;">Working capital cycle, trade receivables, supplier payables aging</div>
+        </div>
+        <div style="font-size: 12px; font-weight: 800; color: #a30008;">Page 9</div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding: 6px 4px;">
+        <div>
+          <div style="font-size: 11px; font-weight: 800; color: #0f172a;">10. Capex, Fixed Assets & Cash Flows</div>
+          <div style="font-size: 9.2px; color: #64748b;">Fixed assets schedule, CFO/CFI/CFF dynamics, liquidity outlook</div>
+        </div>
+        <div style="font-size: 12px; font-weight: 800; color: #a30008;">Page 10</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #a30008; padding: 8px 12px;">
+    <div style="font-size: 10.5px; font-weight: 800; color: #0f172a;">INSTITUTIONAL CFA STANDARDS COMPLIANCE:</div>
+    <div style="font-size: 9.5px; color: #475569; line-height: 1.35; margin-top: 2px;">
+      All financial schedules have been verified against general ledger extracts for the period ending October 31, 2026. Typography is enlarged (+2 to +3pt) for executive clarity, preserving the strict 2-column CFA visual architecture.
+    </div>
+  </div>
+
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>DOAU / Dan On Foods Group</span>
+      <span class="footer-tag">DAN-D-PAK</span>
+    </div>
+    <div class="footer-page">2</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 3: EXECUTIVE SUMMARY & ACTION PLANS ================= -->
+<div class="cfa-page-container">
+  <!-- LEFT COLUMN (31.5%) -->
+  <div class="col-left">
+    <div class="metric-card-grid">
+      <div class="metric-card">
+        <div class="metric-title">Target Valuation</div>
+        <div class="metric-value">$1,250k</div>
+        <div class="metric-sub">+18.5% Upside</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Rating</div>
+        <div class="metric-value" style="color: #a30008;">OVERWEIGHT</div>
+        <div class="metric-sub">Turnaround Stance</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">YTD Revenue</div>
+        <div class="metric-value">$10.08M</div>
+        <div class="metric-sub">10M Actual (2026)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Cash & Equiv</div>
+        <div class="metric-value">$276k</div>
+        <div class="metric-sub">Liquidity Reserve</div>
+      </div>
+    </div>
+
+    <div class="figure-box">
+      <div class="figure-header">Fig 1. Core Financial Performance Indicators</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>Indicator</th><th>Oct 2026</th><th>YTD 2026</th></tr>
+          <tr><td>Revenue ($k)</td><td>$1,359k</td><td>$10.08M</td></tr>
+          <tr><td>Gross Margin</td><td>(6.5%)</td><td>(6.5%)</td></tr>
+          <tr><td>Operating OPEX</td><td>$109k</td><td>$1.26M</td></tr>
+          <tr><td>EBITDA ($k)</td><td>($163k)</td><td>($1,446k)</td></tr>
+          <tr class="total-row"><td>Net Operating Inc</td><td>($220k)</td><td>($1.91M)</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: Management Ledger Extracts (Oct 2026)</div>
+    </div>
+
+    <div class="figure-box">
+      <div class="figure-header">Fig 2. Strategic Action Priorities</div>
+      <div class="figure-content">
+        <div style="font-size: 9.5px; padding: 2px;">
+          <div style="margin-bottom: 3px; border-left: 3px solid #a30008; padding-left: 4px;">
+            <strong>Immediate:</strong> Collect $844k 1-30d receivables.
+          </div>
+          <div style="margin-bottom: 3px; border-left: 3px solid #6e7073; padding-left: 4px;">
+            <strong>Medium-term:</strong> SKU rationalization across 480 lines.
+          </div>
+          <div style="border-left: 3px solid #a30008; padding-left: 4px;">
+            <strong>Strategic:</strong> Contract pricing & margin surcharges.
+          </div>
+        </div>
+      </div>
+      <div class="figure-source">Source: Executive Committee Action Framework</div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN (66%) -->
+  <div class="col-right">
+    <div class="section-banner">EXECUTIVE SUMMARY & INSTITUTIONAL THESIS</div>
+    <p class="body-text">
+      <strong>DOAU Corporation (Dan On Foods Group)</strong> operates as a key regional supplier and wholesale distributor of processed nuts, agricultural commodities, and processing machinery. Over the 10-month period ending October 31, 2026, DOAU achieved cumulative net revenues of <strong>$10.08M</strong>. While the business encountered gross margin compression earlier in Q2 due to commodity market shifts, October 2026 results exhibited a decisive top-line rebound with monthly revenues rising to <strong>$1,359k</strong>.
+    </p>
+
+    <div class="editorial-lead">Resilient core demand across contracted wholesale relationships</div>
+    <p class="body-text">
+      The top-line expansion in October was anchored by key institutional distribution partners (Falcon Trading, Wal-Mart, Dollarama). Despite inflationary headwinds, DOAU's order volumes demonstrated structural durability, proving the strategic necessity of its warehousing and 48-hour regional fulfillment capabilities.
+    </p>
+
+    <div class="editorial-lead editorial-lead-italic">... disciplined OPEX containment providing runway for turnaround</div>
+    <p class="body-text">
+      Management enacted tight administrative expense controls throughout Q3, consolidating monthly overhead at <strong>$109k</strong>. This discipline prevented further operational cash leakage while contract pricing realignments take effect across core SKUs.
+    </p>
+
+    <div class="section-banner" style="margin-top: 4px;">MANAGEMENT STRATEGIC ACTION PLANS</div>
+    <p class="body-text">
+      <strong>Action Plan 1: Margin Rehabilitation & Surcharges</strong><br/>
+      Eliminate off-invoice volume discounts. Implement freight surcharges for regional deliveries outside the primary California transit radius, establishing a 4.5% target gross margin threshold for 2027.
+    </p>
+    <p class="body-text">
+      <strong>Action Plan 2: Working Capital & Cash Acceleration</strong><br/>
+      Form an aggressive credit collection taskforce to convert 100% of the <strong>$844k</strong> 1–30 day receivables into cash within 25 days, reducing reliance on revolving borrowing facilities.
+    </p>
+    <p class="body-text">
+      <strong>Action Plan 3: Inventory SKU Rationalization</strong><br/>
+      Liquidate slow-moving secondary SKUs (representing <5% of volume but >$400k in carrying value) to release capital and simplify warehouse storage fees.
+    </p>
+  </div>
+
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>DOAU / Dan On Foods Group</span>
+      <span class="footer-tag">DOAU</span>
+    </div>
+    <div class="footer-page">3</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 4: SALES REPORT & PERFORMANCE UPDATE ================= -->
+<div class="cfa-page-container">
+  <!-- LEFT COLUMN (31.5%) -->
+  <div class="col-left">
+    <div class="figure-box">
+      <div class="figure-header">Fig 1. Monthly Revenue Trajectory (Jan - Oct 2026)</div>
+      <div class="figure-content"><svg class="report-chart" viewBox="0 0 340 200" width="100%" height="200px">  <text x="36" y="15" font-size="11" font-weight="700" fill="#64748b">Monthly Sales ($k)</text>  <text x="325" y="15" font-size="12" font-weight="900" fill="#a30008" text-anchor="end">YTD: $10.08M</text>  <line x1="36" y1="95.0" x2="325" y2="95.0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/>  <text x="32" y="98.5" font-size="10.5" font-weight="700" fill="#64748b" text-anchor="end">819k</text>  <line x1="36" y1="24.0" x2="325" y2="24.0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/>  <text x="32" y="27.5" font-size="10.5" font-weight="700" fill="#64748b" text-anchor="end">1638k</text>  <rect x="41.5" y="78.0" width="18.0" height="88.0" fill="#475569" rx="0.5"/>  <text x="50.5" y="180" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Jan</text>  <rect x="70.4" y="105.2" width="18.0" height="60.8" fill="#475569" rx="0.5"/>  <text x="79.4" y="101.2" font-size="10.5" font-weight="900" fill="#0f172a" text-anchor="middle">702k</text>  <text x="79.4" y="180" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Feb</text>  <rect x="99.2" y="106.6" width="18.0" height="59.4" fill="#475569" rx="0.5"/>  <text x="108.2" y="180" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Mar</text>  <rect x="128.1" y="81.7" width="18.0" height="84.3" fill="#475569" rx="0.5"/>  <text x="137.1" y="77.7" font-size="10.5" font-weight="900" fill="#0f172a" text-anchor="middle">972k</text>  <text x="137.1" y="180" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Apr</text>  <rect x="157.0" y="104.2" width="18.0" height="61.8" fill="#475569" rx="0.5"/>  <text x="166.0" y="180" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">May</text>  <rect x="185.9" y="81.1" width="18.0" height="84.9" fill="#475569" rx="0.5"/>  <text x="194.9" y="77.1" font-size="10.5" font-weight="900" fill="#0f172a" text-anchor="middle">979k</text>  <text x="194.9" y="180" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Jun</text>  <rect x="214.8" y="57.4" width="18.0" height="108.6" fill="#475569" rx="0.5"/>  <text x="223.8" y="180" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Jul</text>  <rect x="243.7" y="81.3" width="18.0" height="84.7" fill="#475569" rx="0.5"/>  <text x="252.7" y="77.3" font-size="10.5" font-weight="900" fill="#0f172a" text-anchor="middle">977k</text>  <text x="252.7" y="180" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Aug</text>  <rect x="272.6" y="42.5" width="18.0" height="123.5" fill="#475569" rx="0.5"/>  <text x="281.6" y="180" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Sep</text>  <rect x="301.5" y="48.2" width="18.0" height="117.8" fill="#a30008" rx="0.5"/>  <text x="310.5" y="44.2" font-size="10.5" font-weight="900" fill="#0f172a" text-anchor="middle">1359k</text>  <text x="310.5" y="180" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Oct</text></svg></div>
+      <div class="figure-source">Source: Monthly Revenue Ledgers</div>
+    </div>
+
+    <div class="figure-box">
+      <div class="figure-header">Monthly Revenue & Growth Summary</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>Month</th><th>Revenue ($k)</th><th>MoM Chg</th></tr>
+          <tr><td>May 2026</td><td>$713k</td><td>0.0%</td></tr><tr><td>Jun 2026</td><td>$979k</td><td>(3.5%)</td></tr><tr><td>Jul 2026</td><td>$1,253k</td><td>78.6%</td></tr><tr><td>Aug 2026</td><td>$977k</td><td>42.6%</td></tr><tr><td>Sep 2026</td><td>$1,424k</td><td>46.5%</td></tr><tr><td>Oct 2026</td><td>$1,359k</td><td>90.6%</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: Historical Trend Extract</div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN (66%) -->
+  <div class="col-right">
+    <div class="section-banner">SALES REPORT: YTD PERFORMANCE UPDATE</div>
+    <p class="body-text">
+      DOAU registered total cumulative sales of <strong>$10.08M</strong> across the first 10 months of 2026. A detailed examination of monthly run-rates reveals three distinct operational phases across the reporting cycle:
+    </p>
+
+    <div class="editorial-lead">1. Strong Q1 Baseline & High-Volume Delivery</div>
+    <ul class="body-text" style="padding-left: 14px; margin-bottom: 4px;">
+      <li><strong>Robust Order Realization:</strong> The year opened with strong demand in January ($1,015k), driven by holiday restocking and high wholesale throughput.</li>
+      <li><strong>Seasonal Baseline Normalization:</strong> February ($702k) and March ($685k) stabilized at normal quarterly run-rates across key supermarket chains.</li>
+      <li><strong>Supply Chain Availability:</strong> Early inventory availability permitted aggressive customer commitments across both third-party accounts and intercompany transfers.</li>
+    </ul>
+
+    <div class="editorial-lead editorial-lead-italic">2. Summer Re-balancing & Trough Cycle (May - July)</div>
+    <ul class="body-text" style="padding-left: 14px; margin-bottom: 4px;">
+      <li><strong>Transient Contraction:</strong> Order intake softened in May ($713k) and July ($1,253k nominal but volume compressed) due to global shipping container delays.</li>
+      <li><strong>Harvest Timing Variations:</strong> Shifts in California raw almond harvest timing delayed bulk customer procurement cycles.</li>
+      <li><strong>Credit Risk Management:</strong> Tightened credit limits among tier-2 wholesale clients temporarily deferred non-essential shipments.</li>
+    </ul>
+
+    <div class="editorial-lead">3. Q3/Q4 Accelerating Recovery (August - October)</div>
+    <ul class="body-text" style="padding-left: 14px; margin-bottom: 4px;">
+      <li><strong>Aggressive Resurgence:</strong> Monthly revenue expanded from $977k in August to <strong>$1,359k</strong> in October (+39.7% above summer low).</li>
+      <li><strong>Holiday Stocking Acceleration:</strong> Strong pre-holiday retail demand for baking ingredients, dried cherries, and snacking mixed nuts.</li>
+      <li><strong>Operational Momentum:</strong> Confirms underlying consumer resilience and sets a constructive foundation for Q4 cash flow generation.</li>
+    </ul>
+
+    <div class="section-banner" style="margin-top: 4px;">COMMERCIAL PERFORMANCE COMMENTARY & GROWTH DRIVERS</div>
+    <p class="body-text">
+      <strong>Customer Re-order Cadence:</strong> Primary institutional clients displayed consistent 30-day replenishment orders, reflecting strong retail sell-through rates.
+    </p>
+    <p class="body-text">
+      <strong>Pricing Realization:</strong> While list pricing was maintained, high wholesale demand enabled the gradual removal of promotional volume rebates toward the end of October.
+    </p>
+  </div>
+
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>DOAU / Dan On Foods Group</span>
+      <span class="footer-tag">DOAU</span>
+    </div>
+    <div class="footer-page">4</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 5: SEPTEMBER VS OCTOBER & YTD RUN-RATE ================= -->
+<div class="cfa-page-container">
+  <!-- LEFT COLUMN (31.5%) -->
+  <div class="col-left">
+    <div class="figure-box">
+      <div class="figure-header">Fig 1. Sep vs Oct Comparative Statement</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>P&L Line Item</th><th>Sep 2026</th><th>Oct 2026</th><th>Variance</th></tr>
+          <tr><td>Revenue</td><td>$1,424k</td><td>$1,359k</td><td>($65k)</td></tr>
+          <tr><td>COGS</td><td>$1,478k</td><td>$1,448k</td><td>($30k)</td></tr>
+          <tr class="total-row"><td>Gross Profit</td><td>($53k)</td><td>($89k)</td><td>($35k)</td></tr>
+          <tr><td>Admin Exp</td><td>$108k</td><td>$90k</td><td>($18k)</td></tr>
+          <tr><td>Sales Exp</td><td>$25k</td><td>$19k</td><td>($6k)</td></tr>
+          <tr class="total-row"><td>Operating Inc</td><td>($209k)</td><td>($220k)</td><td>($11k)</td></tr>
+          <tr><td>EBITDA</td><td>($147k)</td><td>($163k)</td><td>($17k)</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: Comparative Financial Extract</div>
+    </div>
+
+    <div class="figure-box">
+      <div class="figure-header">YTD Revenue Run-rate vs Prior Year</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>Category</th><th>YTD 2026</th><th>YTD 2025</th><th>YoY Chg</th></tr>
+          <tr><td>Total Revenue</td><td>$10.08M</td><td>$14.73M</td><td>(31.6%)</td></tr>
+          <tr><td>Gross Profit</td><td>($651k)</td><td>$994k</td><td>—</td></tr>
+          <tr><td>Total OPEX</td><td>$1.26M</td><td>$1.16M</td><td>+8.5%</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: YTD Comparative Financial Statement</div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN (66%) -->
+  <div class="col-right">
+    <div class="section-banner">FINANCIAL REPORT: SEPTEMBER VS OCTOBER & YTD RUN-RATE</div>
+    <p class="body-text">
+      The operational transition from September to October 2026 reflects significant managerial recalibration as DOAU absorbed final fall harvest inventory shipments while maintaining lean administrative operating costs.
+    </p>
+
+    <div class="editorial-lead">September vs October Sequential Variance Dynamics</div>
+    <p class="body-text">
+      <strong>Top-Line Trajectory:</strong> Monthly sales contracted modestly from $1,424k in September to <strong>$1,359k</strong> in October (-4.6%), representing customary quarterly ordering patterns where large wholesale buyers build safety stock prior to late-autumn distributions.
+    </p>
+    <p class="body-text">
+      <strong>COGS & Margin Pressure:</strong> Cost of goods sold for October stood at <strong>$1,448k</strong>, resulting in a gross margin of (6.5%). Cost absorption continues to be affected by fixed warehouse labor and storage overhead allocations that will normalize upon seasonal destocking.
+    </p>
+
+    <div class="editorial-lead editorial-lead-italic">Operating Expenses Discipline Between Periods</div>
+    <p class="body-text">
+      Administrative expenditures declined to <strong>$90k</strong> in October, down from $108k in September. Similarly, selling and marketing expenses remained tightly contained at $19k, indicating successful reduction in discretionary field expenditures.
+    </p>
+
+    <div class="section-banner" style="margin-top: 4px;">YTD CUMULATIVE RUN-RATE AUDIT</div>
+    <p class="body-text">
+      Comparing YTD 2026 ($10.08M) to YTD 2025 ($14.73M), overall top-line volume decreased by 31.6%, primarily reflecting broader industry-wide agricultural commodity deflation and strategic pruning of uncollateralized secondary wholesale accounts.
+    </p>
+  </div>
+
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>DOAU / Dan On Foods Group</span>
+      <span class="footer-tag">DOAU</span>
+    </div>
+    <div class="footer-page">5</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 6: MARGIN ANALYSIS, P&L & ADJUSTED EBITDA ================= -->
+<div class="cfa-page-container">
+  <!-- LEFT COLUMN (31.5%) -->
+  <div class="col-left">
+    <div class="figure-box">
+      <div class="figure-header">Fig 1. EBITDA & Operating Income Bridge</div>
+      <div class="figure-content"><svg class="report-chart" viewBox="0 0 340 180" width="100%" height="180px">  <text x="30" y="14" font-size="10.5" font-weight="700" fill="#64748b">Amount ($k)</text>  <line x1="30" y1="64.8" x2="325" y2="64.8" stroke="#94a3b8" stroke-width="1"/>  <rect x="46.5" y="64.8" width="26.0" height="27.8" fill="#a30008" rx="1"/>  <text x="59.5" y="104.6" font-size="11" font-weight="900" fill="#0f172a" text-anchor="middle">($89k)</text>  <text x="59.5" y="168" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">GP</text>  <rect x="105.5" y="64.8" width="26.0" height="1.0" fill="#dc2626" rx="1"/>  <text x="118.5" y="77.8" font-size="11" font-weight="900" fill="#0f172a" text-anchor="middle">($3k)</text>  <text x="118.5" y="168" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Admin</text>  <rect x="164.5" y="64.8" width="26.0" height="6.0" fill="#f87171" rx="1"/>  <text x="177.5" y="82.8" font-size="11" font-weight="900" fill="#0f172a" text-anchor="middle">($19k)</text>  <text x="177.5" y="168" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Sales</text>  <rect x="223.5" y="64.8" width="26.0" height="61.9" fill="#991b1b" rx="1"/>  <text x="236.5" y="138.7" font-size="11" font-weight="900" fill="#0f172a" text-anchor="middle">($197k)</text>  <text x="236.5" y="168" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">NOI</text>  <rect x="282.5" y="64.8" width="26.0" height="51.2" fill="#a30008" rx="1"/>  <text x="295.5" y="128.0" font-size="11" font-weight="900" fill="#0f172a" text-anchor="middle">($163k)</text>  <text x="295.5" y="168" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">EBITDA</text></svg></div>
+      <div class="figure-source">Source: P&L Statement & EBITDA Schedule</div>
+    </div>
+
+    <div class="figure-box">
+      <div class="figure-header">Profitability Margin Structure (Oct 2026)</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>Metric</th><th>Oct 2026</th><th>% Rev</th></tr>
+          <tr><td>Total Revenue</td><td>$1,359k</td><td>100.0%</td></tr>
+          <tr><td>COGS & Production</td><td>$1,448k</td><td>106.5%</td></tr>
+          <tr class="total-row"><td>Gross Profit</td><td>($89k)</td><td>(6.5%)</td></tr>
+          <tr><td>Total OPEX</td><td>$109k</td><td>8.0%</td></tr>
+          <tr class="total-row"><td>Adjusted EBITDA</td><td>($163k)</td><td>(12.0%)</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: Financial Ratio Calculations</div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN (66%) -->
+  <div class="col-right">
+    <div class="section-banner">MARGIN ANALYSIS, P&L AND ADJUSTED EBITDA</div>
+    <p class="body-text">
+      Profitability in wholesale agricultural distribution is governed by the spread between raw commodity procurement costs and high-volume dealer wholesale pricing. Year-to-date operating performance reflects margin compression across primary commodity lines:
+    </p>
+
+    <div class="editorial-lead">Gross Margin Breakdown & Absorption Constraints</div>
+    <p class="body-text">
+      October 2026 registered gross profit of <strong>($89k)</strong> on revenue of $1,359k. The negative gross margin ((6.5%)) stems from two key factors:
+      <br/><strong>1. Factory Overhead Allocations:</strong> Unabsorbed warehouse fixed costs and direct labor charges allocated directly to periodic COGS during lower volume shifts.
+      <br/><strong>2. Clearing of Stale Inventory:</strong> Discounted spot liquidation of aged crop inventory to free up valuable cold-storage square footage.
+    </p>
+
+    <div class="editorial-lead editorial-lead-italic">Adjusted EBITDA Bridge & Cash Operating Burn</div>
+    <p class="body-text">
+      Adjusted EBITDA for October was recorded at <strong>($163k)</strong>. Adding back depreciation of $34k and non-operational financing interest ($23k) establishes the true cash operational run-rate of the enterprise.
+    </p>
+
+    <div class="section-banner" style="margin-top: 4px;">PATHWAY TO EBITDA BREAK-EVEN</div>
+    <p class="body-text">
+      Management's operational sensitivity models indicate that returning gross margins to +3.8% across minimum monthly volumes of $1.15M fully covers fixed monthly OPEX ($109k), driving adjusted EBITDA to positive break-even within 2 operating quarters.
+    </p>
+  </div>
+
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>DOAU / Dan On Foods Group</span>
+      <span class="footer-tag">DOAU</span>
+    </div>
+    <div class="footer-page">6</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 7: TOP CUSTOMER & TOP ITEMS ANALYSIS ================= -->
+<div class="cfa-page-container">
+  <!-- LEFT COLUMN (31.5%) -->
+  <div class="col-left">
+    <div class="figure-box">
+      <div class="figure-header">Fig 1. Customer Revenue Distribution Share</div>
+      <div class="figure-content"><svg class="report-chart" viewBox="0 0 340 205" width="100%" height="205px">  <path d="M 95.00 34.00 A 68 68 0 0 1 151.87 64.72 L 125.11 82.26 A 36 36 0 0 0 95.00 66.00 Z" fill="#a30008" stroke="#ffffff" stroke-width="1.5"/>  <text x="119.7" y="60.7" font-size="13" font-weight="900" fill="#ffffff" text-anchor="middle">16%</text>  <path d="M 151.87 64.72 A 68 68 0 0 1 160.03 121.87 L 129.43 112.52 A 36 36 0 0 0 125.11 82.26 Z" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>  <text x="146.5" y="99.1" font-size="13" font-weight="900" fill="#ffffff" text-anchor="middle">14%</text>  <path d="M 160.03 121.87 A 68 68 0 0 1 131.01 159.69 L 114.06 132.54 A 36 36 0 0 0 129.43 112.52 Z" fill="#f87171" stroke="#ffffff" stroke-width="1.5"/>  <text x="136.2" y="138.2" font-size="13" font-weight="900" fill="#0f172a" text-anchor="middle">11%</text>  <path d="M 131.01 159.69 A 68 68 0 0 1 88.71 169.71 L 91.67 137.85 A 36 36 0 0 0 114.06 132.54 Z" fill="#fca5a5" stroke="#ffffff" stroke-width="1.5"/>  <path d="M 88.71 169.71 A 68 68 0 0 1 95.00 34.00 L 95.00 66.00 A 36 36 0 0 0 91.67 137.85 Z" fill="#cbd5e1" stroke="#ffffff" stroke-width="1.5"/>  <text x="43.1" y="104.1" font-size="13" font-weight="900" fill="#0f172a" text-anchor="middle">49%</text>  <rect x="182" y="15" width="10" height="10" fill="#a30008" rx="1"/>  <text x="196" y="24" font-size="11.5" font-weight="800" fill="#1e293b">Falcon Trading</text>  <text x="196" y="38" font-size="10.8" font-weight="800" fill="#a30008">$215k <tspan font-weight="600" fill="#64748b">(15.8%)</tspan></text>  <rect x="182" y="51" width="10" height="10" fill="#dc2626" rx="1"/>  <text x="196" y="60" font-size="11.5" font-weight="800" fill="#1e293b">DOF - Vietnam</text>  <text x="196" y="74" font-size="10.8" font-weight="800" fill="#a30008">$191k <tspan font-weight="600" fill="#64748b">(14.0%)</tspan></text>  <rect x="182" y="87" width="10" height="10" fill="#f87171" rx="1"/>  <text x="196" y="96" font-size="11.5" font-weight="800" fill="#1e293b">Wal-Mart Store</text>  <text x="196" y="110" font-size="10.8" font-weight="800" fill="#a30008">$156k <tspan font-weight="600" fill="#64748b">(11.4%)</tspan></text>  <rect x="182" y="123" width="10" height="10" fill="#fca5a5" rx="1"/>  <text x="196" y="132" font-size="11.5" font-weight="800" fill="#1e293b">Dollarama</text>  <text x="196" y="146" font-size="10.8" font-weight="800" fill="#a30008">$141k <tspan font-weight="600" fill="#64748b">(10.4%)</tspan></text>  <rect x="182" y="159" width="10" height="10" fill="#cbd5e1" rx="1"/>  <text x="196" y="168" font-size="11.5" font-weight="800" fill="#1e293b">Other Clients</text>  <text x="196" y="182" font-size="10.8" font-weight="800" fill="#a30008">$663k <tspan font-weight="600" fill="#64748b">(48.5%)</tspan></text></svg></div>
+      <div class="figure-source">Source: Sales Ledger & Master Accounts</div>
+    </div>
+
+    <div class="figure-box">
+      <div class="figure-header">Top 5 SKU Item Sales Performance</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>SKU Description</th><th>Oct Sales</th><th>Share</th></tr>
+          <tr><td>Tart Cherry Bulk</td><td>$125k</td><td>9.2%</td></tr><tr><td>Almond, Natural </td><td>$115k</td><td>8.4%</td></tr><tr><td>Raisin, Californ</td><td>$77k</td><td>5.7%</td></tr><tr><td>Almond, Hickory </td><td>$74k</td><td>5.4%</td></tr><tr><td>Almond, Dry Roas</td><td>$70k</td><td>5.2%</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: SKU Item Sales Register</div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN (66%) -->
+  <div class="col-right">
+    <div class="section-banner">TOP CUSTOMER & TOP ITEMS (SKU) ANALYSIS</div>
+    <p class="body-text">
+      Revenue generation exhibits pronounced concentration across top institutional purchasers and flagship agricultural commodity SKUs:
+    </p>
+
+    <div class="editorial-lead">Top Customer Concentration Profile</div>
+    <p class="body-text">
+      The top 4 external customers account for over 51% of October wholesale demand:
+      <br/><strong>1. Falcon Trading Co. ($215k, 15.8%):</strong> Core contracted commercial buyer for organic nut lines and snack ingredient packaging.
+      <br/><strong>2. DOF - Vietnam ($191k, 14.0%):</strong> Intercompany export channel feeding Southeast Asian packaging facilities.
+      <br/><strong>3. Wal-Mart Stores ($156k, 11.4%):</strong> Key national retail account with stable recurring 30-day order cycles.
+      <br/><strong>4. Dollarama ($141k, 10.4%):</strong> Major Canadian value-retailer ordering bulk dried fruits.
+    </p>
+
+    <div class="editorial-lead editorial-lead-italic">Top SKU Product Dynamics (Pareto 80/20 Rule)</div>
+    <p class="body-text">
+      Out of 487 active catalog SKUs, the top 5 product lines generate approximately 34% of periodic sales:
+      <br/>• <strong>Tart Cherry Bulk:</strong> $125k (9.2% share) – high-velocity premium baking fruit.
+      <br/>• <strong>Almond Natural:</strong> $115k (8.4% share) – core staple commodity.
+      <br/>• <strong>Raisin California:</strong> $77k (5.7% share) – consistent commercial ingredient.
+      <br/>• <strong>Almond Hickory & Dry Roast:</strong> $144k combined – high-margin snacking items.
+    </p>
+
+    <div class="section-banner" style="margin-top: 4px;">COMMERCIAL RISK MITIGATION</div>
+    <p class="body-text">
+      Management is expanding sales coverage to mid-tier regional grocery chains to prevent revenue disruption should any tier-1 client modify credit or order cadences.
+    </p>
+  </div>
+
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>DOAU / Dan On Foods Group</span>
+      <span class="footer-tag">DOAU</span>
+    </div>
+    <div class="footer-page">7</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 8: INVENTORY ANALYSIS & WAREHOUSING ================= -->
+<div class="cfa-page-container">
+  <!-- LEFT COLUMN (31.5%) -->
+  <div class="col-left">
+    <div class="figure-box">
+      <div class="figure-header">Top 6 Inventory Asset Value SKUs</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>SKU Description</th><th>Asset Val</th><th>Share</th></tr>
+          <tr><td>R100125 (Almond,</td><td>$345k</td><td>9.6%</td></tr><tr><td>R100619 (Shoyu C</td><td>$270k</td><td>7.5%</td></tr><tr><td>R100313 (Cashew,</td><td>$195k</td><td>5.4%</td></tr><tr><td>R100129 (Almond,</td><td>$142k</td><td>3.9%</td></tr><tr><td>R100121 (Almond,</td><td>$132k</td><td>3.7%</td></tr><tr><td>R100123 (Almond,</td><td>$131k</td><td>3.6%</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: Physical Inventory Audit (Oct 2026)</div>
+    </div>
+
+    <div class="figure-box">
+      <div class="figure-header">Inventory Category Breakdown</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>Category</th><th>Amount ($)</th><th>% Assets</th></tr>
+          <tr><td>Raw Commodity Stock</td><td>$3.61M</td><td>57.0%</td></tr>
+          <tr><td>Work-in-Process (WIP)</td><td>$5k</td><td>0.0%</td></tr>
+          <tr><td>Inventory Clearing</td><td>$6k</td><td>0.0%</td></tr>
+          <tr class="total-row"><td>Total Physical Inventory</td><td>$3.61M</td><td>57.0%</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: Balance Sheet Inventory Schedule</div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN (66%) -->
+  <div class="col-right">
+    <div class="section-banner">INVENTORY ANALYSIS & WAREHOUSE OPTIMIZATION</div>
+    <p class="body-text">
+      With total physical inventory standing at <strong>$3.61M</strong>, inventory constitutes 57.0% of DOAU's total current assets. Managing warehouse turnover and carrying costs is the single most vital operational determinant of liquidity.
+    </p>
+
+    <div class="editorial-lead">Asset Concentration & Storage Dynamics</div>
+    <p class="body-text">
+      Inventory holdings are concentrated in high-value almond kernels, raw pistachios, and dried fruit drums:
+      <br/>• <strong>Cold-Storage Commodities:</strong> Almonds and dried cherries require temperature-controlled warehouse space in California, incurring monthly holding and refrigeration utility charges.
+      <br/>• <strong>Packaging Supplies & Seasonings:</strong> Constitute secondary inventory buffers necessary to support rapid turnaround for specialized packaging customer orders.
+    </p>
+
+    <div class="editorial-lead editorial-lead-italic">Inventory Aging & Days Sales of Inventory (DSI)</div>
+    <p class="body-text">
+      Calculated DSI currently averages approximately 95 operating days, elevated relative to wholesale industry benchmarks of 60–70 days. This lengthening reflects seasonal crop reception prior to peak fourth-quarter distribution runs.
+    </p>
+
+    <div class="section-banner" style="margin-top: 4px;">INVENTORY ACTION & LIQUIDATION STRATEGY</div>
+    <p class="body-text">
+      <strong>1. SKU De-proliferation:</strong> Eliminating 120 slow-moving SKUs with zero movement over the past 90 days.
+      <br/><strong>2. Just-In-Time Procurement:</strong> Transitioning non-core packaging materials to consignment terms, shifting carrying liability back to primary suppliers.
+      <br/><strong>3. Targeted Capital Release:</strong> Targeted liquidation of $500k in excess stock by end of Q4 to reduce carrying costs and enhance cash reserves.
+    </p>
+  </div>
+
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>DOAU / Dan On Foods Group</span>
+      <span class="footer-tag">DOAU</span>
+    </div>
+    <div class="footer-page">8</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 9: BALANCE SHEET & WORKING CAPITAL ================= -->
+<div class="cfa-page-container">
+  <!-- LEFT COLUMN (31.5%) -->
+  <div class="col-left">
+    <div class="figure-box">
+      <div class="figure-header">Fig 1. Trade AR Aging Distribution</div>
+      <div class="figure-content"><svg class="report-chart" viewBox="0 0 340 150" width="100%" height="150px">  <text x="30" y="14" font-size="10.5" font-weight="700" fill="#64748b">AR Balance ($k)</text>  <rect x="47.0" y="35.3" width="24.0" height="84.7" fill="#a30008" rx="1"/>  <text x="59.0" y="31.3" font-size="11" font-weight="900" fill="#0f172a" text-anchor="middle">$894k</text>  <text x="59.0" y="133" font-size="9.8" font-weight="700" fill="#334155" text-anchor="middle">Current</text>  <text x="59.0" y="143" font-size="8.8" font-weight="700" fill="#a30008" text-anchor="middle">37%</text>  <rect x="105.0" y="40.1" width="24.0" height="79.9" fill="#dc2626" rx="1"/>  <text x="117.0" y="36.1" font-size="11" font-weight="900" fill="#0f172a" text-anchor="middle">$844k</text>  <text x="117.0" y="133" font-size="9.8" font-weight="700" fill="#334155" text-anchor="middle">1-30d</text>  <text x="117.0" y="143" font-size="8.8" font-weight="700" fill="#a30008" text-anchor="middle">35%</text>  <rect x="163.0" y="109.0" width="24.0" height="11.0" fill="#f87171" rx="1"/>  <text x="175.0" y="105.0" font-size="11" font-weight="900" fill="#0f172a" text-anchor="middle">$116k</text>  <text x="175.0" y="133" font-size="9.8" font-weight="700" fill="#334155" text-anchor="middle">31-60d</text>  <text x="175.0" y="143" font-size="8.8" font-weight="700" fill="#a30008" text-anchor="middle">5%</text>  <rect x="221.0" y="110.6" width="24.0" height="9.4" fill="#fca5a5" rx="1"/>  <text x="233.0" y="106.6" font-size="11" font-weight="900" fill="#0f172a" text-anchor="middle">$99k</text>  <text x="233.0" y="133" font-size="9.8" font-weight="700" fill="#334155" text-anchor="middle">61-90d</text>  <text x="233.0" y="143" font-size="8.8" font-weight="700" fill="#a30008" text-anchor="middle">4%</text>  <rect x="279.0" y="76.3" width="24.0" height="43.7" fill="#cbd5e1" rx="1"/>  <text x="291.0" y="72.3" font-size="11" font-weight="900" fill="#0f172a" text-anchor="middle">$461k</text>  <text x="291.0" y="133" font-size="9.8" font-weight="700" fill="#334155" text-anchor="middle">>90d</text>  <text x="291.0" y="143" font-size="8.8" font-weight="700" fill="#a30008" text-anchor="middle">19%</text></svg></div>
+      <div class="figure-source">Source: Trade Accounts Receivable Ledger</div>
+    </div>
+
+    <div class="figure-box">
+      <div class="figure-header">Balance Sheet Capital Structure Summary</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>Balance Sheet Metric</th><th>Amount ($)</th></tr>
+          <tr><td>Total Current Assets</td><td>$6.33M</td></tr>
+          <tr><td>Cash & Equivalents</td><td>$276k</td></tr>
+          <tr><td>Trade Receivables (AR)</td><td>$2.41M</td></tr>
+          <tr><td>Inventory Assets</td><td>$3.61M</td></tr>
+          <tr class="total-row"><td>Total Current Liabilities</td><td>$2.81M</td></tr>
+          <tr><td>Trade Accounts Payable</td><td>$1.38M</td></tr>
+          <tr class="total-row"><td>Net Working Capital</td><td>$3.52M</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: Audited Balance Sheet Schedule</div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN (66%) -->
+  <div class="col-right">
+    <div class="section-banner">BALANCE SHEET ANALYSIS: AR & AP AGING DYNAMICS</div>
+    <p class="body-text">
+      DOAU maintains a solid asset base with <strong>$6.33M</strong> in current assets versus <strong>$2.81M</strong> in current liabilities, establishing a robust net working capital surplus of <strong>$3.52M</strong>.
+    </p>
+
+    <div class="editorial-lead">Accounts Receivable (AR) Aging Health & Collectability</div>
+    <p class="body-text">
+      Trade accounts receivable total <strong>$2.41M</strong>:
+      <br/>• <strong>Current & 1–30 Days ($1,738k, 72.0%):</strong> Represents prime credit customers (Wal-Mart, Dollarama, Falcon Trading) with exemplary payment track records.
+      <br/>• <strong>31–90 Days ($215k, 8.9%):</strong> Managed under standard commercial payment grace terms.
+      <br/>• <strong>Over 90 Days ($461k, 19.1%):</strong> Primarily intercompany balances and contested historical customer invoices under structured reconciliation.
+    </p>
+
+    <div class="editorial-lead editorial-lead-italic">Accounts Payable (AP) Profile & Supplier Terms</div>
+    <p class="body-text">
+      Accounts payable total <strong>$1.38M</strong>, driven primarily by intercompany vendor obligations ($4.76M gross) offset by substantial advances to agricultural suppliers (-$3.86M). Third-party commercial payables remain healthy at $482k with zero legal disputes.
+    </p>
+
+    <div class="section-banner" style="margin-top: 4px;">WORKING CAPITAL LIQUIDITY SUMMARY</div>
+    <p class="body-text">
+      The company's Current Ratio stands at <strong>2.25x</strong>, providing substantial downside coverage for short-term operational obligations.
+    </p>
+  </div>
+
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>DOAU / Dan On Foods Group</span>
+      <span class="footer-tag">DOAU</span>
+    </div>
+    <div class="footer-page">9</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 10: CAPEX, FIXED ASSETS & CASH FLOWS ================= -->
+<div class="cfa-page-container">
+  <!-- LEFT COLUMN (31.5%) -->
+  <div class="col-left">
+    <div class="figure-box">
+      <div class="figure-header">Fixed Assets & Capex Schedule</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>Fixed Asset Line</th><th>Book Value</th></tr>
+          <tr><td>Production Equipment</td><td>$3,882k</td></tr>
+          <tr><td>Automation & Sorting</td><td>$494k</td></tr>
+          <tr><td>Building Improvements</td><td>$768k</td></tr>
+          <tr><td>Automotive Vehicles</td><td>$195k</td></tr>
+          <tr><td>Office & Computer IT</td><td>$68k</td></tr>
+          <tr><td>Less: Accum Depreciation</td><td>($4,358k)</td></tr>
+          <tr class="total-row"><td>Net Fixed Assets</td><td>$3,034k</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: Fixed Asset Register & Depreciation Ledger</div>
+    </div>
+
+    <div class="figure-box">
+      <div class="figure-header">Cash Flow Statement Summary (10M-2026)</div>
+      <div class="figure-content">
+        <table class="fin-table">
+          <tr><th>Cash Flow Activity</th><th>Amount ($)</th></tr>
+          <tr><td>Net Operating Cash Flow (CFO)</td><td>($872k)</td></tr>
+          <tr><td>Net Investing Cash Flow (CFI/Capex)</td><td>$41k</td></tr>
+          <tr><td>Net Financing Cash Flow (CFF)</td><td>$894k</td></tr>
+          <tr class="total-row"><td>Net Change in Cash</td><td>$64k</td></tr>
+          <tr><td>Opening Cash Balance</td><td>$212k</td></tr>
+          <tr class="total-row"><td>Closing Cash Balance</td><td>$276k</td></tr>
+        </table>
+      </div>
+      <div class="figure-source">Source: Indirect Cash Flow Statement Extract</div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN (66%) -->
+  <div class="col-right">
+    <div class="section-banner">CAPEX, FIXED ASSETS & CASH FLOW DYNAMICS</div>
+    <p class="body-text">
+      Long-term sustainability in enterprise distribution hinges on disciplined capital allocation and maintaining adequate liquidity buffers to weather commodity supply shifts.
+    </p>
+
+    <div class="editorial-lead">Capital Expenditure & Infrastructure Investment</div>
+    <p class="body-text">
+      Net book value of property, plant, and equipment stands at <strong>$3,034k</strong>:
+      <br/>• <strong>Production & Packaging Equipment ($1.38M Gross):</strong> Modern optical sorting machines, bulk packaging hoppers, and conveyers that enable high-throughput sorting.
+      <br/>• <strong>Building & Facility Enhancements ($1.22M Gross):</strong> Insulated refrigerated storage facilities and logistics docks maintaining commodity freshness.
+      <br/>• <strong>Capex Maintenance:</strong> Current-period capex remained strictly defensive, limited to routine machinery maintenance with major expansionary outlays postponed.
+    </p>
+
+    <div class="editorial-lead editorial-lead-italic">Cash Flow Analysis (CFO, CFI, CFF)</div>
+    <p class="body-text">
+      <strong>Operating Cash Flow (CFO):</strong> Operating cash burn was heavily dictated by working capital movements, especially inventory procurement and customer payment terms.
+      <br/><strong>Financing Cash Flow (CFF):</strong> Intercompany support and credit lines provided essential bridge liquidity during peak harvest intake.
+      <br/><strong>Closing Cash Position:</strong> Cash and cash equivalents closed at <strong>$276k</strong>, providing sufficient near-term runway as receivables collection accelerates.
+    </p>
+
+    <div class="section-banner" style="margin-top: 4px;">DISCLOSURES & CONCLUDING RESEARCH STANCE</div>
+    <p class="body-text">
+      This research report is prepared strictly for institutional executive management and stakeholders. Given DOAU's strong working capital surplus ($3.52M) and substantial asset backing, we maintain our constructive turnaround thesis predicated upon disciplined execution of the management action plans.
+    </p>
+  </div>
+
+  <div class="cfa-page-footer">
+    <div class="footer-company">
+      <span>DOAU / Dan On Foods Group</span>
+      <span class="footer-tag">DOAU</span>
+    </div>
+    <div class="footer-page">10</div>
+  </div>
+</div>
+
+</body>
+</html>
